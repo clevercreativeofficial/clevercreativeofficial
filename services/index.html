@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional design and development services by Clever Creative">
+    <meta name="keywords" content="graphic design, web development, UI/UX, branding, services">
+    <meta name="author" content="Clever Creative">
+    <title>Services - Clever Creative | Graphic Designer & Web Developer</title>
+
+    <meta name="theme-color" content="#748260">
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flaticon icons -->
+    <link rel='stylesheet' 
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Custom style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#748260',
+                    },
+                },
+            },
+        };
+    </script>
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            <div class="animate-bounce">
+                <img class="w-16 animate-pulse" src="assets/images/logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- overlay -->
+    <div class="overlay md:translate-x-full translate-x-[750px] duration-300 bg-gray-900 bg-opacity-75 fixed top-0 left-0 w-full h-screen z-50">
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar sticky top-0 md:max-h-none max-h-[80px] backdrop-blur-lg bg-white bg-opacity-75 border-b border-gray-100 z-50">
+        <!-- container -->
+        <div class="max-w-[1200px] m-auto px-3 flex justify-between items-center">
+            <div class="w-10 py-4">
+                <a href="/">
+                    <img src="/assets/images/logo.svg" alt="logo">
+                </a>
+            </div>
+
+            <ul id="navItems" class="md:relative fixed top-0 left-0 md:bg-transparent bg-white md:w-auto w-4/5 md:min-h-auto md:h-auto md:min-h-0 min-h-screen flex md:-translate-x-[0] -translate-x-[750px] duration-500 md:flex md:flex-row flex-col text-sm font-medium text-gray-700 md:items-center justify-start md:px-0 px-10 md:py-0 py-3 md:gap-10 md:mb-0 mb-6 gap-6 z-50">
+                <div class="md:hidden block w-32 pb-4">
+                    <a href="/">
+                        <img src="/assets/images/logo/logo_color.svg" alt="logo">
+                    </a>
+                </div>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/">Home</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/apropos">About</a></li>
+                <li><a class="hover:text-primary text-primary duration-300 ease-in-out" href="/services">Services</a></li>
+                <li><a class="hover:text-primary duration-300 ease-in-out" href="/secteurs">Projects</a></li>
+                <a href="/contact" class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white">
+                    <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
+                    Contact
+                </a>
+            </ul>
+
+            <div id="menu-bar" class="hamburger md:hidden block w-8 h-8 flex items-center justify-center bg-primary text-white rounded-md cursor-pointer z-50">
+                <i class="fi fi-rr-bars-staggered text-lg translate-y-0.5"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero Section -->
+    <section class="max-w-[1200px] m-auto my-4 px-3">
+        <div class="w-full bg-white py-10 lg:px-10 px-3 rounded-xl">
+            <div class="text-center">
+                <h2 class="text-primary lg:text-[2.5rem] text-[2rem] font-semibold">
+                    My Services
+                </h2>
+                <h4 class="text-gray-600 text-xl lg:mt-2 mt-0 mb-4">
+                    Comprehensive design and development solutions
+                </h4>
+                <p class="max-w-[926px] text-base text-gray-600 mx-auto">
+                    I offer a range of professional services to help businesses establish and enhance their digital presence. 
+                    From initial concept to final implementation, I work closely with clients to deliver solutions that 
+                    align with their goals and resonate with their audience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="bg-gray-100 py-10">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-xl hover:border-gray-200 border-transparent border transition-shadow">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-laptop"></i>
+                    </div>
+                    <h3 class="text-xl text-primary font-medium mb-4">UI/UX Design</h3>
+                    <p class="text-base text-gray-600 mb-4">
+                        Create intuitive and visually appealing interfaces that enhance user experience and drive engagement.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            User research & persona development
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Wireframing & prototyping
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Interaction design
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Usability testing
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-xl hover:border-gray-200 border-transparent border transition-shadow">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-globe"></i>
+                    </div>
+                    <h3 class="text-xl text-primary font-medium mb-4">Web Development</h3>
+                    <p class="text-base text-gray-600 mb-4">
+                        Build responsive, fast, and secure websites that work seamlessly across all devices.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Custom website development
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            E-commerce solutions
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            CMS integration (WordPress, etc.)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Website maintenance
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-xl hover:border-gray-200 border-transparent border transition-shadow">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-palette"></i>
+                    </div>
+                    <h3 class="text-xl text-primary font-medium mb-4">Brand Identity</h3>
+                    <p class="text-base text-gray-600 mb-4">
+                        Develop a cohesive brand identity that communicates your values and differentiates you in the market.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Logo design
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Color palette & typography
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Brand guidelines
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Business collateral
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-xl hover:border-gray-200 border-transparent border transition-shadow">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-mobile"></i>
+                    </div>
+                    <h3 class="text-xl text-primary font-medium mb-4">Mobile Design</h3>
+                    <p class="text-base text-gray-600 mb-4">
+                        Design mobile interfaces that provide exceptional user experiences on smaller screens.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Mobile app UI/UX design
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Responsive web design
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Prototyping & testing
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Design systems
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-xl hover:border-gray-200 border-transparent border transition-shadow">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-chart-pie-alt"></i>
+                    </div>
+                    <h3 class="text-xl text-primary font-medium mb-4">Digital Marketing</h3>
+                    <p class="text-base text-gray-600 mb-4">
+                        Enhance your online presence with strategic digital marketing solutions.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Social media graphics
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Email campaign design
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Digital advertisements
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Content creation
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-xl hover:border-gray-200 border-transparent border transition-shadow">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fi fi-rr-pencil-paintbrush"></i>
+                    </div>
+                    <h3 class="text-xl text-primary font-medium mb-4">Graphic Design</h3>
+                    <p class="text-base text-gray-600 mb-4">
+                        Create compelling visual content that communicates your message effectively.
+                    </p>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Print design (brochures, flyers)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Infographics & data visualization
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Illustration
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                            Packaging design
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-4 text-center">My Working Process</h2>
+            <p class="text-base text-gray-600 text-center max-w-2xl mx-auto mb-10">
+                A structured approach to ensure quality and efficiency in every project.
+            </p>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-primary text-xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-lg text-primary font-medium mb-2">Discovery</h3>
+                    <p class="text-sm text-gray-600">
+                        Understanding your goals, audience, and requirements through research and consultation.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-primary text-xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-lg text-primary font-medium mb-2">Concept</h3>
+                    <p class="text-sm text-gray-600">
+                        Developing initial concepts and wireframes to visualize the direction.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-primary text-xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-lg text-primary font-medium mb-2">Design</h3>
+                    <p class="text-sm text-gray-600">
+                        Creating high-fidelity designs and prototypes for review and feedback.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-primary text-xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-lg text-primary font-medium mb-2">Delivery</h3>
+                    <p class="text-sm text-gray-600">
+                        Finalizing and implementing the approved solution with thorough testing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <h2 class="text-3xl font-semibold text-gray-700 mb-4 text-center">Frequently Asked Questions</h2>
+            <p class="text-base text-gray-600 text-center max-w-2xl mx-auto mb-10">
+                Common questions about my services and working process.
+            </p>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-100 px-6 py-4 rounded-xl">
+                    <button class="w-full text-left flex justify-between text-gray-700 items-center focus:outline-none">
+                        <h3 class="md:text-lg text-md mr-2 font-semibold">What's included in your design services?</h3>
+                        <span class="text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="text-sm text-gray-600 pt-2">My design services include research, concept development, high-fidelity designs, and revisions based on your feedback. The exact deliverables depend on the specific project and package you choose.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-100 px-6 py-4 rounded-xl">
+                    <button class="w-full text-left flex justify-between text-gray-700 items-center focus:outline-none">
+                        <h3 class="md:text-lg text-md mr-2 font-semibold">How long does a typical project take?</h3>
+                        <span class="text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="text-sm text-gray-600 pt-2">Project timelines vary based on scope and complexity. A basic website might take 2-3 weeks, while a comprehensive branding project could take 4-6 weeks. I'll provide a detailed timeline after our initial consultation.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-100 px-6 py-4 rounded-xl">
+                    <button class="w-full text-left flex justify-between text-gray-700 items-center focus:outline-none">
+                        <h3 class="md:text-lg text-md mr-2 font-semibold">Do you offer ongoing support after project completion?</h3>
+                        <span class="text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="text-sm text-gray-600 pt-2">Yes, all packages include some level of post-launch support. I also offer monthly retainer agreements for clients who need ongoing design and development work.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-100 px-6 py-4 rounded-xl">
+                    <button class="w-full text-left flex justify-between text-gray-700 items-center focus:outline-none">
+                        <h3 class="md:text-lg text-md mr-2 font-semibold">What's your payment structure?</h3>
+                        <span class="text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="text-sm text-gray-600 pt-2">I typically require a 50% deposit to begin work, with the remaining 50% due upon project completion. For larger projects, we can arrange milestone payments.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-gray-100 px-6 py-4 rounded-xl">
+                    <button class="w-full text-left flex justify-between text-gray-700 items-center focus:outline-none">
+                        <h3 class="md:text-lg text-md mr-2 font-semibold">Can you work with my existing brand guidelines?</h3>
+                        <span class="text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="text-sm text-gray-600 pt-2">Absolutely! If you have existing brand guidelines, I'll ensure all designs adhere to your established visual identity while still bringing fresh creativity to your project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-500">
+        <div class="max-w-[1200px] mx-auto px-4">
+            <!-- Certifications -->
+            <div class="text-center flex md:flex-row flex-col justify-between border-t border-gray-200 py-6">
+                <p class="text-sm text-gray-600">© <span id="copyright"></span> The Creative House</p>
+                <p class="text-sm text-gray-600">Designed by <a target="_blank" href="https://www.klevadev.com" class="text-primary">Clever Designer</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dropdown -->
+    <script src="assets/js/dropdown.js"></script>
+
+    <!-- custom color -->
+    <script src="assets/js/tailwind_config.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+        });
+    </script>
+
+    <!-- loader -->
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#loader').fadeOut();
+        })
+    </script>
+
+    <!-- Copyright -->
+    <script>
+        const copyright = new Date().getFullYear();
+        document.getElementById('copyright').innerHTML = copyright;
+    </script>
+
+    <!-- faq -->
+    <script>
+        const faqTitle = document.querySelectorAll('.bg-white button')
+        faqTitle.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('span');
+
+                // Toggle the max-height of the content
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null; // Collapse
+                    icon.textContent = '+';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px'; // Expand
+                    icon.textContent = '-';
+                }
+
+                // Rotate the icon
+                icon.classList.toggle('rotate-180');
+
+                button.classList.toggle('text-primary')
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -34,14 +34,18 @@ h1, h2, h3, h4{
     bottom: -55px !important; /* Adjust the position of the dots */
   }
 
+  .slick-dots li{
+    margin: 0 !important;
+  }
+
   .slick-dots li button:before {
-    color: #15803D !important; /* Gold color for inactive dots */
+    color: #73805F !important; /* Gold color for inactive dots */
     opacity: 0.3; /* Make inactive dots slightly transparent */
     font-size: 12px; /* Adjust dot size */
   }
 
   .slick-dots li.slick-active button:before {
-    color: #15803D; /* Gold color for active dot */
+    color: #73805F; /* Gold color for active dot */
     opacity: 1; /* Make active dot fully visible */
   }
 

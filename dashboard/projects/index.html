@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="italafrica">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <title>Italafrica Group | Home</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flaticon Icons -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body class="bg-gray-950">
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-gray-950 z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            <div
+                class="animate-spin rounded-full h-20 w-20 flex justify-center items-center border-b-2 border-r-2 border-green-700">
+                <div
+                    class="animate-spin rounded-full h-16 w-16 flex justify-center items-center border-b-2 border-r-2 border-white">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay fixed top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-75 z-50 hidden"></div>
+
+    <!-- navbar -->
+    <nav class="sticky top-0 h-[80px] backdrop-blur-lg bg-gray-950 bg-opacity-75 border-b border-gray-900 z-50">
+        <div class="w-full h-full px-3 flex justify-between items-center">
+            <div id="logo-container" class="w-[250px] flex items-center justify-between gap-3 z-20">
+                <div id="logo" class="w-10 py-4">
+                    <a href="/">
+                        <img src="../../assets/images/logo/logo_bc.svg" alt="logo">
+                    </a>
+                </div>
+                <div id="menu-bar"
+                    class="w-8 h-8 flex items-center justify-center text-white rounded cursor-pointer ml-2 z-50 text-center">
+                    <i class="fi fi-rr-sidebar-flip text-lg"></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <p class="sm:block hidden text-white text-sm">Awa Melvine</p>
+                <i class="fi fi-rr-circle-user translate-y-0.5 text-gray-400 text-2xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div id="sidebar"
+        class="fixed left-0 top-0 w-[275px] pt-24 px-3 min-h-screen bg-gray-950 overflow-x-hidden border-r border-gray-900 z-20">
+        <ul class="flex flex-col gap-2">
+            <li>
+                <a class="inline-block text-sm w-full text-gray-300 px-3 py-2 rounded-lg bg-green-700" href="/admin">
+                    <i class="fi fi-rr-dashboard text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-900 duration-300"
+                    href="/admin/projects">
+                    <i class="fi fi-rr-excavator text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-900 duration-300"
+                    href="/admin/products">
+                    <i class="fi fi-rr-boxes text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <span>Products</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-90 duration-300"
+                    href="/admin/users">
+                    <i class="fi fi-rr-users translate-y-0.5 inline-block mx-1"></i>
+                    <span>Users</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-900 duration-300"
+                    href="/admin/faqs">
+                    <i class="fi fi-rr-comments-question text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <span>Faqs</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-900 duration-300"
+                    href="/admin/subscribers/">
+                    <i class="fi fi-rr-newsletter-subscribe text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <span>Subscribers</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-900 duration-300"
+                    href="/admin/address">
+                    <i class="fi fi-rr-marker text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <span>Address</span>
+                </a>
+            </li>
+        </ul>
+
+        <div id="logout" class="absolute bottom-2 left-0 w-[275px] px-3 text-center">
+            <a href=""
+                class="inline-block text-sm w-full text-gray-300 px-4 py-2 rounded-lg hover:bg-rose-500 hover:text-white bg-gray-900 duration-300">
+                <i class="fi fi-rr-sign-out-alt translate-y-0.5 inline-block mx-1"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <section class="ml-[70px] w-[calc(100vw-70px)] min-h-[calc(100vh-80px)] md:py-8 py-4 md:px-6 px-3 bg-gray-950">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header Section -->
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
+                <div class="sm:w-1/2 w-full">
+                    <h1 class="text-2xl font-semibold text-gray-100">Project Management</h1>
+                    <p class="text-sm text-gray-400 mt-1">Manage and organize all your construction projects</p>
+                </div>
+                <div class="sm:w-fit w-full flex flex-wrap gap-3">
+                    <a href="/admin/projects/create"
+                        class="sm:w-fit w-full flex items-center gap-2 px-4 py-2.5 rounded-lg bg-green-600 hover:bg-green-700 text-white transition-colors shadow-sm">
+                        <i class="fi fi-rr-add text-sm translate-y-0.5 inline-block"></i>
+                        <small>Add Project</small>
+                    </a>
+                    <a href="/admin/projects/categories"
+                        class="sm:w-fit w-full flex items-center gap-2 px-4 py-2.5 rounded-lg bg-gray-700 text-gray-200 hover:bg-gray-700 transition-colors shadow-sm">
+                        <i class="fi fi-rr-list text-sm translate-y-0.5 inline-block"></i>
+                        <small>Categories</small>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Products Table -->
+            <div class="bg-gray-950 rounded-xl shadow-sm border border-gray-800 overflow-hidden">
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-300">
+                        <thead class="text-xs uppercase bg-gray-800 text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                                    Project
+                                </th>
+                                <th scope="col" class="px-6 py-3 whitespace-nowrap">
+                                    Category
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-right whitespace-nowrap">
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-800">
+                            <!-- Product Row 1 -->
+                            <tr class="bg-gray-900 hover:bg-gray-800 transition-colors">
+                                <th scope="row" class="px-6 py-4 font-medium whitespace-nowrap text-white">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="w-10 h-10 rounded-md bg-green-900/30 flex items-center justify-center">
+                                            <i class="fi fi-rr-building text-green-400"></i>
+                                        </div>
+                                        <div>
+                                            <div>Inzovu Mall</div>
+                                            <div class="text-xs text-gray-400">PRJ-2023-001</div>
+                                        </div>
+                                    </div>
+                                </th>
+
+                                <!-- Category -->
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <small
+                                        class="px-2.5 py-1 text-xs font-medium rounded-full bg-green-900/30 text-green-200">Kitchens
+                                        & Interior Design</small>
+                                </td>
+
+                                <!-- Actions -->
+                                <td class="px-6 py-4 text-right whitespace-nowrap">
+                                    <div class="flex justify-end gap-2">
+                                        <a href="#"
+                                            class="w-10 h-10 flex justify-center items-center text-gray-400 hover:text-blue-400 hover:bg-blue-900/20 rounded-lg transition-colors"
+                                            title="Edit">
+                                            <i class="fi fi-rr-edit text-sm"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-10 h-10 flex justify-center items-center text-gray-400 hover:text-green-400 hover:bg-green-900/20 rounded-lg transition-colors"
+                                            title="View">
+                                            <i class="fi fi-rr-eye text-sm"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-10 h-10 flex justify-center items-center text-gray-400 hover:text-rose-400 hover:bg-rose-900/20 rounded-lg transition-colors"
+                                            title="Delete">
+                                            <i class="fi fi-rr-trash text-sm"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Table Footer with Pagination -->
+                <div class="px-6 py-4 border-t border-gray-700 bg-gray-800/30">
+                    <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <div class="text-sm text-gray-400">
+                            Showing <span class="font-medium text-gray-200">1</span> to <span
+                                class="font-medium text-gray-200">3</span> of <span
+                                class="font-medium text-gray-200">24</span> products
+                        </div>
+                        <nav class="flex items-center gap-1">
+                            <button
+                                class="w-10 h-10 flex justify-center items-center rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+                                <i class="fi fi-rr-angle-small-left text-sm translate-y-0.5"></i>
+                            </button>
+                            <button
+                                class="w-10 h-10 flex justify-center items-center rounded-lg bg-green-700 text-white hover:bg-green-700 transition-colors">
+                                1
+                            </button>
+                            <button
+                                class="w-10 h-10 flex justify-center items-center rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+                                2
+                            </button>
+                            <button
+                                class="w-10 h-10 flex justify-center items-center rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+                                3
+                            </button>
+                            <button
+                                class="w-10 h-10 flex justify-center items-center rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors">
+                                <i class="fi fi-rr-angle-small-right text-sm"></i>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- scripts -->
+    <script type="text/javascript" defer>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuBar = document.getElementById("menu-bar");
+            const logo = document.getElementById("logo");
+            const logoBox = document.getElementById('logo-container')
+            const sidebar = document.getElementById("sidebar");
+            const logout = document.getElementById("logout");
+            const logoutIcon = document.querySelector("#logout i");
+            const labelNames = document.querySelectorAll("span");
+
+            // Define screen size breakpoint
+            const isSmallDevice = window.innerWidth <= 768; // Adjust breakpoint if needed
+
+            if (!isSmallDevice) {
+                // On wider screens, load state from localStorage
+                const isCollapsed = localStorage.getItem("sidebar-collapsed") === "true";
+                if (isCollapsed) {
+                    collapseSidebar();
+                } else {
+                    expandSidebar();
+                }
+            } else {
+                // On small devices, always collapse by default
+                collapseSidebar();
+            }
+
+            menuBar.addEventListener("click", () => {
+                const isNowCollapsed = sidebar.classList.toggle("w-[70px]");
+                logout.classList.toggle("w-[70px]");
+                logoutIcon.classList.toggle("mx-1");
+                logo.classList.toggle("hidden");
+                logoBox.classList.toggle("w-[70px]");
+                labelNames.forEach(label => label.classList.toggle("hidden"));
+
+                // Only store state in localStorage for wider screens
+                if (!isSmallDevice) {
+                    localStorage.setItem("sidebar-collapsed", isNowCollapsed);
+                }
+            });
+
+            function collapseSidebar() {
+                sidebar.classList.add("w-[70px]");
+                logout.classList.add("w-[70px]");
+                logoutIcon.classList.add("mx-1");
+                logo.classList.add("hidden");
+                logoBox.classList.add("w-[70px]");
+                labelNames.forEach(label => label.classList.add("hidden"));
+            }
+
+            function expandSidebar() {
+                sidebar.classList.remove("w-[70px]");
+                logout.classList.remove("w-[70px]");
+                logoutIcon.classList.remove("mx-1");
+                logo.classList.remove("hidden");
+                logoBox.classList.remove("w-[70px]");
+                labelNames.forEach(label => label.classList.remove("hidden"));
+            }
+        });
+    </script>
+
+    <!-- jQuery for Loader (if needed) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $("#loader").fadeOut();
+        });
+    </script>
+
+    <!-- Copyright Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const copyrightElement = document.getElementById("copyright");
+            if (copyrightElement) {
+                copyrightElement.innerHTML = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+
+</html>

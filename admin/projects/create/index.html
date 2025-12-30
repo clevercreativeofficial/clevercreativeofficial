@@ -46,11 +46,6 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-    <!-- Quill is init -->
-    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
-    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
-
-
 </head>
 
 <body class="bg-gray-50 dark:bg-gray-900">
@@ -95,28 +90,28 @@
         class="fixed left-0 top-0 w-[275px] pt-24 px-3 min-h-screen bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 z-20">
         <ul class="flex flex-col gap-2">
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
                     href="/admin">
                     <i class="fi fi-rr-user text-[16px] translate-y-0.5 inline-block mx-1"></i>
                     <span>Profile</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
                     href="/admin/projects">
                     <i class="fi fi-rr-laptop text-[16px] translate-y-0.5 inline-block mx-1"></i>
                     <span>Projects</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
                     href="/admin/testimonials">
                     <i class="fi fi-rr-stars translate-y-0.5 inline-block mx-1"></i>
                     <span>Testimonials</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-white px-3 py-2 rounded-lg bg-primary" href="/admin/resume">
+                <a class="inline-block text-sm w-full text-white px-4 py-3 rounded-lg bg-primary" href="/admin/resume">
                     <i class="fi fi-rr-document translate-y-0.5 inline-block mx-1"></i>
                     <span>Resume</span>
                 </a>
@@ -132,21 +127,23 @@
         </div>
     </div>
 
-    <!-- Add Project Page -->
-    <section class="md:py-12 py-6">
-        <div class="max-w-[1200px] mx-auto px-4">
+    <!-- Add Project Page - Case Study Structure -->
+    <section
+        class="ml-[70px] w-[calc(100vw-70px)] min-h-[calc(100vh-80px)] md:py-8 py-4 md:px-6 px-3 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
             <!-- Page Header -->
             <div class="mb-8">
-                <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center justify-between md:flex-row flex-col gap-4 mb-6">
                     <div>
-                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-2">Add New Project
+                        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+                            Create New Case Study
                         </h1>
                         <p class="text-gray-600 dark:text-gray-300">
-                            Showcase your work with detailed project information and visuals
+                            Build a compelling project story with sections, highlights, and measurable results
                         </p>
                     </div>
                     <button onclick="history.back()"
-                        class="flex items-center gap-2 px-4 py-2.5 border border-gray-300 dark:border-gray-700 rounded-xl text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                        class="sm:w-auto w-full flex items-center justify-center gap-2 px-4 py-2.5 border border-gray-300 dark:border-gray-700 rounded-xl text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                         <i class="fi fi-rr-angle-small-left translate-y-0.5"></i>
                         Back to Projects
                     </button>
@@ -156,39 +153,95 @@
             <!-- Main Form -->
             <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
                 <form id="addProjectForm" class="divide-y divide-gray-200 dark:divide-gray-700">
-                    <!-- Basic Information Section -->
+                    <!-- Hero Section -->
                     <div class="p-8">
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                                <i class="fi fi-rr-info text-primary"></i>
+                                <i class="fi fi-rr-star text-primary"></i>
                             </div>
                             <div>
-                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Basic Information
+                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                    Project Hero Section
                                 </h2>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">Core details about your project</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">First impression of your case study
+                                </p>
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                            <!-- Left Column -->
-                            <div class="space-y-6">
-                                <div>
-                                    <label for="projectTitle"
-                                        class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                        Project Title *
+                        <div class="space-y-6">
+                            <!-- Category Badge -->
+                            <div>
+                                <label for="projectCategory"
+                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                    Category Badge *
+                                </label>
+                                <div class="flex flex-wrap gap-2">
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="category_badge" value="E-Commerce Redesign"
+                                            class="sr-only peer" checked>
+                                        <span
+                                            class="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm cursor-pointer peer-checked:bg-primary peer-checked:text-white transition-colors">
+                                            E-Commerce Redesign
+                                        </span>
                                     </label>
-                                    <input type="text" id="projectTitle" required
-                                        class="w-full px-4 py-3 outline-none border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors"
-                                        placeholder="Eco Market: Sustainable E-commerce Redesign">
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="category_badge" value="Web Development"
+                                            class="sr-only peer">
+                                        <span
+                                            class="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm cursor-pointer peer-checked:bg-primary peer-checked:text-white transition-colors">
+                                            Web Development
+                                        </span>
+                                    </label>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="category_badge" value="Brand Identity"
+                                            class="sr-only peer">
+                                        <span
+                                            class="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm cursor-pointer peer-checked:bg-primary peer-checked:text-white transition-colors">
+                                            Brand Identity
+                                        </span>
+                                    </label>
+                                    <label class="inline-flex items-center">
+                                        <input type="radio" name="category_badge" value="Mobile App"
+                                            class="sr-only peer">
+                                        <span
+                                            class="px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm cursor-pointer peer-checked:bg-primary peer-checked:text-white transition-colors">
+                                            Mobile App
+                                        </span>
+                                    </label>
                                 </div>
+                            </div>
 
+                            <!-- Main Title -->
+                            <div>
+                                <label for="projectTitle"
+                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                    Project Title *
+                                </label>
+                                <input type="text" id="projectTitle" required
+                                    class="w-full min-h-10 px-4 py-3 mt-1 text-2xl font-semibold text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 duration-300"
+                                    placeholder="Eco Market: Sustainable E-commerce Platform Redesign">
+                            </div>
+
+                            <!-- Excerpt -->
+                            <div>
+                                <label for="projectExcerpt"
+                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                    Project Excerpt *
+                                </label>
+                                <textarea id="projectExcerpt" rows="3" required
+                                    class="w-full min-h-10 px-4 py-3 mt-1 text-xl text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 duration-300"
+                                    placeholder="A complete redesign of an eco-conscious e-commerce platform that increased conversions by 35% while better communicating the brand's sustainability mission."></textarea>
+                            </div>
+
+                            <!-- Hero Info Grid -->
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <div>
                                     <label for="clientName"
                                         class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
                                         Client Name *
                                     </label>
                                     <input type="text" id="clientName" required
-                                        class="w-full px-4 py-3 outline-none border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors"
+                                        class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 duration-300"
                                         placeholder="Eco Market Inc.">
                                 </div>
 
@@ -197,338 +250,494 @@
                                         class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
                                         Project Year *
                                     </label>
-                                    <select id="projectYear" required
-                                        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors">
-                                        <option value="">Select Year</option>
-                                        <option value="2024">2024</option>
-                                        <option value="2023" selected>2023</option>
-                                        <option value="2022">2022</option>
-                                        <option value="2021">2021</option>
-                                        <option value="2020">2020</option>
-                                    </select>
+                                    <input type="text" id="clientName" required
+                                        class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 duration-300"
+                                        placeholder="2020">
                                 </div>
 
                                 <div>
-                                    <label for="projectUrl"
+                                    <label for="projectServices"
                                         class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                        Live Project URL
+                                        Services *
                                     </label>
-                                    <input type="url" id="projectUrl"
-                                        class="w-full px-4 py-3 outline-none border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors"
-                                        placeholder="https://ecomarket.example.com">
+                                    <input type="text" id="projectServices" required
+                                        class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"
+                                        placeholder="UX Research, UI Design, Front-end Development">
                                 </div>
                             </div>
 
-                            <!-- Right Column -->
-                            <div class="space-y-6">
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                        Project Category *
-                                    </label>
-                                    <div class="grid grid-cols-2 gap-3">
-                                        <label
-                                            class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
-                                            <input type="radio" name="category" value="web-design"
-                                                class="mr-3 accent-primary" checked>
-                                            <span class="flex-1 text-gray-600 dark:text-gray-300">Web Design</span>
-                                        </label>
-                                        <label
-                                            class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
-                                            <input type="radio" name="category" value="web-dev"
-                                                class="mr-3 accent-primary">
-                                            <span class="flex-1 text-gray-600 dark:text-gray-300">Web Development</span>
-                                        </label>
-                                        <label
-                                            class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
-                                            <input type="radio" name="category" value="mobile"
-                                                class="mr-3 accent-primary">
-                                            <span class="flex-1 text-gray-600 dark:text-gray-300">Mobile App</span>
-                                        </label>
-                                        <label
-                                            class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer transition-colors">
-                                            <input type="radio" name="category" value="branding"
-                                                class="mr-3 accent-primary">
-                                            <span class="flex-1 text-gray-600 dark:text-gray-300">Branding</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label for="projectTags"
-                                        class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                        Tags
-                                    </label>
-                                    <div
-                                        class="flex flex-wrap gap-2 p-3 border border-gray-300 dark:border-gray-700 rounded-xl min-h-[52px]">
-                                        <span
-                                            class="inline-flex items-center gap-1 bg-primary/10 text-primary px-3 py-1 rounded-lg text-sm">
-                                            E-commerce
-                                            <button type="button" class="hover:text-primary-dark">
-                                                <i class="fi fi-rr-cross-small text-xs"></i>
-                                            </button>
-                                        </span>
-                                        <span
-                                            class="inline-flex items-center gap-1 bg-primary/10 text-primary px-3 py-1 rounded-lg text-sm">
-                                            Sustainability
-                                            <button type="button" class="hover:text-primary-dark">
-                                                <i class="fi fi-rr-cross-small text-xs"></i>
-                                            </button>
-                                        </span>
-                                        <input type="text" id="projectTags"
-                                            class="flex-1 min-w-[120px] bg-transparent text-gray-600 dark:text-gray-300 border-0 outline-none focus:ring-0 px-0"
-                                            placeholder="Add a tag...">
-                                    </div>
-                                </div>
+                            <!-- Live URL -->
+                            <div>
+                                <label for="projectUrl"
+                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                    Live Project URL
+                                </label>
+                                <input type="url" id="projectUrl"
+                                    class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"
+                                    placeholder="https://ecomarket.example.com">
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project Description Section -->
+                    <!-- Project Highlights Sidebar -->
                     <div class="p-8">
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                                <i class="fi fi-rr-document text-primary"></i>
+                                <i class="fi fi-rr-bullet text-primary"></i>
                             </div>
                             <div>
-                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Project Description
+                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                    Project Highlights (Sidebar)
                                 </h2>
-                                <p class="text-sm text-gray-600 dark:text-gray-300">Tell the story behind your project
-                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">Key information displayed in the
+                                    sidebar</p>
                             </div>
                         </div>
 
-                        <div class="space-y-6">
-                            <div>
-                                <label for="shortDescription"
-                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Short Description *
-                                </label>
-                                <textarea id="shortDescription" rows="6" required
-                                    class="w-full px-4 py-3 outline-none border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors"
-                                    placeholder="Briefly describe your project (appears on project cards)"></textarea>
-                            </div>
-
-                            <div>
-                                <label for="fullDescription"
-                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Full Description *
-                                </label>
-                                <div class="bg-white overflow-hidden">
-                                    <div id="editor" class="outline-none min-h-[200px]"></div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6" id="highlightsContainer">
+                            <!-- Dynamic highlights will be added here -->
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm text-gray-800 dark:text-gray-100 mb-1">Timeline</label>
+                                    <input type="text" name="highlight_label[]" value="Timeline"
+                                        class="w-full px-4 py-3 text-sm text-gray-700 dark:text-gray-200 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-transparent text-sm duration-300">
+                                    <input type="text" name="highlight_value[]"
+                                        class="w-full px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"
+                                        placeholder="12 weeks" value="12 weeks (Research to Launch)">
                                 </div>
                             </div>
 
-                            <div>
-                                <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Services Provided *
-                                </label>
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                                    <label
-                                        class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 cursor-pointer transition-colors">
-                                        <input type="checkbox" class="mr-3 accent-primary rounded" checked>
-                                        <span>UX Research</span>
-                                    </label>
-                                    <label
-                                        class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 cursor-pointer transition-colors">
-                                        <input type="checkbox" class="mr-3 accent-primary rounded" checked>
-                                        <span>UI Design</span>
-                                    </label>
-                                    <label
-                                        class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 cursor-pointer transition-colors">
-                                        <input type="checkbox" class="mr-3 accent-primary rounded">
-                                        <span>Front-end Development</span>
-                                    </label>
-                                    <label
-                                        class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 cursor-pointer transition-colors">
-                                        <input type="checkbox" class="mr-3 accent-primary rounded">
-                                        <span>Back-end Development</span>
-                                    </label>
-                                    <label
-                                        class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 cursor-pointer transition-colors">
-                                        <input type="checkbox" class="mr-3 accent-primary rounded">
-                                        <span>Brand Strategy</span>
-                                    </label>
-                                    <label
-                                        class="flex items-center p-3 border border-gray-300 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 cursor-pointer transition-colors">
-                                        <input type="checkbox" class="mr-3 accent-primary rounded">
-                                        <span>Content Strategy</span>
-                                    </label>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm text-gray-800 dark:text-gray-100 mb-1">Team</label>
+                                    <input type="text" name="highlight_label[]" value="Team"
+                                        class="w-full px-4 py-3 text-sm text-gray-700 dark:text-gray-200 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-transparent text-sm duration-300">
+                                    <input type="text" name="highlight_value[]"
+                                        class="w-full px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"
+                                        placeholder="UX Designer, UI Designer, Front-end Developer"
+                                        value="UX Designer, UI Designer, Front-end Developer">
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm text-gray-800 dark:text-gray-100 mb-1">Platform</label>
+                                    <input type="text" name="highlight_label[]" value="Platform"
+                                        class="w-full px-4 py-3 text-sm text-gray-700 dark:text-gray-200 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-transparent text-sm duration-300">
+                                    <input type="text" name="highlight_value[]"
+                                        class="w-full px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"
+                                        placeholder="Shopify Plus" value="Shopify Plus">
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm text-gray-800 dark:text-gray-100 mb-1">Key
+                                        Metrics</label>
+                                    <input type="text" name="highlight_label[]" value="Key Metrics"
+                                        class="w-full px-4 py-3 text-sm text-gray-700 dark:text-gray-200 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-transparent text-sm duration-300">
+                                    <input type="text" name="highlight_value[]"
+                                        class="w-full px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"
+                                        placeholder="35% conversion increase"
+                                        value="35% conversion increase, 40% bounce rate reduction">
                                 </div>
                             </div>
                         </div>
+
+                        <button type="button" onclick="addHighlight()"
+                            class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            <i class="fi fi-rr-plus"></i>
+                            Add Another Highlight
+                        </button>
                     </div>
 
-                    <!-- Media & Visuals Section -->
+                    <!-- Content Sections -->
                     <div class="p-8">
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                                <i class="fi fi-rr-gallery text-primary"></i>
+                                <i class="fi fi-rr-layout-fluid text-primary"></i>
                             </div>
                             <div>
-                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Media & Visuals</h2>
-                                <p class="text-sm text-gray-600 dark:text-gray-300">Add images, videos, and mockups</p>
+                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                    Content Sections
+                                </h2>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">Build your case study with modular
+                                    sections</p>
                             </div>
                         </div>
 
-                        <div class="space-y-6">
-                            <!-- Featured Image -->
-                            <div>
-                                <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Featured Image *
-                                </label>
-                                <div
-                                    class="border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-2xl p-8 text-center hover:border-primary transition-colors cursor-pointer">
-                                    <div
-                                        class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
-                                        <i class="fi fi-rr-cloud-upload text-2xl text-gray-400 translate-y-0.5"></i>
+                        <div class="space-y-6" id="sectionsContainer">
+                            <!-- Section 1: Project Overview -->
+                            <div class="">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                                            <span class="text-primary font-medium">1</span>
+                                        </div>
+                                        <h3 class="font-semibold text-gray-800 dark:text-gray-100">Project Overview</h3>
                                     </div>
-                                    <p class="font-medium text-gray-800 dark:text-gray-100 mb-2">Upload featured image
-                                    </p>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
-                                        Recommended: 1200×800px, PNG, JPG or WebP
-                                    </p>
                                     <button type="button"
-                                        class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white text-sm px-6 py-2.5 rounded-xl transition-colors font-medium">
-                                        <i class="fi fi-rr-folder-open translate-y-0.5"></i>
-                                        Choose File
+                                        class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+                                        <i class="fi fi-rr-menu-dots-vertical"></i>
                                     </button>
                                 </div>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                            Section Title
+                                        </label>
+                                        <input type="text" name="section_title[]" value="Project Overview"
+                                            class="w-full px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                            Section Content
+                                        </label>
+                                        <textarea id="projectDescription" rows="8"
+                                            class="w-full px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"
+                                            placeholder="Case study content goes here..."></textarea>
+                                        <div
+                                            class="bg-sky-50 dark:bg-sky-800/30 text-sky-800 dark:text-sky-100 text-xs block mt-2 p-4 rounded-lg">
+                                            Write your case study using simple markdown:<br><br>
+
+                                            <div class="grid grid-cols-4 gap-4">
+                                                <span>
+                                                    <strong>Headings:</strong><br>
+                                                    # Heading 1<br>
+                                                    ## Heading 2<br>
+                                                    ### Heading 3<br><br>
+                                                </span>
+
+                                                <span>
+                                                    <strong>Text formatting:</strong><br>
+                                                    **Bold text**<br>
+                                                    *Italic text*<br><br>
+                                                </span>
+
+                                                <span>
+                                                    <strong>Lists:</strong><br>
+                                                    * Bullet point 1<br>
+                                                    * Bullet point 2<br><br>
+                                                </span>
+
+                                                <span>
+                                                    <strong>Numbered lists:</strong><br>
+                                                    1. First item<br>
+                                                    2. Second item<br><br>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <!-- Live preview -->
+                                        <div id="markdownPreview"
+                                            class="prose dark:prose-invert max-w-none bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-200 p-4 rounded-lg mt-2">
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
 
-                            <!-- Additional Images -->
-                            <div>
-                                <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Gallery Images
-                                </label>
-                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                    <div
-                                        class="aspect-video rounded-xl bg-gray-100 dark:bg-gray-900 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-700 hover:border-primary transition-colors cursor-pointer">
-                                        <div class="text-center">
-                                            <i class="fi fi-rr-plus mb-2 block text-2xl text-gray-400"></i>
-                                            <span class="text-sm text-gray-500">Add Image</span>
+                            <!-- Section 2: Research Insights -->
+                            <div class="section">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                                            <span class="text-primary font-medium">2</span>
                                         </div>
+                                        <h3 class="font-semibold text-gray-800 dark:text-gray-100">Research & Analysis
+                                        </h3>
                                     </div>
-                                    <div
-                                        class="aspect-video rounded-xl bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
-                                        <div
-                                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
-                                            <button type="button" class="p-2 bg-white/90 rounded-lg hover:bg-white">
-                                                <i class="fi fi-rr-edit"></i>
-                                            </button>
-                                            <button type="button" class="p-2 bg-white/90 rounded-lg hover:bg-white">
-                                                <i class="fi fi-rr-trash"></i>
-                                            </button>
-                                        </div>
-                                        <div class="absolute top-2 right-2">
-                                            <span class="px-2 py-1 bg-black/50 text-white text-xs rounded">Cover</span>
-                                        </div>
+                                    <button type="button"
+                                        class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+                                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                                    </button>
+                                </div>
+
+                                <div class="space-y-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                            Section Title
+                                        </label>
+                                        <input type="text" name="section_title[]"
+                                            value="Understanding the Eco-Conscious Shopper"
+                                            class="w-full px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
                                     </div>
-                                    <div
-                                        class="aspect-video rounded-xl bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
-                                        <div
-                                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
-                                            <button type="button" class="p-2 bg-white/90 rounded-lg hover:bg-white">
-                                                <i class="fi fi-rr-edit"></i>
-                                            </button>
-                                            <button type="button" class="p-2 bg-white/90 rounded-lg hover:bg-white">
-                                                <i class="fi fi-rr-trash"></i>
-                                            </button>
+
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label
+                                                class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                                Key User Insights
+                                            </label>
+                                            <div class="space-y-3">
+                                                <div class="flex items-start gap-3">
+                                                    <div
+                                                        class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                        <span class="text-xs font-bold">1</span>
+                                                    </div>
+                                                    <textarea rows="3"
+                                                        placeholder="Sustainability transparency insight..."
+                                                        class="w-full min-h-12 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"></textarea>
+                                                </div>
+                                                <div class="flex items-start gap-3">
+                                                    <div
+                                                        class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                        <span class="text-xs font-bold">2</span>
+                                                    </div>
+                                                    <textarea rows="3" placeholder="Mobile-first behavior insight..."
+                                                        class="w-full min-h-12 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"></textarea>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div
-                                        class="aspect-video rounded-xl bg-gray-200 dark:bg-gray-700 relative group overflow-hidden">
-                                        <div
-                                            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
-                                            <button type="button" class="p-2 bg-white/90 rounded-lg hover:bg-white">
-                                                <i class="fi fi-rr-edit"></i>
-                                            </button>
-                                            <button type="button" class="p-2 bg-white/90 rounded-lg hover:bg-white">
-                                                <i class="fi fi-rr-trash"></i>
-                                            </button>
+
+                                        <div>
+                                            <label
+                                                class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                                Competitive Analysis
+                                            </label>
+                                            <div class="space-y-3">
+                                                <div class="flex items-start gap-3">
+                                                    <div
+                                                        class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                        <i class="fi fi-rr-palette text-xs"></i>
+                                                    </div>
+                                                    <textarea rows="3" placeholder="Visual differentiation analysis..."
+                                                        class="w-full min-h-12 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"></textarea>
+                                                </div>
+                                                <div class="flex items-start gap-3">
+                                                    <div
+                                                        class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+                                                        <i class="fi fi-rr-filter text-xs"></i>
+                                                    </div>
+                                                    <textarea rows="3" placeholder="Filter limitations analysis..."
+                                                        class="w-full min-h-12 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"></textarea>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Video URL -->
-                            <div>
-                                <label for="videoUrl"
-                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Video URL (Optional)
-                                </label>
-                                <div class="flex gap-3">
-                                    <input type="url" id="videoUrl"
-                                        class="flex-1 px-4 py-3 outline-none border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors"
-                                        placeholder="https://www.youtube.com/watch?v=...">
-                                    <select
-                                        class="px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors">
-                                        <option>YouTube</option>
-                                        <option>Vimeo</option>
-                                        <option>Loom</option>
-                                    </select>
+                            <!-- Section 3: Design Solutions -->
+                            <div class="section">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                                            <span class="text-primary font-medium">3</span>
+                                        </div>
+                                        <h3 class="font-semibold text-gray-800 dark:text-gray-100">Design Solutions</h3>
+                                    </div>
+                                    <button type="button"
+                                        class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300">
+                                        <i class="fi fi-rr-menu-dots-vertical"></i>
+                                    </button>
+                                </div>
+
+                                <div class="space-y-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                            Section Title
+                                        </label>
+                                        <input type="text" name="section_title[]"
+                                            value="Creating a Sustainable Shopping Experience"
+                                            class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                            Content with Image Grid
+                                        </label>
+                                        <div class="space-y-4">
+                                            <textarea rows="4" placeholder="Describe your design solutions..."
+                                                class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"></textarea>
+
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div
+                                                    class="aspect-[4/3] rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center cursor-pointer focus:border-primary transition-colors">
+                                                    <div class="text-center">
+                                                        <i class="fi fi-rr-plus mb-2 block text-2xl text-gray-400"></i>
+                                                        <span class="text-sm text-gray-500">Add Image</span>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="aspect-[4/3] rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center cursor-pointer focus:border-primary transition-colors">
+                                                    <div class="text-center">
+                                                        <i class="fi fi-rr-plus mb-2 block text-2xl text-gray-400"></i>
+                                                        <span class="text-sm text-gray-500">Add Image</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="mt-6">
+                            <button type="button" onclick="addSection()"
+                                class="inline-flex items-center gap-2 px-4 py-3 bg-gray-200 dark:bg-gray-700 border-2 border-gray-300 dark:border-gray-700 rounded-xl w-full justify-center text-gray-600 dark:text-gray-300 focus:border-primary hover:text-primary dark:hover:text-primary transition-colors">
+                                <i class="fi fi-rr-plus translate-y-0.5"></i>
+                                Add New Section
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- Results & Metrics Section -->
+                    <!-- Results & Metrics -->
                     <div class="p-8">
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                                 <i class="fi fi-rr-stats text-primary"></i>
                             </div>
                             <div>
-                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Results & Metrics
+                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                    Measurable Results
                                 </h2>
-                                <p class="text-sm text-gray-600 dark:text-gray-300">Quantify your project's impact</p>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">Showcase your project's impact with
+                                    numbers</p>
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                            <div>
-                                <label for="metric1Value"
-                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Metric 1 Value
-                                </label>
-                                <input type="text" id="metric1Value"
-                                    class="w-full px-4 py-3 outline-none border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors"
-                                    placeholder="35%">
+                        <div class="space-y-6">
+                            <!-- Metrics Grid -->
+                            <div class="grid md:grid-cols-3 gap-6" id="metricsContainer">
+                                <div class="space-y-4">
+                                    <div class="">
+                                        <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                            Metric 1
+                                        </label>
+                                        <input type="text" name="metric_value[]" placeholder="35%"
+                                            class="w-full min-h-10 px-4 py-3 mt-1 text-3xl font-semibold text-center text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 duration-300">
+                                        <input type="text" name="metric_label[]"
+                                            placeholder="Increase in conversion rate"
+                                            class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+                                    </div>
+                                </div>
+
+                                <div class="space-y-4">
+                                    <div class="">
+                                        <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                            Metric 2
+                                        </label>
+                                        <input type="text" name="metric_value[]" placeholder="40%"
+                                            class="w-full min-h-10 px-4 py-3 mt-1 text-3xl font-semibold text-center text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 duration-300">
+                                        <input type="text" name="metric_label[]" placeholder="Reduction in bounce rate"
+                                            class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+                                    </div>
+                                </div>
+
+                                <div class="space-y-4">
+                                    <div class="">
+                                        <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                            Metric 3
+                                        </label>
+                                        <input type="text" name="metric_value[]" placeholder="28%"
+                                            class="w-full min-h-10 px-4 py-3 mt-1 text-3xl font-semibold text-center text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 duration-300">
+                                        <input type="text" name="metric_label[]"
+                                            placeholder="Increase in mobile conversions"
+                                            class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="addMetric()"
+                                class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg text-sm text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                                <i class="fi fi-rr-plus"></i>
+                                Add Another Metric
+                            </button>
+
+                            <!-- Testimonial -->
+                            <div class="">
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-4">Client
+                                    Testimonial</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                            Testimonial Text
+                                        </label>
+                                        <textarea rows="4" name="testimonial_text" placeholder="Add a client quote..."
+                                            class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"></textarea>
+                                    </div>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label
+                                                class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                                Client Name
+                                            </label>
+                                            <input type="text" name="testimonial_name" placeholder="Sarah Johnson"
+                                                class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+                                        </div>
+                                        <div>
+                                            <label
+                                                class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                                Client Title
+                                            </label>
+                                            <input type="text" name="testimonial_title" placeholder="CEO, Eco Market"
+                                                class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Media Gallery -->
+                    <div class="p-8">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fi fi-rr-images text-primary"></i>
                             </div>
                             <div>
-                                <label for="metric1Label"
-                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Metric 1 Label
-                                </label>
-                                <input type="text" id="metric1Label"
-                                    class="w-full px-4 py-3 outline-none border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors"
-                                    placeholder="Increase in conversion rate">
-                            </div>
-                            <div class="flex items-end">
-                                <button type="button"
-                                    class="w-full px-4 py-3 border border-gray-300 text-sm text-gray-600 dark:text-gray-300 dark:hover:text-gray-700 dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors">
-                                    Add Another Metric
-                                </button>
+                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                                    Media Gallery
+                                </h2>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">Add project images, mockups, and
+                                    screenshots</p>
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-6">
+                            <!-- Cover Image -->
                             <div>
-                                <label for="testimonial"
-                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Client Testimonial (Optional)
+                                <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                    Cover Image *
                                 </label>
-                                <textarea id="testimonial" rows="4"
-                                    class="w-full px-4 py-3 outline-none border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors"
-                                    placeholder="Add a client quote..."></textarea>
+                                <div
+                                    class="aspect-[1/1] max-w-2xl rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center cursor-pointer focus:border-primary transition-colors relative overflow-hidden">
+                                    <div class="text-center p-8">
+                                        <div
+                                            class="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
+                                            <i class="fi fi-rr-cloud-upload translate-y-0.5 text-2xl text-gray-400"></i>
+                                        </div>
+                                        <p class="font-medium text-gray-800 dark:text-gray-100 mb-2">Upload cover image
+                                        </p>
+                                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                                            Recommended: 1400×1050px, PNG, JPG or WebP
+                                        </p>
+                                        <button type="button"
+                                            class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white text-sm px-6 py-2.5 rounded-lg transition-colors font-medium">
+                                            <i class="fi fi-rr-folder-open translate-y-0.5"></i>
+                                            Choose File
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
+
+                            <!-- Gallery Images -->
                             <div>
-                                <label for="clientName"
-                                    class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
-                                    Client Name & Title
+                                <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                                    Additional Images
                                 </label>
-                                <input type="text" id="clientName"
-                                    class="w-full px-4 py-3 outline-none border border-gray-300 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors"
-                                    placeholder="Sarah Johnson, CEO of Eco Market">
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="galleryContainer">
+                                    <div
+                                        class="aspect-square rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-700 flex items-center justify-center cursor-pointer focus:border-primary transition-colors">
+                                        <div class="text-center">
+                                            <i class="fi fi-rr-plus mb-2 block text-2xl text-gray-400"></i>
+                                            <span class="text-sm text-gray-500">Add Image</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -543,19 +752,17 @@
                 </button>
                 <div class="flex gap-4">
                     <button type="button"
-                        class="px-8 py-3 border border-gray-300 text-sm dark:border-gray-700 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium">
+                        class="px-8 py-3 border border-gray-300 text-sm dark:border-gray-700 rounded-xl text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium">
                         Save as Draft
                     </button>
                     <button type="submit" form="addProjectForm"
                         class="px-8 py-3 bg-primary hover:bg-primary-dark text-sm text-white rounded-xl transition-colors font-medium shadow-sm">
-                        Publish Project
+                        Publish Case Study
                     </button>
                 </div>
             </div>
         </div>
     </section>
-
-
 
     <!-- scripts -->
     <script src="../../../assets/js/sidebar.js" defer></script>
@@ -570,24 +777,6 @@
     <!-- Include the Quill library -->
     <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
 
-    <!-- Initialize Quill editor -->
-    <script>
-        // Initialize Quill
-        const quill = new Quill( '#editor', {
-            theme: 'snow',
-            modules: {
-                toolbar: [
-                    [ { 'header': [ 1, 2, 3, 4, 5, 6, false ] } ],
-                    [ 'bold', 'italic', 'underline' ],
-                    [ { 'list': 'ordered' }, { 'list': 'bullet' } ],
-                    [ 'link', 'image' ]
-                ]
-            },
-            placeholder: 'Write your project description here...',
-        } );
-    </script>
-    </script>
-
     <!-- Form Submission -->
     <script src="../../../assets/js/formValidation.js" defer></script>
 
@@ -599,6 +788,141 @@
 
     <!-- Projects -->
     <script src="../../../assets/js/Projects.js" defer></script>
+
+    <!-- JavaScript for dynamic sections -->
+    <script>
+        // Initialize Quill editor
+        const quill = new Quill( '#overviewEditor', {
+            theme: 'snow',
+            modules: {
+                toolbar: [
+                    [ 'bold', 'italic', 'underline' ],
+                    [ { 'header': [ 2, 3, false ] } ],
+                    [ { 'list': 'ordered' }, { 'list': 'bullet' } ],
+                    [ 'link' ],
+                    [ 'clean' ]
+                ]
+            },
+            placeholder: 'Write your project overview here...'
+        } );
+
+        // Sync Quill content with hidden input
+        quill.on( 'text-change', function ()
+        {
+            document.getElementById( 'overviewContent' ).value = quill.root.innerHTML;
+        } );
+
+    </script>
+
+    <script>
+
+        // Add new highlight
+        let highlightCount = 4;
+        function addHighlight ()
+        {
+            const container = document.getElementById( 'highlightsContainer' );
+            const newHighlight = document.createElement( 'div' );
+            newHighlight.className = 'space-y-4';
+            newHighlight.innerHTML = `
+        <div>
+            <label class="block text-sm text-gray-800 dark:text-gray-100 mb-1">Highlight ${ highlightCount + 1 }</label>
+            <input type="text" name="highlight_label[]" placeholder="Label"
+                class="w-full px-4 py-3 text-sm text-gray-700 dark:text-gray-200 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-transparent text-sm duration-300">
+            <input type="text" name="highlight_value[]"
+                class="w-full px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300"
+                placeholder="Value">
+        </div>
+    `;
+            container.appendChild( newHighlight );
+            highlightCount++;
+        }
+
+        // Add new metric
+        let metricCount = 3;
+        function addMetric ()
+        {
+            const container = document.getElementById( 'metricsContainer' );
+            const newMetric = document.createElement( 'div' );
+            newMetric.className = 'space-y-4';
+            newMetric.innerHTML = `
+        <div>
+            <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                Metric ${ metricCount + 1 }
+            </label>
+            <input type="text" name="metric_value[]" placeholder="Value"
+                class="w-full min-h-10 px-4 py-3 mt-1 text-3xl font-semibold text-center text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 duration-300">
+            <input type="text" name="metric_label[]" placeholder="Label"
+                class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+        </div>
+    `;
+            container.appendChild( newMetric );
+            metricCount++;
+        }
+
+        // Add new section
+        let sectionCount = 3;
+        function addSection ()
+        {
+            const container = document.getElementById( 'sectionsContainer' );
+            const newSection = document.createElement( 'div' );
+            newSection.className = 'section';
+            newSection.innerHTML = `
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <span class="text-primary font-medium">${ sectionCount + 1 }</span>
+                </div>
+                <h3 class="font-semibold text-gray-800 dark:text-gray-100">New Section</h3>
+            </div>
+            <button type="button" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300" onclick="this.closest('div').remove()">
+                <i class="fi fi-rr-trash"></i>
+            </button>
+        </div>
+        <div class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                    Section Title
+                </label>
+                <input type="text" name="section_title[]" placeholder="Section Title"
+                    class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-800 dark:text-gray-100 mb-2">
+                    Section Type
+                </label>
+                <select class="w-full min-h-10 px-4 py-3 mt-1 text-sm text-gray-700 dark:text-gray-100 outline-none border border-gray-300 focus:dark:border-primary focus:border-primary dark:border-gray-700 rounded-lg bg-gray-200 dark:bg-gray-700 text-sm duration-300">
+                    <option value="text">Text Content</option>
+                    <option value="image">Image with Text</option>
+                    <option value="columns">Two Columns</option>
+                    <option value="stats">Statistics Grid</option>
+                </select>
+            </div>
+        </div>
+    `;
+            container.appendChild( newSection );
+            sectionCount++;
+        }
+    </script>
+
+    <script>
+        // Simple markdown to HTML conversion
+        function simpleMarkdown ( text )
+        {
+            return text
+                .replace( /^# (.*$)/gm, '<h1 class="text-3xl font-bold mt-6 mb-4">$1</h1>' )
+                .replace( /^## (.*$)/gm, '<h2 class="text-2xl font-bold mt-5 mb-3">$1</h2>' )
+                .replace( /^### (.*$)/gm, '<h3 class="text-xl font-bold mt-4 mb-2">$1</h3>' )
+                .replace( /\*\*(.*?)\*\*/g, '<strong>$1</strong>' )
+                .replace( /\*(.*?)\*/g, '<em>$1</em>' )
+                .replace( /^- (.*$)/gm, '<li class="ml-4">$1</li>' )
+                .replace( /\n/g, '<br>' );
+        }
+
+        document.getElementById( 'projectDescription' ).addEventListener( 'input', function ( e )
+        {
+            document.getElementById( 'markdownPreview' ).innerHTML = simpleMarkdown( e.target.value );
+        } );
+    </script>
 </body>
 
 </html>

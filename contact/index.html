@@ -99,11 +99,11 @@
                         <img src="/assets/images/logo.svg" alt="logo">
                     </a>
                 </div>
-                <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out"
-                        href="/">Home</a></li>
+                <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out" href="/">Home</a>
+                </li>
                 <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out"
                         href="/about">About</a></li>
-                        <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out"
+                <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out"
                         href="/resume">Resume</a></li>
                 <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out"
                         href="/services">Services</a></li>
@@ -124,161 +124,391 @@
         </div>
     </nav>
 
-    <!-- Contact Hero Section -->
-    <section class="max-w-[1200px] m-auto my-4 px-3">
-        <div class="w-full bg-white dark:bg-gray-800 py-10 lg:px-10 px-3 rounded-xl">
-            <div class="text-center">
-                <h2 class="text-primary lg:text-[2.5rem] text-[2rem] font-semibold">
-                    Get In Touch
-                </h2>
-                <h4 class="text-gray-600 dark:text-gray-300 text-xl lg:mt-2 mt-0 mb-4">
-                    Let's discuss your project
-                </h4>
-                <p class="max-w-[926px] text-base text-gray-600 dark:text-gray-400 mx-auto">
-                    Have a project in mind or want to discuss potential collaboration? Fill out the form below or
-                    contact me directly. I typically respond within 24-48 hours.
-                </p>
+    <!-- Premium Contact Section -->
+    <section class="max-w-[1200px] mx-auto px-3 py-3 sm:py-8 md:py-12">
+        <!-- Contact Header -->
+        <div class="relative sm:mb-16 mb-8">
+            <div
+                class="relative bg-white dark:bg-gray-800 border border-primary/20 rounded-2xl p-8 md:p-12 text-center overflow-hidden">
+
+                <div class="relative z-10">
+                    <div
+                        class="inline-flex items-center gap-2 bg-primary/10 dark:bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-sm">
+                        <i class="fi fi-rr-envelope translate-y-0.5"></i>
+                        Let's Work Together
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+                        Get In <span class="text-primary">Touch</span>
+                    </h1>
+
+                    <p class="text-md text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-6">
+                        Have an exciting project in mind? Let's collaborate to create something exceptional.
+                        I'm currently accepting new projects and typically respond within 24 hours.
+                    </p>
+
+                    <!-- Quick Stats -->
+                    <div class="flex flex-wrap md:justify-center justify-start gap-8 mt-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fi fi-rr-clock translate-y-0.5 text-primary"></i>
+                            </div>
+                            <div class="text-left">
+                                <div class="text-sm text-gray-600 dark:text-gray-400">Response Time</div>
+                                <div class="font-semibold text-gray-800 dark:text-gray-100">Within 24h</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fi fi-rr-calendar-check translate-y-0.5 text-primary"></i>
+                            </div>
+                            <div class="text-left">
+                                <div class="text-sm text-gray-600 dark:text-gray-400">Availability</div>
+                                <div class="font-semibold text-gray-800 dark:text-gray-100">Open for Projects</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fi fi-rr-globe translate-y-0.5 text-primary"></i>
+                            </div>
+                            <div class="text-left">
+                                <div class="text-sm text-gray-600 dark:text-gray-400">Location</div>
+                                <div class="font-semibold text-gray-800 dark:text-gray-100">Remote • Worldwide</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="bg-gray-100 dark:bg-gray-900 py-6">
-        <div class="max-w-[1200px] mx-auto px-3">
-            <div class="grid lg:grid-cols-2 gap-10">
-                <!-- Contact Form -->
-                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl">
-                    <h3 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">Send Me a Message</h3>
-
-                    <form id="contactForm" class="space-y-6">
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="name"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Full
-                                    Name</label>
-                                <input type="text" id="name" name="name" required
-                                    class="w-full h-8 px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 focus:bg-transparent dark:focus:bg-gray-600 outline-none focus:ring-primary focus:border-primary">
+        <!-- Contact Content -->
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Contact Information -->
+            <div class="lg:col-span-1 space-y-8">
+                <!-- Contact Card -->
+                <div class="relative">
+                    <div
+                        class="relative bg-white dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-2xl shadow-gray-600/5 dark:shadow-none">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fi fi-rr-address-book text-primary text-xl"></i>
                             </div>
-                            <div>
-                                <label for="email"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email
-                                    Address</label>
-                                <input type="email" id="email" name="email" required
-                                    class="w-full h-8 px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 focus:bg-transparent dark:focus:bg-gray-600 outline-none focus:ring-primary focus:border-primary">
-                            </div>
+                            <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Contact Details</h2>
                         </div>
 
-                        <div>
-                            <label for="subject"
-                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
-                            <input type="text" id="subject" name="subject" required
-                                class="w-full h-8 px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 focus:bg-transparent dark:focus:bg-gray-600 outline-none focus:ring-primary focus:border-primary">
-                        </div>
-
-                        <div>
-                            <label for="message"
-                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your
-                                Message</label>
-                            <textarea id="message" name="message" rows="5" required
-                                class="w-full px-3 py-2 text-sm resize-none h-48 border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 focus:bg-transparent dark:focus:bg-gray-600 outline-none focus:ring-primary focus:border-primary"></textarea>
-                        </div>
-
-                        <div class="flex">
-                            <input type="checkbox" id="consent" name="consent" required
-                                class="w-4 h-4 text-primary accent-primary mt-0.5 border-gray-300 dark:border-gray-600 rounded focus:ring-primary">
-                            <label for="consent" class="ml-2 block text-sm text-gray-700 dark:text-gray-400">
-                                I consent to having my data collected and stored according to the <br> <a
-                                    href="/privacy" class="text-primary hover:underline">Privacy Policy</a>
-                            </label>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full h-10 px-3 py-2 text-sm bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center gap-2">
-                            <i class="fi fi-rr-paper-plane translate-y-0.5"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="space-y-8">
-                    <div class="bg-white dark:bg-gray-800 p-8 rounded-xl">
-                        <h3 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">Contact Information
-                        </h3>
-
-                        <div class="space-y-6">
+                        <div class="space-y-8">
+                            <!-- Email -->
                             <div class="flex items-start gap-4">
-                                <div class="text-primary text-2xl mt-1">
-                                    <i class="fi fi-rr-envelope"></i>
+                                <div
+                                    class="w-12 h-12 rounded-lg bg-gray-50 dark:bg-gray-700/50 flex items-center justify-center flex-shrink-0">
+                                    <i class="fi fi-rr-envelope text-primary"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-700 dark:text-gray-300">Email</h4>
+                                    <h3 class="font-semibold text-gray-800 dark:text-gray-100 mb-1">Email Address</h3>
                                     <a href="mailto:hello@clevercreative.com"
-                                        class="text-gray-600 dark:text-gray-400 hover:text-primary hover:underline">
+                                        class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors group/link">
                                         hello@clevercreative.com
+                                        <i
+                                            class="fi fi-rr-arrow-up-right-from-square ml-2 text-xs opacity-0 group-hover/link:opacity-100 transition-opacity"></i>
                                     </a>
                                 </div>
                             </div>
 
+                            <!-- Phone -->
                             <div class="flex items-start gap-4">
-                                <div class="text-primary text-2xl mt-1">
-                                    <i class="fi fi-rr-phone-call"></i>
+                                <div
+                                    class="w-12 h-12 rounded-lg bg-gray-50 dark:bg-gray-700/50 flex items-center justify-center flex-shrink-0">
+                                    <i class="fi fi-rr-phone-call text-primary"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-700 dark:text-gray-300">Phone</h4>
+                                    <h3 class="font-semibold text-gray-800 dark:text-gray-100 mb-1">Phone Number</h3>
                                     <a href="tel:+1234567890"
-                                        class="text-gray-600 dark:text-gray-400 hover:text-primary hover:underline">
+                                        class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">
                                         +1 (234) 567-890
                                     </a>
                                 </div>
                             </div>
 
+                            <!-- Location -->
                             <div class="flex items-start gap-4">
-                                <div class="text-primary text-2xl mt-1">
-                                    <i class="fi fi-rr-map-marker"></i>
+                                <div
+                                    class="w-12 h-12 rounded-lg bg-gray-50 dark:bg-gray-700/50 flex items-center justify-center flex-shrink-0">
+                                    <i class="fi fi-rr-map-marker text-primary"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-medium text-gray-700 dark:text-gray-300">Location</h4>
-                                    <p class="text-gray-600 dark:text-gray-400">
-                                        123 Design Street<br>
-                                        Creative City, CA 90210<br>
+                                    <h3 class="font-semibold text-gray-800 dark:text-gray-100 mb-1">Location</h3>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                                        123 Design Street
+                                        Creative City, CA 90210
                                         United States
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="text-primary text-2xl mt-1">
-                                    <i class="fi fi-rr-clock"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-gray-700 dark:text-gray-300">Working Hours</h4>
-                                    <p class="text-gray-600 dark:text-gray-400">
-                                        Monday - Friday: 9am - 5pm<br>
-                                        Weekends: By appointment
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Social Media -->
-                    <div class="bg-white dark:bg-gray-800 p-8 rounded-xl">
-                        <h3 class="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">Follow Me</h3>
-                        <div class="flex flex-wrap gap-4">
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors">
-                                <i class="fi fi-brands-dribbble inline-block translate-y-0.5 text-lg"></i>
+                <!-- Working Hours -->
+                <div class="relative">
+                    <div
+                        class="relative bg-white dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-2xl shadow-gray-600/5 dark:shadow-none">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fi fi-rr-clock text-primary text-xl"></i>
+                            </div>
+                            <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Working Hours</h2>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div
+                                class="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-700/30 rounded-lg">
+                                <span class="font-medium text-gray-800 dark:text-gray-100">Monday - Friday</span>
+                                <span class="text-primary text-sm">9am - 5pm</span>
+                            </div>
+
+                            <div
+                                class="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-700/30 rounded-lg">
+                                <span class="font-medium text-gray-800 dark:text-gray-100">Weekends</span>
+                                <span class="text-primary text-sm">By Appointment</span>
+                            </div>
+
+                            <div
+                                class="flex justify-between items-center p-3 bg-gray-50 dark:bg-gray-700/30 rounded-lg">
+                                <span class="font-medium text-gray-800 dark:text-gray-100">Urgent Projects</span>
+                                <span class="text-green-600 text-sm">24/7 Support</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">
+                            <div class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                                <i class="fi fi-rr-info text-primary translate-y-0.5"></i>
+                                <span>All times are in Pacific Time (PT)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="relative">
+                    <div
+                        class="relative bg-white dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-2xl shadow-gray-600/5 dark:shadow-none">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fi fi-rr-share text-primary text-xl"></i>
+                            </div>
+                            <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Connect With Me</h2>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="#" class="group/social">
+                                <div
+                                    class="relative p-4 rounded-xl bg-gradient-to-br from-pink-500/10 to-pink-600/5 border border-pink-500/20 text-center hover:border-pink-500/40 transition-all hover:scale-105">
+                                    <i class="fi fi-brands-dribbble text-2xl text-pink-500 mb-2"></i>
+                                    <div class="text-sm font-medium text-gray-800 dark:text-gray-100">Dribbble</div>
+                                    <div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Design Work</div>
+                                </div>
                             </a>
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors">
-                                <i class="fi fi-brands-behance inline-block translate-y-0.5 text-lg"></i>
+
+                            <a href="#" class="group/social">
+                                <div
+                                    class="relative p-4 rounded-xl bg-gradient-to-br from-sky-500/10 to-sky-600/5 border border-sky-500/20 text-center hover:border-sky-500/40 transition-all hover:scale-105">
+                                    <i class="fi fi-brands-linkedin text-2xl text-sky-500 mb-2"></i>
+                                    <div class="text-sm font-medium text-gray-800 dark:text-gray-100">Linkedin</div>
+                                    <div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Job Opportunities</div>
+                                </div>
                             </a>
-                            <a href="#"
-                                class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors">
-                                <i class="fi fi-brands-github inline-block translate-y-0.5 text-lg"></i>
+
+                            <a href="#" class="group/social">
+                                <div
+                                    class="relative p-4 rounded-xl bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20 text-center hover:border-blue-500/40 transition-all hover:scale-105">
+                                    <i class="fi fi-brands-behance text-2xl text-blue-500 mb-2"></i>
+                                    <div class="text-sm font-medium text-gray-800 dark:text-gray-100">Behance</div>
+                                    <div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Portfolio</div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="group/social">
+                                <div
+                                    class="relative p-4 rounded-xl bg-gradient-to-br from-gray-800/10 to-gray-900/5 border border-gray-700/20 text-center hover:border-gray-700/40 transition-all hover:scale-105 dark:from-gray-700/10 dark:to-gray-800/5 dark:border-gray-600/20 dark:hover:border-gray-600/40">
+                                    <i class="fi fi-brands-github text-2xl text-gray-800 dark:text-gray-300 mb-2"></i>
+                                    <div class="text-sm font-medium text-gray-800 dark:text-gray-100">GitHub</div>
+                                    <div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Code & Projects</div>
+                                </div>
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-2">
+                <div class="relative">
+                    <div
+                        class="relative bg-white dark:bg-gray-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-2xl shadow-gray-600/5 dark:shadow-none">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <i class="fi fi-rr-paper-plane text-primary text-xl"></i>
+                            </div>
+                            <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">Send a Message</h2>
+                        </div>
+
+                        <form id="contactForm" class="space-y-8">
+                            <!-- Name & Email -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-3">
+                                    <label for="name"
+                                        class="block text-sm font-semibold text-gray-800 dark:text-gray-100">
+                                        Full Name
+                                        <span class="text-red-500 ml-1">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <div
+                                            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <i class="fi fi-rr-user text-gray-400 text-sm"></i>
+                                        </div>
+                                        <input type="text" id="name" name="name" required
+                                            class="w-full h-12 pl-10 pr-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-xl bg-gray-50 dark:bg-gray-700/50 text-gray-800 dark:text-gray-200 focus:bg-white dark:focus:bg-gray-700 outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
+                                            placeholder="Enter your full name">
+                                    </div>
+                                </div>
+
+                                <div class="space-y-3">
+                                    <label for="email"
+                                        class="block text-sm font-semibold text-gray-800 dark:text-gray-100">
+                                        Email Address
+                                        <span class="text-red-500 ml-1">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <div
+                                            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <i class="fi fi-rr-envelope text-gray-400 text-sm"></i>
+                                        </div>
+                                        <input type="email" id="email" name="email" required
+                                            class="w-full h-12 pl-10 pr-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-xl bg-gray-50 dark:bg-gray-700/50 text-gray-800 dark:text-gray-200 focus:bg-white dark:focus:bg-gray-700 outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
+                                            placeholder="your.email@example.com">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="space-y-3">
+                                <label for="subject"
+                                    class="block text-sm font-semibold text-gray-800 dark:text-gray-100">
+                                    Subject
+                                    <span class="text-red-500 ml-1">*</span>
+                                </label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                        <i class="fi fi-rr-briefcase text-gray-400 text-sm"></i>
+                                    </div>
+                                    <input type="text" id="subject" name="subject" required
+                                        class="w-full h-12 pl-10 pr-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-xl bg-gray-50 dark:bg-gray-700/50 text-gray-800 dark:text-gray-200 focus:bg-white dark:focus:bg-gray-700 outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
+                                        placeholder="Project Inquiry or Collaboration">
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="space-y-3">
+                                <label for="message"
+                                    class="block text-sm font-semibold text-gray-800 dark:text-gray-100">
+                                    Your Message
+                                    <span class="text-red-500 ml-1">*</span>
+                                </label>
+                                <div class="relative">
+                                    <div class="absolute top-3 left-3 pointer-events-none">
+                                        <i class="fi fi-rr-edit text-gray-400 text-sm"></i>
+                                    </div>
+                                    <textarea id="message" name="message" rows="6" required
+                                        class="w-full pl-10 pr-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-xl bg-gray-50 dark:bg-gray-700/50 text-gray-800 dark:text-gray-200 focus:bg-white dark:focus:bg-gray-700 outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all resize-none"
+                                        placeholder="Tell me about your project, timeline, and budget..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Project Type -->
+                            <div class="space-y-3">
+                                <label class="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-3">
+                                    Project Type (Optional)
+                                </label>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    <label class="relative">
+                                        <input type="checkbox" name="project_type[]" value="web-dev"
+                                            class="sr-only peer">
+                                        <div
+                                            class="p-3 border border-gray-300 dark:border-gray-600 rounded-xl text-center cursor-pointer hover:border-primary peer-checked:border-primary peer-checked:bg-primary/5 transition-all">
+                                            <i
+                                                class="fi fi-rr-globe block text-lg text-gray-600 dark:text-gray-400 mb-1 peer-checked:text-primary"></i>
+                                            <span
+                                                class="text-sm text-gray-800 dark:text-gray-200 peer-checked:text-primary">Web
+                                                Dev</span>
+                                        </div>
+                                    </label>
+
+                                    <label class="relative">
+                                        <input type="checkbox" name="project_type[]" value="ui-ux" class="sr-only peer">
+                                        <div
+                                            class="p-3 border border-gray-300 dark:border-gray-600 rounded-xl text-center cursor-pointer hover:border-primary peer-checked:border-primary peer-checked:bg-primary/5 transition-all">
+                                            <i
+                                                class="fi fi-rr-location-arrow block text-lg text-gray-600 dark:text-gray-400 mb-1 peer-checked:text-primary"></i>
+                                            <span
+                                                class="text-sm text-gray-800 dark:text-gray-200 peer-checked:text-primary">UI/UX</span>
+                                        </div>
+                                    </label>
+
+                                    <label class="relative">
+                                        <input type="checkbox" name="project_type[]" value="graphic-design"
+                                            class="sr-only peer">
+                                        <div
+                                            class="p-3 border border-gray-300 dark:border-gray-600 rounded-xl text-center cursor-pointer hover:border-primary peer-checked:border-primary peer-checked:bg-primary/5 transition-all">
+                                            <i
+                                                class="fi fi-rr-palette block text-lg text-gray-600 dark:text-gray-400 mb-1 peer-checked:text-primary"></i>
+                                            <span
+                                                class="text-sm text-gray-800 dark:text-gray-200 peer-checked:text-primary">Design</span>
+                                        </div>
+                                    </label>
+
+                                    <label class="relative">
+                                        <input type="checkbox" name="project_type[]" value="consultation"
+                                            class="sr-only peer">
+                                        <div
+                                            class="p-3 border border-gray-300 dark:border-gray-600 rounded-xl text-center cursor-pointer hover:border-primary peer-checked:border-primary peer-checked:bg-primary/5 transition-all">
+                                            <i
+                                                class="fi fi-rr-handshake block text-lg text-gray-600 dark:text-gray-400 mb-1 peer-checked:text-primary"></i>
+                                            <span
+                                                class="text-sm text-gray-800 dark:text-gray-200 peer-checked:text-primary">Consult</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Privacy & Submit -->
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-3">
+                                    <div class="relative">
+                                        <input type="checkbox" id="consent" name="consent" required
+                                            class="w-4 h-4 border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 focus:ring-primary focus:ring-2 text-primary cursor-pointer accent-primary">
+                                    </div>
+                                    <label for="consent" class="text-sm text-gray-700 dark:text-gray-300">
+                                        I consent to having my data collected and stored according to the
+                                        <a href="/privacy" class="text-primary font-medium hover:underline">Privacy
+                                            Policy</a>.
+                                        I understand that this information will be used to respond to my inquiry.
+                                    </label>
+                                </div>
+
+                                <button type="submit"
+                                    class="group relative w-full h-12 px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all duration-300 overflow-hidden shadow-lg hover:shadow-xl hover:shadow-primary/25">
+                                    <span class="relative z-10 flex items-center justify-center gap-3">
+                                        <i class="fi fi-rr-paper-plane"></i>
+                                        Send Message
+                                    </span>
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-r from-primary to-primary/70 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

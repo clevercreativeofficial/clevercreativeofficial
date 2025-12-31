@@ -99,11 +99,11 @@
                         <img src="/assets/images/logo.svg" alt="logo">
                     </a>
                 </div>
-                <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out"
-                        href="/">Home</a></li>
+                <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out" href="/">Home</a>
+                </li>
                 <li><a class="hover:text-primary dark:hover:text-primary text-primary duration-300 ease-in-out"
                         href="/about">About</a></li>
-                        <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out"
+                <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out"
                         href="/resume">Resume</a></li>
                 <li><a class="hover:text-primary dark:hover:text-primary duration-300 ease-in-out"
                         href="/services">Services</a></li>
@@ -124,300 +124,492 @@
         </div>
     </nav>
 
-    <!-- About Hero Section -->
-    <section class="hidden max-w-[1200px] m-auto my-4 px-3 flex justify-between items-center">
-        <div class="w-full bg-white dark:bg-gray-800 py-10 lg:px-10 px-3 rounded-xl">
-            <div class="flex flex-col lg:flex-row lg:gap-10 gap-5">
-                <div class="w-full lg:text-left text-center">
-                    <h2 class="text-primary lg:text-[2.5rem] text-[2rem] font-semibold">
-                        About Me
-                    </h2>
-
-                    <h4 class="text-gray-600 dark:text-gray-300 text-xl lg:mt-2 mt-0 mb-4">
-                        My Journey in Design & Development
-                    </h4>
-
-                    <p class="max-w-[926px] text-base text-gray-600 dark:text-gray-400">
+    <!-- About Hero Section - Redesigned -->
+    <section class="max-w-[1200px] mx-auto px-3 py-8 lg:py-12">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+            <!-- Left: Content -->
+            <div class="lg:w-7/12">
+                <div class="mb-6">
+                    <span class="text-primary font-medium text-sm tracking-wider uppercase">About Me</span>
+                    <h1 class="text-4xl lg:text-5xl font-semibold text-gray-800 dark:text-gray-100 mt-2 mb-3">
+                        Crafting Digital Experiences <span class="block text-primary">Since 2014</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                         I'm Clever Creative, a passionate designer and developer with over 9 years of experience
                         creating digital experiences that matter. My journey began with a love for visual storytelling
                         and evolved into a career where I bridge the gap between aesthetics and functionality.
                     </p>
+                </div>
 
-                    <div class="flex lg:justify-start justify-center gap-2 mt-4">
-                        <a href="/resume">
-                            <button
-                                class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 px-4 bg-primary text-sm font-medium text-white dark:text-gray-100">
-                                <i class="fi fi-rr-document translate-y-0.5"></i>
-                                My Resume
-                            </button>
-                        </a>
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+                        <div class="text-2xl font-bold text-primary">9+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+                        <div class="text-2xl font-bold text-primary">150+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Projects Delivered</div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+                        <div class="text-2xl font-bold text-primary">45+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Happy Clients</div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+                        <div class="text-2xl font-bold text-primary">12+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Industries Served</div>
+                    </div>
+                </div>
 
-                        <a href="/contact">
-                            <button
-                                class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 px-4 bg-gray-600 dark:bg-gray-700 text-sm font-medium text-white dark:text-gray-100">
-                                <i class="fi fi-rr-envelope translate-y-0.5"></i>
-                                Contact Me
-                            </button>
-                        </a>
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-3">
+                    <a href="/resume"
+                        class="sm:w-fit w-full inline-flex justify-center items-center gap-2 bg-primary text-white text-sm px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                        <i class="fi fi-rr-document translate-y-0.5"></i>
+                        View Resume
+                    </a>
+                    <a href="/contact"
+                        class="sm:w-fit w-full inline-flex justify-center items-center gap-2 bg-gray-800 dark:bg-gray-700 text-white text-sm px-6 py-3 rounded-lg font-medium hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors">
+                        <i class="fi fi-rr-envelope translate-y-0.5"></i>
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="lg:w-5/12 w-full">
+                <div class="relative">
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl">
+                        <img src="https://ik.imagekit.io/qq6z28mp5/sitting-on-my-desk.jpg" alt="Professional workspace"
+                            class="w-full min-h-[400px] object-cover aspect-[4/3]">
+                    </div>
+                    <!-- Decorative element -->
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-2xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy & Approach Section -->
+    <section class="bg-gray-100 dark:bg-gray-900 py-16">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="text-center mb-12">
+                <span class="text-primary font-medium text-sm tracking-wider uppercase">My Philosophy</span>
+                <h2 class="text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-100 mt-2 mb-4">
+                    Where Design Meets Purpose
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-lg">
+                    I believe great design isn't just about aesthetics—it's about solving problems,
+                    creating meaningful connections, and delivering tangible business value.
+                </p>
+            </div>
+
+            <!-- Philosophy Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="text-3xl text-primary mb-4">
+                        <i class="fi fi-rr-bulb"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">Human-Centered Design</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Every project begins with understanding people—their needs, behaviors, and motivations.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="text-3xl text-primary mb-4">
+                        <i class="fi fi-rr-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">Performance-Driven</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Beautiful designs must perform exceptionally—fast, accessible, and scalable.
+                    </p>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl border border-gray-200 dark:border-gray-700">
+                    <div class="text-3xl text-primary mb-4">
+                        <i class="fi fi-rr-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">Collaborative Process</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Success comes from partnership, transparent communication, and shared vision.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Process Timeline -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-8 text-center">My Process</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div
+                            class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-4">
+                            01
+                        </div>
+                        <h4 class="font-semibold text-gray-800 dark:text-gray-100 mb-2">Discover</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Research & Strategy</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-4">
+                            02
+                        </div>
+                        <h4 class="font-semibold text-gray-800 dark:text-gray-100 mb-2">Design</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Wireframes & Prototypes</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-4">
+                            03
+                        </div>
+                        <h4 class="font-semibold text-gray-800 dark:text-gray-100 mb-2">Develop</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Build & Iterate</p>
+                    </div>
+                    <div class="text-center">
+                        <div
+                            class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-4">
+                            04
+                        </div>
+                        <h4 class="font-semibold text-gray-800 dark:text-gray-100 mb-2">Deliver</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Launch & Optimize</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- My Story Section -->
-    <section class="bg-gray-100 dark:bg-gray-900 md:py-20 py-10">
-        <div class="max-w-[1200px] mx-auto px-3">
-            <div class="grid md:grid-cols-2 gap-10 items-centers">
-                <div>
-                    <h2 class="text-3xl font-semibold text-gray-700 dark:text-gray-200 mb-4">My Story</h2>
-                    <p class="text-base text-gray-600 dark:text-gray-400 mb-4">
-                        My design journey began in 2014 when I first discovered my passion for visual communication.
-                        What started as a hobby quickly turned into a career as I realized the power of design to solve
-                        problems and create meaningful connections.
-                    </p>
-                    <p class="text-base text-gray-600 dark:text-gray-400 mb-4">
-                        Over the years, I've had the privilege of working with startups, established businesses, and
-                        non-profits across various industries. Each project has taught me something new and helped me
-                        refine my approach to design and development.
-                    </p>
-                    <p class="text-base text-gray-600 dark:text-gray-400">
-                        Today, I combine my expertise in graphic design with web development skills to create cohesive
-                        digital experiences that are both beautiful and functional.
-                    </p>
-                </div>
-                <div
-                    class="bg-white dark:bg-gray-800 h-[450px] rounded-3xl shadow-sm dark:shadow-gray-800/50 overflow-hidden">
-                    <img src="https://jfctjplvujhqsposskbb.supabase.co/storage/v1/object/sign/images/sitting%20on%20my%20desk.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zN2VhYTFlMC01NWVmLTRlZWEtYjE1Ny05N2I4OWJmMzAzZWUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJpbWFnZXMvc2l0dGluZyBvbiBteSBkZXNrLmpwZyIsImlhdCI6MTc0OTAxMzI0MCwiZXhwIjoxNzgwNTQ5MjQwfQ.mlAIreW4z5v7HW_Wr6dLLZ8-9yYDJt74_8rGXB6imoY"
-                        alt="Design workspace" class="w-full h-full object-cover rounded-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- My Approach Section -->
+    <!-- Expertise Section -->
     <section class="bg-white dark:bg-gray-800 py-16">
         <div class="max-w-[1200px] mx-auto px-3">
-            <h2 class="text-3xl font-semibold text-gray-700 dark:text-gray-200 mb-4 text-center">My Approach</h2>
-            <p class="text-base text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-10">
-                Every project is unique, but my process remains consistent to ensure quality and effectiveness.
-            </p>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Skills Visualization -->
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-6">
+                        Technical Expertise
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8">
+                        A comprehensive skill set refined through years of hands-on experience across diverse projects
+                        and industries.
+                    </p>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Approach 1 -->
-                <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl">
-                    <div class="text-4xl text-primary mb-4">
-                        <i class="fi fi-rr-search-alt"></i>
+                    <!-- Skill Categories -->
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-800 dark:text-gray-200">UI/UX Design</span>
+                                <span class="text-primary font-medium">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-800 dark:text-gray-200">Frontend Development</span>
+                                <span class="text-primary font-medium">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-800 dark:text-gray-200">Brand Strategy</span>
+                                <span class="text-primary font-medium">88%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-800 dark:text-gray-200">Product Design</span>
+                                <span class="text-primary font-medium">92%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="text-xl text-primary font-medium mb-4">Research & Discovery</h3>
-                    <p class="text-base text-gray-600 dark:text-gray-400">
-                        I begin by understanding your business, audience, and goals to create solutions that truly fit
-                        your needs.
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-6">
+                        Tools & Technologies
+                    </h2>
+
+                    <!-- Design Tools -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-medium text-gray-700 dark:text-gray-300 mb-4">Design Tools</h3>
+
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-primary/10 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg">
+                                <i class="fi fi-brands-figma inline-block translate-y-0.5"></i>
+                                Figma
+                            </span>
+                            <span class="bg-primary/10 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg">
+                                <i class="fi fi-brands-adobe inline-block translate-y-0.5"></i>
+                                Adobe Creative Suite
+                            </span>
+                            <span class="bg-primary/10 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg">
+                                <i class="fi fi-rr-code-branch inline-block translate-y-0.5"></i>
+                                Git
+                            </span>
+                            <span class="bg-primary/10 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg">
+                                <i class="fi fi-brands-visual-basic inline-block translate-y-0.5"></i>
+                                VS Code
+                            </span>
+                            <span class="bg-primary/10 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg">
+                                <i class="fi fi-rr-cube inline-block translate-y-0.5"></i>
+                                Blender
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Development Stack -->
+                    <div class="mb-8">
+                        <h3 class="text-lg font-medium text-gray-700 dark:text-gray-300 mb-4">Development Stack</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-primary/10 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg">
+                                React / Next.js
+                            </span>
+                            <span class="bg-primary/10 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg">
+                                TypeScript
+                            </span>
+                            <span class="bg-primary/10 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg">
+                                Tailwind CSS
+                            </span>
+                            <span class="bg-primary/10 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg">
+                                Node.js
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Additional Expertise -->
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-700 dark:text-gray-300 mb-4">Additional Expertise</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
+                                <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                                Design Systems
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
+                                <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                                Accessibility
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
+                                <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                                Performance
+                            </div>
+                            <div class="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
+                                <i class="fi fi-rr-check text-primary translate-y-0.5"></i>
+                                Mobile-First
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Journey Section -->
+    <section class="bg-white dark:bg-gray-800 py-16">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="text-center mb-12">
+                <span class="text-primary font-medium text-sm tracking-wider uppercase">Career Journey</span>
+                <h2 class="text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-100 mt-2 mb-4">
+                    9+ Years of Growth & Impact
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <!-- Story Content -->
+                <div class="space-y-6">
+                    <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">The Beginning</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">
+                            My design journey began in 2014 when I first discovered my passion for visual communication.
+                            What started as a hobby quickly turned into a career as I realized the power of design to
+                            solve
+                            problems and create meaningful connections.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">Growth & Evolution</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">
+                            Over the years, I've had the privilege of working with startups, established businesses, and
+                            non-profits across various industries. Each project has taught me something new and helped
+                            me
+                            refine my approach to design and development.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">Current Focus</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">
+                            Today, I combine my expertise in graphic design with web development skills to create
+                            cohesive
+                            digital experiences that are both beautiful and functional, focusing on scalable design
+                            systems
+                            and performance-optimized solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestones -->
+                <div>
+                    <div
+                        class="bg-gray-100 dark:bg-gray-900 p-8 rounded-xl border border-gray-200 dark:border-gray-700 h-full">
+                        <h3 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-6">Key Milestones</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fi fi-rr-trophy text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 dark:text-gray-100">Design Awards</h4>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">Multiple industry recognitions
+                                        for innovative design solutions</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fi fi-rr-chart-line-up text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 dark:text-gray-100">Client Impact</h4>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">Consistently delivered 30%+
+                                        improvement in key metrics</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fi fi-rr-users text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 dark:text-gray-100">Mentorship</h4>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">Guided 15+ junior designers in
+                                        their professional growth</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fi fi-rr-globe text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 dark:text-gray-100">Global Reach</h4>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">Projects spanning 12+ countries
+                                        across 4 continents</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Insights Section -->
+    <section class="bg-gray-100 dark:bg-gray-900 py-16">
+        <div class="max-w-[1200px] mx-auto px-3">
+            <div class="text-center mb-12">
+                <span class="text-primary font-medium text-sm tracking-wider uppercase">Beyond Design</span>
+                <h2 class="text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-gray-100 mt-2 mb-4">
+                    Personal Fun Facts
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                    A few personal tidbits that make me who I am beyond design and development.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fi fi-rr-piano text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">Piano Enthusiast</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        I love piano - while still learning, its melodies bring me peace and relaxation.
                     </p>
                 </div>
 
-                <!-- Approach 2 -->
-                <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl">
-                    <div class="text-4xl text-primary mb-4">
-                        <i class="fi fi-rr-pencil-paintbrush"></i>
+                <div class="text-center p-8 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fi fi-rr-headphones text-2xl text-primary"></i>
                     </div>
-                    <h3 class="text-xl text-primary font-medium mb-4">Design & Prototyping</h3>
-                    <p class="text-base text-gray-600 dark:text-gray-400">
-                        Through iterative design, I create prototypes that bring concepts to life before any code is
-                        written.
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">Creative Fuel</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Exploring diverse music genres and artists keeps my creativity flowing.
                     </p>
                 </div>
 
-                <!-- Approach 3 -->
-                <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl">
-                    <div class="text-4xl text-primary mb-4">
-                        <i class="fi fi-rr-browser"></i>
+                <div class="text-center p-8 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fi fi-rr-mountains text-2xl text-primary"></i>
                     </div>
-                    <h3 class="text-xl text-primary font-medium mb-4">Development & Testing</h3>
-                    <p class="text-base text-gray-600 dark:text-gray-400">
-                        I build robust solutions that are thoroughly tested across devices to ensure flawless
-                        performance.
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">Challenge Seeker</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        I embrace new challenges and explorations - they're opportunities for growth.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="bg-gray-100 dark:bg-gray-900 py-16">
+    <!-- Senior-Level CTA -->
+    <section class="bg-gray-100 dark:bg-gray-900 pb-16">
         <div class="max-w-[1200px] mx-auto px-3">
-            <h2 class="text-3xl font-semibold text-gray-700 dark:text-gray-200 text-center mb-4">Skills & Expertise</h2>
-            <p class="text-base text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-center mb-8">
-                I've developed a diverse skill set that allows me to handle projects from concept to completion.
-            </p>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Design Skills -->
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl">
-                    <h3 class="text-xl text-primary font-medium mb-4 flex items-center gap-2">
-                        <i class="fi fi-rr-pencil-paintbrush inline-block translate-y-0.5"></i>
-                        Design Skills
-                    </h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600 dark:text-gray-400">UI/UX Design</span>
-                            <div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600 dark:text-gray-400">Brand Identity</span>
-                            <div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600 dark:text-gray-400">Typography</span>
-                            <div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600 dark:text-gray-400">Illustration</span>
-                            <div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </li>
-                    </ul>
+            <div
+                class="bg-gradient-to-r from-primary to-primary/90 text-white rounded-2xl p-12 text-center relative overflow-hidden">
+                <!-- Background Pattern -->
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full -translate-y-32 translate-x-32">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full translate-y-32 -translate-x-32">
+                    </div>
                 </div>
 
-                <!-- Development Skills -->
-                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl">
-                    <h3 class="text-xl text-primary font-medium mb-4 flex items-center gap-2">
-                        <i class="fi fi-rr-browser inline-block translate-y-0.5"></i>
-                        Development Skills
-                    </h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600 dark:text-gray-400">HTML/CSS</span>
-                            <div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600 dark:text-gray-400">JavaScript</span>
-                            <div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600 dark:text-gray-400">React</span>
-                            <div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-32 text-gray-600 dark:text-gray-400">Node.js</span>
-                            <div class="flex-1 bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-                                <div class="bg-primary h-2.5 rounded-full" style="width: 75%"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <div class="relative z-10">
+                    <h2 class="text-3xl lg:text-4xl font-semibold mb-4">
+                        Ready to Elevate Your Digital Presence?
+                    </h2>
+                    <p class="text-white/90 text-md max-w-2xl mx-auto mb-8">
+                        Let's collaborate to create impactful solutions that drive real business results.
+                        With 9+ years of experience, I bring both creative vision and technical expertise to every
+                        project.
+                    </p>
 
-            <!-- Tools Section -->
-            <div class="mt-8 bg-white dark:bg-gray-800 p-6 rounded-xl">
-                <h3 class="text-xl text-primary font-medium mb-4 flex items-center gap-2">
-                    <i class="fi fi-rr-settings inline-block translate-y-0.5"></i>
-                    Tools I Use
-                </h3>
-                <div class="flex flex-wrap gap-4">
-                    <span
-                        class="bg-primary/10 text-gray-600 dark:text-gray-400 px-4 py-2 rounded-full flex items-center gap-2">
-                        <i class="fi fi-brands-figma inline-block translate-y-0.5"></i>
-                        Figma
-                    </span>
-                    <span
-                        class="bg-primary/10 text-gray-600 dark:text-gray-400 px-4 py-2 rounded-full flex items-center gap-2">
-                        <i class="fi fi-brands-adobe inline-block translate-y-0.5"></i>
-                        Adobe Suite
-                    </span>
-                    <span
-                        class="bg-primary/10 text-gray-600 dark:text-gray-400 px-4 py-2 rounded-full flex items-center gap-2">
-                        <i class="fi fi-rr-code-branch inline-block translate-y-0.5"></i>
-                        Git
-                    </span>
-                    <span
-                        class="bg-primary/10 text-gray-600 dark:text-gray-400 px-4 py-2 rounded-full flex items-center gap-2">
-                        <i class="fi fi-brands-visual-basic inline-block translate-y-0.5"></i>
-                        VS Code
-                    </span>
-                    <span
-                        class="bg-primary/10 text-gray-600 dark:text-gray-400 px-4 py-2 rounded-full flex items-center gap-2">
-                        <i class="fi fi-rr-cube inline-block translate-y-0.5"></i>
-                        Blender
-                    </span>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="/contact"
+                            class="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-3 rounded-lg font-semibold text-sm hover:bg-gray-100 transition-colors">
+                            <i class="fi fi-rr-calendar translate-y-0.5"></i>
+                            Schedule a Consultation
+                        </a>
+                        <a href="/portfolio"
+                            class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white text-sm px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                            <i class="fi fi-rr-folder-open translate-y-0.5"></i>
+                            View Case Studies
+                        </a>
+                    </div>
 
-    <!-- Fun Facts Section -->
-<section class="bg-white dark:bg-gray-800 py-16">
-    <div class="max-w-[1200px] mx-auto px-3">
-        <h2 class="text-3xl font-semibold text-gray-700 dark:text-gray-200 mb-4 text-center">Fun Facts</h2>
-        <p class="text-base text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-10">
-            A few personal tidbits that make me who I am beyond design and development.
-        </p>
-
-        <div class="grid md:grid-cols-3 gap-6">
-            <!-- Fact 1 -->
-            <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl text-center">
-                <div class="text-4xl text-primary mb-4 mx-auto w-fit">
-                    <i class="fi fi-rr-piano"></i>
-                </div>
-                <h3 class="text-xl text-primary font-medium mb-2">Piano Enthusiast</h3>
-                <p class="text-base text-gray-600 dark:text-gray-400">
-                    I love piano - while still learning, its melodies bring me peace and relaxation.
-                </p>
-            </div>
-
-            <!-- Fact 2 -->
-            <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl text-center">
-                <div class="text-4xl text-primary mb-4 mx-auto w-fit">
-                    <i class="fi fi-rr-headphones"></i>
-                </div>
-                <h3 class="text-xl text-primary font-medium mb-2">Music Explorer</h3>
-                <p class="text-base text-gray-600 dark:text-gray-400">
-                    Constantly discovering new genres and artists - music fuels my creativity.
-                </p>
-            </div>
-
-            <!-- Fact 3 -->
-            <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-xl text-center">
-                <div class="text-4xl text-primary mb-4 mx-auto w-fit">
-                    <i class="fi fi-rr-bolt"></i>
-                </div>
-                <h3 class="text-xl text-primary font-medium mb-2">Challenge Seeker</h3>
-                <p class="text-base text-gray-600 dark:text-gray-400">
-                    I embrace new challenges and explorations - they're opportunities for growth.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- CTA Section -->
-    <section class="bg-gray-100 dark:bg-gray-900 py-16">
-        <div class="max-w-[1200px] mx-auto px-3">
-            <div class="bg-primary text-white p-10 rounded-xl text-center">
-                <h2 class="text-2xl font-semibold mb-4">Ready to work together?</h2>
-                <p class="text-white/90 mb-6 max-w-2xl mx-auto">
-                    Whether you have a project in mind or just want to chat about design and development, I'd love to
-                    hear from you.
-                </p>
-                <div class="max-w-[150px] mx-auto">
-                    <a href="/contact"
-                        class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-white text-sm font-medium text-primary mx-auto">
-                        <i class="fi fi-rr-envelope translate-y-0.5 inline-block"></i>
-                        Get in Touch
-                    </a>
+                    <p class="text-white/70 text-sm mt-6">
+                        Typically respond within 24 hours • Initial consultation is complimentary
+                    </p>
                 </div>
             </div>
         </div>
@@ -432,16 +624,20 @@
                 <p class="text-sm text-gray-600 dark:text-gray-400">© <span id="copyright"></span> Clever Creative
                 </p>
                 <div class="flex justify-center gap-2 text-primary translate-y-0.5">
-                    <a class="hover:text-gray-500 dark:hover:text-gray-400 duration-150 ease-in-out" href="https://www.facebook.com/clevercreativeofficial">
+                    <a class="hover:text-gray-500 dark:hover:text-gray-400 duration-150 ease-in-out"
+                        href="https://www.facebook.com/clevercreativeofficial">
                         <i class="fi fi-brands-facebook"></i>
                     </a>
-                    <a class="hover:text-gray-500 dark:hover:text-gray-400 duration-150 ease-in-out" href="https://www.instagram.com/clevercreativeofficial">
+                    <a class="hover:text-gray-500 dark:hover:text-gray-400 duration-150 ease-in-out"
+                        href="https://www.instagram.com/clevercreativeofficial">
                         <i class="fi fi-brands-instagram"></i>
                     </a>
-                    <a class="hover:text-gray-500 dark:hover:text-gray-400 duration-150 ease-in-out" href="https://www.github.com/clevercreativeofficial">
+                    <a class="hover:text-gray-500 dark:hover:text-gray-400 duration-150 ease-in-out"
+                        href="https://www.github.com/clevercreativeofficial">
                         <i class="fi fi-brands-github"></i>
                     </a>
-                    <a class="hover:text-gray-500 dark:hover:text-gray-400 duration-150 ease-in-out" href="https://www.dribbble.com/clevercreativeofficial">
+                    <a class="hover:text-gray-500 dark:hover:text-gray-400 duration-150 ease-in-out"
+                        href="https://www.dribbble.com/clevercreativeofficial">
                         <i class="fi fi-brands-dribbble"></i>
                     </a>
                 </div>

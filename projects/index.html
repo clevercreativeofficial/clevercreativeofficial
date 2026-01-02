@@ -181,13 +181,12 @@
 
         <!-- Portfolio Filter & Controls -->
         <div class="relative mb-12">
-            <div
-                class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6 shadow-xl shadow-gray-100 dark:shadow-none">
-                <div class="flex justify-between items-center gap-6">
-                    <div class="flex gap-4">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6 shadow-xl shadow-gray-100 dark:shadow-none">
+                <div class="flex justify-between items-center md:flex-row flex-col gap-6">
+                    <div class="w-full flex md:flex-row flex-col gap-4">
                         <div class="relative">
                             <select
-                                class="appearance-none bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm px-4 py-2.5 pr-10 rounded-xl border border-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary cursor-pointer">
+                                class="md:w-fit w-full appearance-none bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm px-4 py-2.5 pr-10 rounded-xl border border-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary cursor-pointer">
                                 <option>All</option>
                                 <option>Graphic Design</option>
                                 <option>Web Development</option>
@@ -198,7 +197,7 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                        <div class="w-full flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                             <i class="fi fi-rr-sort-alt"></i>
                             <span>Sort by:</span>
                             <select
@@ -210,7 +209,7 @@
                     </div>
 
                     <button type="button"
-                        class="px-6 py-2.5 rounded-lg text-sm text-white bg-primary hover:bg-primary/80 transition-colors duration-200 shadow-sm">
+                        class="md:w-fit w-full px-6 py-2.5 rounded-lg text-sm text-white bg-primary hover:bg-primary/80 transition-colors duration-200 shadow-sm">
                         <i class="fi fi-rr-filter translate-y-0.5 inline-block mr-2"></i>
                         Filter
                     </button>
@@ -709,7 +708,7 @@
                 <div class="border-t border-gray-200 dark:border-gray-800 mt-12"></div>
 
                 <!-- Bottom Section -->
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6 py-6">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-2 py-6">
                     <!-- Copyright -->
                     <div class="text-sm text-gray-500 dark:text-gray-400">
                         © <span id="copyright"></span> Clever Creative. All rights reserved.

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Kleva Creative Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='../../assets/css/styles.css'>
+    <style>
+        :root {
+            --primary: #667eea;
+        }
+
+        .sidebar {
+            width: 275px;
+            transform: translateX(-275px);
+            transition: transform 0.3s ease;
+        }
+
+        .sidebar.active {
+            transform: translateX(0);
+        }
+
+        .main-content {
+            margin-left: 0;
+            transition: margin-left 0.3s ease;
+        }
+
+        .sidebar.active+.main-content {
+            margin-left: 275px;
+        }
+
+        @media (min-width: 1024px) {
+            .sidebar {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 275px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900">
+    <!-- loader -->
+    <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white dark:bg-gray-900 z-[100]">
+        <div class="flex flex-col justify-center items-center gap-4 h-full">
+            <div class="animate-bounce">
+                <img class="w-16 animate-pulse" src="../../assets/images/logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav
+        class="sticky top-0 h-[80px] backdrop-blur-lg bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 z-50">
+        <div class="w-full h-full px-3 flex justify-between items-center">
+            <div id="logo-container" class="w-[250px] flex items-center justify-between gap-3 z-20">
+                <div id="logo" class="w-10 py-4">
+                    <a href="/">
+                        <img src="../../assets/images/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div id="menu-bar"
+                    class="w-8 h-8 flex items-center justify-center text-gray-700 dark:text-gray-300 rounded cursor-pointer ml-2 z-50">
+                    <i class="fi fi-rr-sidebar-flip text-lg"></i>
+                </div>
+            </div>
+            <div id="themeToggle"
+                class="w-10 h-10 text-primary bg-primary text-white rounded-full shadow-lg flex justify-center items-center cursor-pointer">
+                <span class="sun">
+                    <i class="fi fi-rr-sun inline-block translate-y-0.5"></i>
+                </span>
+                <span class="moon hidden">
+                    <i class="fi fi-rr-moon inline-block translate-y-0.5"></i>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div id="sidebar"
+        class="fixed left-0 top-0 w-[275px] pt-24 px-3 min-h-screen bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 z-20">
+        <ul class="flex flex-col gap-2">
+            <li>
+                <a class="inline-block text-sm w-full text-white px-3 py-2 rounded-lg bg-primary" href="/admin">
+                    <i class="fi fi-rr-dashboard mx-1"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/projects">
+                    <i class="fi fi-rr-briefcase mx-1"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/Partners">
+                    <i class="fi fi-rr-star mx-1"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/resume">
+                    <i class="fi fi-rr-document mx-1"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/partners">
+                    <i class="fi fi-rr-users mx-1"></i>
+                    <span>Partners</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/resume">
+                    <i class="fi fi-rr-document mx-1"></i>
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/resume">
+                    <i class="fi fi-rr-envelope mx-1"></i>
+                    <span>Messages</span>
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- User Profile -->
+        <div class="absolute bottom-6 left-6 right-6">
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-gray-100 dark:bg-gray-800">
+                <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                    <i class="fi fi-rr-user text-primary"></i>
+                </div>
+                <div class="flex-1">
+                    <p class="font-medium text-sm text-gray-800 dark:text-gray-100">Admin User</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">admin@kleva.com</p>
+                </div>
+                <a href="login.html" class="p-2 text-gray-500 hover:text-red-500 transition-colors">
+                    <i class="fi fi-rr-sign-out-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <main class="main-content min-h-screen">
+        <!-- Top Bar -->
+        <header class="sticky top-0 h-16 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 z-30">
+            <div class="h-full px-6 flex items-center justify-between">
+                <button id="menuToggle" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+                    <i class="fi fi-rr-menu-burger text-xl"></i>
+                </button>
+
+                <div class="flex items-center gap-4">
+                    <!-- Theme Toggle -->
+                    <button id="themeToggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+                        <i class="fi fi-rr-sun dark:hidden"></i>
+                        <i class="fi fi-rr-moon hidden dark:block"></i>
+                    </button>
+
+                    <!-- Notifications -->
+                    <div class="relative">
+                        <button id="notificationsBtn"
+                            class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 relative">
+                            <i class="fi fi-rr-bell"></i>
+                            <span class="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                        </button>
+                        <div id="notificationsPanel"
+                            class="hidden absolute right-0 mt-2 w-80 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+                            <div class="p-4">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h3 class="font-semibold text-gray-800 dark:text-gray-100">Notifications</h3>
+                                    <span class="text-xs text-primary cursor-pointer">Mark all as read</span>
+                                </div>
+                                <div class="space-y-3">
+                                    <!-- Notification items here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="p-6">
+            <!-- Header -->
+            <div class="mb-8">
+                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Dashboard Overview</h1>
+                <p class="text-gray-600 dark:text-gray-400 mt-2">Welcome back! Here's what's happening with your
+                    portfolio.</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Total Projects -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Total Projects</p>
+                            <p class="text-3xl font-bold text-gray-800 dark:text-gray-100 mt-2">24</p>
+                            <p class="text-xs text-green-500 mt-1">+2 this month</p>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                            <i class="fi fi-rr-briefcase text-blue-500 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">New Messages</p>
+                            <p class="text-3xl font-bold text-gray-800 dark:text-gray-100 mt-2">3</p>
+                            <p class="text-xs text-amber-500 mt-1">Require attention</p>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                            <i class="fi fi-rr-envelope text-amber-500 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Skills Listed</p>
+                            <p class="text-3xl font-bold text-gray-800 dark:text-gray-100 mt-2">15</p>
+                            <p class="text-xs text-emerald-500 mt-1">All active</p>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+                            <i class="fi fi-rr-star text-emerald-500 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partners -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Partners</p>
+                            <p class="text-3xl font-bold text-gray-800 dark:text-gray-100 mt-2">8</p>
+                            <p class="text-xs text-purple-500 mt-1">6 featured</p>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                            <i class="fi fi-rr-handshake text-purple-500 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity & Quick Actions -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Recent Activity -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Recent Activity</h2>
+                        <a href="#" class="text-sm text-primary hover:text-primary/80">View all</a>
+                    </div>
+                    <div class="space-y-4">
+                        <!-- Activity items would go here -->
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-gray-50 dark:bg-gray-700/50">
+                            <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center">
+                                <i class="fi fi-rr-check text-green-500"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-gray-800 dark:text-gray-100">Project "EcoBrix"
+                                    published</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">2 hours ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                    <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Quick Actions</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="projects.html?action=add"
+                            class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-primary/5 transition-all duration-300 text-center">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                                <i class="fi fi-rr-add text-primary"></i>
+                            </div>
+                            <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Add Project</span>
+                        </a>
+                        <a href="skills.html?action=add"
+                            class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-primary/5 transition-all duration-300 text-center">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mx-auto mb-3">
+                                <i class="fi fi-rr-star text-blue-500"></i>
+                            </div>
+                            <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Add Skill</span>
+                        </a>
+                        <a href="messages.html"
+                            class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-primary/5 transition-all duration-300 text-center">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mx-auto mb-3">
+                                <i class="fi fi-rr-envelope text-amber-500"></i>
+                            </div>
+                            <span class="text-sm font-medium text-gray-800 dark:text-gray-100">View Messages</span>
+                        </a>
+                        <a href="settings.html"
+                            class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary hover:bg-primary/5 transition-all duration-300 text-center">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center mx-auto mb-3">
+                                <i class="fi fi-rr-settings text-purple-500"></i>
+                            </div>
+                            <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Settings</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- scripts -->
+    <script src="../../assets/js/sidebar.js" defer></script>
+
+    <!-- custom color -->
+    <script src="../../assets/js/tailwindConfig.js"></script>
+
+    <!-- Slick carousel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <!-- Form Submission -->
+    <script src="../../../assets/js/formValidation.js" defer></script>
+
+    <!-- General scripts -->
+    <script src="../../assets/js/scripts.js" defer></script>
+
+    <!-- Dark mode toggle -->
+    <script src="../../assets/js/theme.js" defer></script>
+</body>
+
+</html>

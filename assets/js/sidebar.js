@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const logout = document.getElementById("logout");
             const logoutIcon = document.querySelector("#logout i");
             const labelNames = document.querySelectorAll("li span");
+            const userProfile = document.getElementById("userProfile");
 
             // Define screen size breakpoint
             const isSmallDevice = window.innerWidth <= 768; // Adjust breakpoint if needed
@@ -30,6 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 logo.classList.toggle("hidden");
                 logoBox.classList.toggle("w-[70px]");
                 labelNames.forEach(label => label.classList.toggle("hidden"));
+                userProfile.classList.toggle("hidden");
+
 
                 // Only store state in localStorage for wider screens
                 if (!isSmallDevice) {
@@ -44,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 logo.classList.add("hidden");
                 logoBox.classList.add("w-[70px]");
                 labelNames.forEach(label => label.classList.add("hidden"));
+                userProfile.classList.add("hidden");
             }
 
             function expandSidebar() {
@@ -53,5 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 logo.classList.remove("hidden");
                 logoBox.classList.remove("w-[70px]");
                 labelNames.forEach(label => label.classList.remove("hidden"));
+                userProfile.classList.remove("hidden");
             }
         });

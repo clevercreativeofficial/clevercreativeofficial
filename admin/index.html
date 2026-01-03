@@ -49,7 +49,7 @@
 
 </head>
 
-<body class="bg-gray-50 dark:bg-gray-900">
+<body class="bg-gray-50 dark:bg-gray-900 overflow-x-hidden">
     <!-- loader -->
     <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white dark:bg-gray-900 z-[100]">
         <div class="flex flex-col justify-center items-center gap-4 h-full">
@@ -74,14 +74,9 @@
                     <i class="fi fi-rr-sidebar-flip text-lg"></i>
                 </div>
             </div>
-            <div id="themeToggle"
-                class="w-10 h-10 text-primary bg-primary text-white rounded-full shadow-lg flex justify-center items-center cursor-pointer">
-                <span class="sun">
-                    <i class="fi fi-rr-sun inline-block translate-y-0.5"></i>
-                </span>
-                <span class="moon hidden">
-                    <i class="fi fi-rr-moon inline-block translate-y-0.5"></i>
-                </span>
+            <div
+                class="w-10 h-10 bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-full shadow-lg flex justify-center items-center cursor-pointer">
+                <i class="fi fi-rr-user inline-block"></i>
             </div>
         </div>
     </nav>
@@ -91,40 +86,84 @@
         class="fixed left-0 top-0 w-[275px] pt-24 px-3 min-h-screen bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 z-20">
         <ul class="flex flex-col gap-2">
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm h-[40px] w-full text-white px-3 py-2 rounded-lg bg-primary"
                     href="/admin">
-                    <i class="fi fi-rr-user text-[16px] translate-y-0.5 inline-block mx-1"></i>
-                    <span>Profile</span>
+                    <i class="fi fi-rr-dashboard mx-1"></i>
+                    <span>Dashboard</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
                     href="/admin/projects">
-                    <i class="fi fi-rr-laptop text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <i class="fi fi-rr-briefcase text-primary mx-1"></i>
                     <span>Projects</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
-                    href="/admin/testimonials">
-                    <i class="fi fi-rr-stars translate-y-0.5 inline-block mx-1"></i>
-                    <span>Testimonials</span>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/Partners">
+                    <i class="fi fi-rr-star text-primary mx-1"></i>
+                    <span>Skills</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-white px-3 py-2 rounded-lg bg-primary" href="/admin/resume">
-                    <i class="fi fi-rr-document translate-y-0.5 inline-block mx-1"></i>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/resume">
+                    <i class="fi fi-rr-document text-primary mx-1"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/partners">
+                    <i class="fi fi-rr-users text-primary mx-1"></i>
+                    <span>Partners</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/resume">
+                    <i class="fi fi-rr-document text-primary mx-1"></i>
                     <span>Resume</span>
                 </a>
             </li>
+            <li>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/resume">
+                    <i class="fi fi-rr-envelope text-primary mx-1"></i>
+                    <span>Messages</span>
+                </a>
+            </li>
+
         </ul>
 
-        <div id="logout" class="absolute bottom-2 left-0 w-[275px] px-3 text-center">
-            <a href=""
-                class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-rose-500 hover:text-white bg-gray-100 dark:bg-gray-800 duration-300">
-                <i class="fi fi-rr-sign-out-alt translate-y-0.5 inline-block mx-1"></i>
-                <span>Logout</span>
-            </a>
+        <ul class="absolute bottom-24 left-0 w-full flex items-center px-3">
+            <div id="themeToggle"
+                class="inline-block text-sm h-[40px] w-full flex items-center justify-center text-center text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 cursor-pointer duration-300">
+                <div class="flex items-center justify-center">
+                    <span class="moon"><i class="fi fi-rr-moon text-primary"></i></span>
+                    <span class="sun"><i class="fi fi-rr-sun text-primary"></i></span>
+                    <li><span class="ml-2">Theme</span></li>
+                </div>
+            </div>
+        </ul>
+
+        <!-- User Profile -->
+        <div id="logout" class="absolute bottom-4 left-0 w-[275px] px-3">
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-gray-100 dark:bg-gray-800">
+                <div id="userProfile" class="flex items-center justify-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                        <i class="fi fi-rr-user text-primary"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-medium text-sm text-gray-800 dark:text-gray-100">Admin User</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">admin@kleva.com</p>
+                    </div>
+                </div>
+                <a href="login.html" class="p-2 text-gray-500 hover:text-red-500 transition-colors">
+                    <i class="fi fi-rr-sign-out-alt"></i>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -132,247 +171,118 @@
     <section
         class="ml-[70px] w-[calc(100vw-70px)] min-h-[calc(100vh-80px)] md:py-8 py-4 md:px-6 px-3 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-6xl mx-auto">
-            <!-- Premium Header with Profile Summary -->
-            <div class="mb-8">
-                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm overflow-hidden">
-                    <!-- Profile Info -->
-                    <div class="px-8 py-8">
-                        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-                            <div class="flex flex-col md:flex-row items-start md:items-end gap-6">
-                                <div class="relative">
-                                    <div
-                                        class="w-32 h-32 rounded-full border-4 border-white dark:border-gray-800 bg-white dark:bg-gray-800 overflow-hidden">
-                                        <img src="../assets/images/default-avatar-profile.webp" alt="Profile Picture"
-                                            class="w-full h-full object-cover">
-                                    </div>
-                                    <button
-                                        class="absolute bottom-2 right-2 w-10 h-10 flex items-center justify-center bg-primary text-white p-2 rounded-full hover:bg-primary-dark transition-colors shadow-lg">
-                                        <i class="fi fi-rr-camera text-base"></i>
-                                    </button>
-                                </div>
-                                <div class="md:mb-6">
-                                    <h1
-                                        class="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-1">
-                                        John Doe
-                                    </h1>
-                                    <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">
-                                        Admin • Graphic Designer & Web Developer
-                                    </p>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-3 py-1 bg-primary/10 text-primary dark:bg-primary/20 rounded-full text-sm">
-                                            Creative Professional
-                                        </span>
-                                        <span
-                                            class="px-3 py-1 bg-primary/10 text-primary dark:bg-primary/20 rounded-full text-sm">
-                                            5+ Years Experience
-                                        </span>
-                                    </div>
-                                </div>
+
+            <!-- Dashboard Content -->
+            <div class="sm:p-6 p-0">
+                <!-- Header -->
+                <div class="mb-8">
+                    <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Dashboard Overview</h1>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">Welcome back! Here's what's happening with your
+                        portfolio.</p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <!-- Total Projects -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Total Projects</p>
+                                <p class="text-3xl font-bold text-gray-800 dark:text-gray-100 mt-2">24</p>
+                                <p class="text-xs text-green-500 mt-1">+2 this month</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center">
+                                <i class="fi fi-rr-briefcase text-blue-500 text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Messages -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">New Messages</p>
+                                <p class="text-3xl font-bold text-gray-800 dark:text-gray-100 mt-2">3</p>
+                                <p class="text-xs text-amber-500 mt-1">Require attention</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                                <i class="fi fi-rr-envelope text-amber-500 text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Skills Listed</p>
+                                <p class="text-3xl font-bold text-gray-800 dark:text-gray-100 mt-2">15</p>
+                                <p class="text-xs text-emerald-500 mt-1">All active</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center">
+                                <i class="fi fi-rr-star text-emerald-500 text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Partners -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Partners</p>
+                                <p class="text-3xl font-bold text-gray-800 dark:text-gray-100 mt-2">8</p>
+                                <p class="text-xs text-purple-500 mt-1">6 featured</p>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center">
+                                <i class="fi fi-rr-handshake text-purple-500 text-xl"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Premium Content Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- Left Column -->
-                <div class="lg:col-span-2 space-y-6">
-                    <!-- Personal Information Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm">
-                        <div class="flex items-center justify-between mb-6">
-                            <div>
-                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
-                                    Personal Information
-                                </h2>
-                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                                    Basic profile details and contact information
-                                </p>
+                <!-- Quick Actions -->
+                <div class="mt-16">
+                    <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Quick Actions</h2>
+                    <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4">
+                        <a href="projects.html?action=add"
+                            class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary bg-white dark:bg-gray-800 hover:bg-primary/5 transition-all duration-300 text-center">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                                <i class="fi fi-rr-add text-primary"></i>
                             </div>
-                            <button
-                                class="text-primary hover:text-primary-dark text-sm font-medium px-4 py-2 hover:bg-primary/5 rounded-lg transition-colors">
-                                Edit Information
-                            </button>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="space-y-4">
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Full
-                                        Name</label>
-                                    <p class="text-gray-800 dark:text-gray-200 font-medium">John Doe</p>
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Email
-                                        Address</label>
-                                    <p class="text-gray-800 dark:text-gray-200 font-medium">john@clevercreative.com</p>
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Phone
-                                        Number</label>
-                                    <p class="text-gray-800 dark:text-gray-200 font-medium">+1 (555) 123-4567</p>
-                                </div>
+                            <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Add Project</span>
+                        </a>
+                        <a href="skills.html?action=add"
+                            class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary bg-white dark:bg-gray-800 hover:bg-primary/5 transition-all duration-300 text-center">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center mx-auto mb-3">
+                                <i class="fi fi-rr-star text-blue-500"></i>
                             </div>
-
-                            <div class="space-y-4">
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Location</label>
-                                    <p class="text-gray-800 dark:text-gray-200 font-medium">123 Design
-                                        Street<br>Creative City, CA 90210<br>United States</p>
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Member
-                                        Since</label>
-                                    <p class="text-gray-800 dark:text-gray-200 font-medium">January 2022</p>
-                                </div>
+                            <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Add Skill</span>
+                        </a>
+                        <a href="messages.html"
+                            class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary bg-white dark:bg-gray-800 hover:bg-primary/5 transition-all duration-300 text-center">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center mx-auto mb-3">
+                                <i class="fi fi-rr-envelope text-amber-500"></i>
                             </div>
-                        </div>
-
-                        <div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">
-                            <label
-                                class="block text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-2">Bio</label>
-                            <p class="text-gray-800 dark:text-gray-200">
-                                Creative professional with 5+ years of experience in graphic design and web development.
-                                Passionate about creating beautiful, functional digital experiences.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Change Password Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm">
-                        <div class="flex items-center justify-between mb-6">
-                            <div>
-                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
-                                    Security Settings
-                                </h2>
-                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                                    Update your password to keep your account secure
-                                </p>
+                            <span class="text-sm font-medium text-gray-800 dark:text-gray-100">View Messages</span>
+                        </a>
+                        <a href="settings.html"
+                            class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-primary bg-white dark:bg-gray-800 hover:bg-primary/5 transition-all duration-300 text-center">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center mx-auto mb-3">
+                                <i class="fi fi-rr-settings text-purple-500"></i>
                             </div>
-                        </div>
-
-                        <form class="space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="current-password"
-                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Current
-                                        Password</label>
-                                    <input type="password" id="current-password"
-                                        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors">
-                                </div>
-                                <div>
-                                    <label for="new-password"
-                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">New
-                                        Password</label>
-                                    <input type="password" id="new-password"
-                                        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors">
-                                </div>
-                            </div>
-                            <div>
-                                <label for="confirm-password"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Confirm New
-                                    Password</label>
-                                <input type="password" id="confirm-password"
-                                    class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-xl outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200 transition-colors">
-                            </div>
-                            <div class="flex justify-end">
-                                <button type="submit"
-                                    class="bg-primary hover:bg-primary-dark text-white text-sm px-8 py-3 rounded-xl transition-colors font-medium shadow-sm">
-                                    Update Password
-                                </button>
-                            </div>
-                        </form>
+                            <span class="text-sm font-medium text-gray-800 dark:text-gray-100">Settings</span>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Right Column -->
-                <div class="space-y-6">
-                    <!-- Social Links Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-sm">
-                        <div class="flex items-center justify-between mb-6">
-                            <div>
-                                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100">
-                                    Social Profiles
-                                </h2>
-                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                                    Connected accounts and social links
-                                </p>
-                            </div>
-                            <button
-                                class="text-primary hover:text-primary-dark text-sm font-medium px-4 py-2 hover:bg-primary/5 rounded-lg transition-colors">
-                                Manage
-                            </button>
-                        </div>
-
-                        <div class="space-y-4">
-                            <a href="#"
-                                class="flex items-center gap-4 p-3 rounded-xl border border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors group">
-                                <div
-                                    class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:bg-blue-500/10 transition-colors">
-                                    <i class="fi fi-brands-linkedin text-blue-500 dark:text-blue-400 text-lg"></i>
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <p class="text-sm font-medium text-gray-800 dark:text-gray-200 truncate">
-                                        linkedin.com/in/johndoe</p>
-                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Professional Network</p>
-                                </div>
-                                <i class="fi fi-rr-arrow-up-right-from-square text-gray-400 dark:text-gray-500"></i>
-                            </a>
-
-                            <a href="#"
-                                class="flex items-center gap-4 p-3 rounded-xl border border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors group">
-                                <div
-                                    class="w-10 h-10 rounded-xl bg-pink-100 dark:bg-pink-900/30 flex items-center justify-center group-hover:bg-pink-500/10 transition-colors">
-                                    <i class="fi fi-brands-instagram text-pink-500 dark:text-pink-400 text-lg"></i>
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <p class="text-sm font-medium text-gray-800 dark:text-gray-200 truncate">
-                                        instagram.com/johndoe</p>
-                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Personal Portfolio</p>
-                                </div>
-                                <i class="fi fi-rr-arrow-up-right-from-square text-gray-400 dark:text-gray-500"></i>
-                            </a>
-
-                            <a href="#"
-                                class="flex items-center gap-4 p-3 rounded-xl border border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors group">
-                                <div
-                                    class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:bg-blue-400/10 transition-colors">
-                                    <i class="fi fi-brands-twitter text-blue-400 dark:text-blue-300 text-lg"></i>
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <p class="text-sm font-medium text-gray-800 dark:text-gray-200 truncate">
-                                        twitter.com/johndoe</p>
-                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Thoughts & Updates</p>
-                                </div>
-                                <i class="fi fi-rr-arrow-up-right-from-square text-gray-400 dark:text-gray-500"></i>
-                            </a>
-
-                            <a href="#"
-                                class="flex items-center gap-4 p-3 rounded-xl border border-gray-100 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors group">
-                                <div
-                                    class="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-700 flex items-center justify-center group-hover:bg-gray-800/20 transition-colors">
-                                    <i class="fi fi-brands-github text-gray-800 dark:text-gray-200 text-lg"></i>
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <p class="text-sm font-medium text-gray-800 dark:text-gray-200 truncate">
-                                        github.com/johndoe</p>
-                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Code & Projects</p>
-                                </div>
-                                <i class="fi fi-rr-arrow-up-right-from-square text-gray-400 dark:text-gray-500"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-    
+
     <!-- scripts -->
     <script src="../../assets/js/sidebar.js" defer></script>
 

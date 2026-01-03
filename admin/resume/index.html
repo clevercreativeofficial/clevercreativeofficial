@@ -49,36 +49,34 @@
 
 </head>
 
-<body class="bg-gray-50 dark:bg-gray-900">
+<body class="bg-gray-50 dark:bg-gray-900 overflow-x-hidden">
     <!-- loader -->
     <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white dark:bg-gray-900 z-[100]">
         <div class="flex flex-col justify-center items-center gap-4 h-full">
             <div class="animate-bounce">
-                <img class="w-16 animate-pulse" src="/assets/images/logo.svg" alt="">
+                <img class="w-16 animate-pulse" src="../../assets/images/logo.svg" alt="">
             </div>
         </div>
     </div>
 
     <!-- navbar -->
-    <nav class="sticky top-0 h-[80px] backdrop-blur-lg bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 z-50">
+    <nav
+        class="sticky top-0 h-[80px] backdrop-blur-lg bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 z-50">
         <div class="w-full h-full px-3 flex justify-between items-center">
             <div id="logo-container" class="w-[250px] flex items-center justify-between gap-3 z-20">
                 <div id="logo" class="w-10 py-4">
                     <a href="/">
-                        <img src="../assets/images/logo.svg" alt="logo">
+                        <img src="../../assets/images/logo.svg" alt="logo">
                     </a>
                 </div>
-                <div id="menu-bar" class="w-8 h-8 flex items-center justify-center text-gray-700 dark:text-gray-300 rounded cursor-pointer ml-2 z-50">
+                <div id="menu-bar"
+                    class="w-8 h-8 flex items-center justify-center text-gray-700 dark:text-gray-300 rounded cursor-pointer ml-2 z-50">
                     <i class="fi fi-rr-sidebar-flip text-lg"></i>
                 </div>
             </div>
-            <div id="themeToggle" class="w-10 h-10 text-primary bg-primary text-white rounded-full shadow-lg flex justify-center items-center cursor-pointer">
-                <span class="sun">
-                    <i class="fi fi-rr-sun inline-block translate-y-0.5"></i>
-                </span>
-                <span class="moon hidden">
-                    <i class="fi fi-rr-moon inline-block translate-y-0.5"></i>
-                </span>
+            <div
+                class="w-10 h-10 bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-full shadow-lg flex justify-center items-center cursor-pointer">
+                <i class="fi fi-rr-user inline-block"></i>
             </div>
         </div>
     </nav>
@@ -88,229 +86,352 @@
         class="fixed left-0 top-0 w-[275px] pt-24 px-3 min-h-screen bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 z-20">
         <ul class="flex flex-col gap-2">
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm h-[40px] w-full text-white px-3 py-2 rounded-lg bg-primary"
                     href="/admin">
-                    <i class="fi fi-rr-user text-[16px] translate-y-0.5 inline-block mx-1"></i>
-                    <span>Profile</span>
+                    <i class="fi fi-rr-dashboard mx-1"></i>
+                    <span>Dashboard</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
                     href="/admin/projects">
-                    <i class="fi fi-rr-laptop text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <i class="fi fi-rr-briefcase text-primary mx-1"></i>
                     <span>Projects</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
-                    href="/admin/testimonials">
-                    <i class="fi fi-rr-stars translate-y-0.5 inline-block mx-1"></i>
-                    <span>Testimonials</span>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/skills">
+                    <i class="fi fi-rr-star text-primary mx-1"></i>
+                    <span>Skills</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-white px-3 py-2 rounded-lg bg-primary"
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/services">
+                    <i class="fi fi-rr-grid text-primary mx-1"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/partners">
+                    <i class="fi fi-rr-users text-primary mx-1"></i>
+                    <span>Partners</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
                     href="/admin/resume">
-                    <i class="fi fi-rr-document translate-y-0.5 inline-block mx-1"></i>
+                    <i class="fi fi-rr-document text-primary mx-1"></i>
                     <span>Resume</span>
                 </a>
             </li>
+            <li>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/messages">
+                    <i class="fi fi-rr-envelope text-primary mx-1"></i>
+                    <span>Messages</span>
+                </a>
+            </li>
+
         </ul>
 
-        <div id="logout" class="absolute bottom-2 left-0 w-[275px] px-3 text-center">
-            <a href=""
-                class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-rose-500 hover:text-white bg-gray-100 dark:bg-gray-800 duration-300">
-                <i class="fi fi-rr-sign-out-alt translate-y-0.5 inline-block mx-1"></i>
-                <span>Logout</span>
-            </a>
+        <ul class="absolute bottom-24 left-0 w-full flex items-center px-3">
+            <div id="themeToggle"
+                class="inline-block text-sm h-[40px] w-full flex items-center justify-center text-center text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 cursor-pointer duration-300">
+                <div class="flex items-center justify-center">
+                    <span class="moon"><i class="fi fi-rr-moon text-primary"></i></span>
+                    <span class="sun"><i class="fi fi-rr-sun text-primary"></i></span>
+                    <li><span class="ml-2">Theme</span></li>
+                </div>
+            </div>
+        </ul>
+
+        <!-- User Profile -->
+        <div id="logout" class="absolute bottom-4 left-0 w-[275px] px-3">
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-gray-100 dark:bg-gray-800">
+                <div id="userProfile" class="flex items-center justify-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                        <i class="fi fi-rr-user text-primary"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-medium text-sm text-gray-800 dark:text-gray-100">Admin User</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">admin@kleva.com</p>
+                    </div>
+                </div>
+                <a href="login.html" class="p-2 text-gray-500 hover:text-red-500 transition-colors">
+                    <i class="fi fi-rr-sign-out-alt"></i>
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Main Resume Section -->
-    <section class="ml-[70px] w-[calc(100vw-70px)] min-h-[calc(100vh-80px)] md:py-8 py-4 md:px-6 px-3 bg-gray-50 dark:bg-gray-900">
-        <div class="max-w-7xl mx-auto">
-            <!-- Resume Header -->
-            <div class="w-full bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm mb-8">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                    <div>
-                        <h1 class="text-xl md:text-2xl font-semibold text-gray-800 dark:text-gray-100">
-                            Resume Management
-                        </h1>
-                        <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                            Manage and update your professional resume/CV
-                        </p>
+<section class="ml-[70px] w-[calc(100vw-70px)] min-h-[calc(100vh-80px)] md:py-8 py-4 md:px-6 px-3 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Resume Content -->
+        <div class="sm:p-6 p-0">
+            <!-- Header -->
+            <div class="mb-8">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-3">
+                            <div class="sm:flex hidden w-12 h-12 rounded-xl bg-primary/10 items-center justify-center">
+                                <i class="fi fi-rr-file-invoice text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Resume Management</h1>
+                                <p class="text-gray-600 dark:text-gray-400 mt-1">Manage and update your professional resume/CV</p>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="flex gap-3">
-                        <button class="inline-block flex justify-center items-center gap-2 px-4 rounded-lg min-w-[125px] h-8 bg-primary text-sm text-white dark:text-gray-100">
-                            <i class="fi fi-rr-cloud-upload text-sm translate-y-0.5"></i>
-                            <span>Upload PDF</span>
-                        </button>
+                    <button onclick="openResumeModal()"
+                        class="group relative md:w-fit w-full flex items-center justify-center gap-2 bg-primary text-white text-sm px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 overflow-hidden">
+                        <span class="relative z-10 flex items-center gap-2">
+                            <i class="fi fi-rr-cloud-upload"></i>
+                            <span>Upload PDF Resume</span>
+                        </span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-primary/70 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Experience</p>
+                            <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">8 Years</p>
+                        </div>
+                        <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center">
+                            <i class="fi fi-rr-briefcase text-blue-500"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Skills</p>
+                            <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">12</p>
+                        </div>
+                        <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center">
+                            <i class="fi fi-rr-bolt text-green-500"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Certifications</p>
+                            <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">4</p>
+                        </div>
+                        <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center">
+                            <i class="fi fi-rr-badge text-yellow-500"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Education</p>
+                            <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">2</p>
+                        </div>
+                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center">
+                            <i class="fi fi-rr-graduation-cap text-purple-500"></i>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Resume Content -->
+            <!-- Resume Sections Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <!-- Left Column -->
                 <div class="lg:col-span-1 space-y-6">
                     <!-- Personal Info Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
-                        <div class="flex justify-between items-center mb-4">
-                            <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                Personal Information
-                            </h2>
-                            <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                Edit
-                            </button>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                                    <i class="fi fi-rr-user text-gray-600 dark:text-gray-300"></i>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300">
+                        <div class="p-5">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                        <i class="fi fi-rr-user text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Personal Information</h3>
+                                        <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Basic contact details</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p class="text-gray-800 dark:text-gray-200 font-medium">John Doe</p>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">Graphic Designer & Developer</p>
-                                </div>
+                                <button class="text-gray-500 hover:text-primary dark:text-gray-400">
+                                    <i class="fi fi-rr-edit text-sm"></i>
+                                </button>
                             </div>
-                            
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                                    <i class="fi fi-rr-envelope text-gray-600 dark:text-gray-300"></i>
+
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+                                        <i class="fi fi-rr-envelope text-gray-600 dark:text-gray-300 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-800 dark:text-gray-200">john@clevercreative.com</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">Email Address</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p class="text-gray-800 dark:text-gray-200 font-medium">john@clevercreative.com</p>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">Email</p>
+                                
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+                                        <i class="fi fi-rr-phone-call text-gray-600 dark:text-gray-300 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-800 dark:text-gray-200">+1 (555) 123-4567</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">Phone Number</p>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                                    <i class="fi fi-rr-phone-call text-gray-600 dark:text-gray-300"></i>
+                                
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+                                        <i class="fi fi-rr-marker text-gray-600 dark:text-gray-300 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-800 dark:text-gray-200">San Francisco, CA</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">Location</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <p class="text-gray-800 dark:text-gray-200 font-medium">+1 (555) 123-4567</p>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">Phone</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                                    <i class="fi fi-rr-marker text-gray-600 dark:text-gray-300"></i>
-                                </div>
-                                <div>
-                                    <p class="text-gray-800 dark:text-gray-200 font-medium">San Francisco, CA</p>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">Location</p>
+                                
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+                                        <i class="fi fi-rr-globe text-gray-600 dark:text-gray-300 text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-800 dark:text-gray-200">portfolio.dev</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">Website</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Skills Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
-                        <div class="flex justify-between items-center mb-4">
-                            <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                Skills
-                            </h2>
-                            <div class="flex gap-2">
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    Edit
-                                </button>
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    +
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div>
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span class="text-gray-800 dark:text-gray-200">UI/UX Design</span>
-                                    <span class="text-gray-600 dark:text-gray-400">90%</span>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300">
+                        <div class="p-5">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                        <i class="fi fi-rr-bolt text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Skills</h3>
+                                        <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Technical & professional skills</p>
+                                    </div>
                                 </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                                <div class="flex gap-1">
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-add text-sm"></i>
+                                    </button>
                                 </div>
                             </div>
-                            
-                            <div>
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span class="text-gray-800 dark:text-gray-200">Web Development</span>
-                                    <span class="text-gray-600 dark:text-gray-400">85%</span>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between text-sm mb-2">
+                                        <span class="text-gray-800 dark:text-gray-200 font-medium">UI/UX Design</span>
+                                        <span class="text-primary font-semibold">90%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
                                 </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                                
+                                <div>
+                                    <div class="flex justify-between text-sm mb-2">
+                                        <span class="text-gray-800 dark:text-gray-200 font-medium">Web Development</span>
+                                        <span class="text-primary font-semibold">85%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div>
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span class="text-gray-800 dark:text-gray-200">Graphic Design</span>
-                                    <span class="text-gray-600 dark:text-gray-400">95%</span>
+                                
+                                <div>
+                                    <div class="flex justify-between text-sm mb-2">
+                                        <span class="text-gray-800 dark:text-gray-200 font-medium">Graphic Design</span>
+                                        <span class="text-primary font-semibold">95%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
                                 </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
-                                </div>
-                            </div>
-                            
-                            <div>
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span class="text-gray-800 dark:text-gray-200">Photography</span>
-                                    <span class="text-gray-600 dark:text-gray-400">75%</span>
-                                </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+                                
+                                <div>
+                                    <div class="flex justify-between text-sm mb-2">
+                                        <span class="text-gray-800 dark:text-gray-200 font-medium">Photography</span>
+                                        <span class="text-primary font-semibold">75%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Languages Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
-                        <div class="flex justify-between items-center mb-4">
-                            <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                Languages
-                            </h2>
-                            <div class="flex gap-2">
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    Edit
-                                </button>
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    +
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-4">
-                            <div>
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span class="text-gray-800 dark:text-gray-200">English</span>
-                                    <span class="text-gray-600 dark:text-gray-400">Native</span>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300">
+                        <div class="p-5">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                        <i class="fi fi-rr-language text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Languages</h3>
+                                        <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Language proficiency</p>
+                                    </div>
                                 </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary h-2 rounded-full" style="width: 100%"></div>
+                                <div class="flex gap-1">
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-add text-sm"></i>
+                                    </button>
                                 </div>
                             </div>
-                            
-                            <div>
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span class="text-gray-800 dark:text-gray-200">Spanish</span>
-                                    <span class="text-gray-600 dark:text-gray-400">Professional</span>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between text-sm mb-2">
+                                        <span class="text-gray-800 dark:text-gray-200 font-medium">English</span>
+                                        <span class="text-primary font-semibold">Native</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 100%"></div>
+                                    </div>
                                 </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary h-2 rounded-full" style="width: 70%"></div>
+                                
+                                <div>
+                                    <div class="flex justify-between text-sm mb-2">
+                                        <span class="text-gray-800 dark:text-gray-200 font-medium">Spanish</span>
+                                        <span class="text-primary font-semibold">Professional</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                            <div>
-                                <div class="flex justify-between text-sm mb-1">
-                                    <span class="text-gray-800 dark:text-gray-200">French</span>
-                                    <span class="text-gray-600 dark:text-gray-400">Intermediate</span>
-                                </div>
-                                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                                    <div class="bg-primary h-2 rounded-full" style="width: 50%"></div>
+                                
+                                <div>
+                                    <div class="flex justify-between text-sm mb-2">
+                                        <span class="text-gray-800 dark:text-gray-200 font-medium">French</span>
+                                        <span class="text-primary font-semibold">Intermediate</span>
+                                    </div>
+                                    <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 50%"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -320,245 +441,265 @@
                 <!-- Right Column -->
                 <div class="lg:col-span-2 space-y-6">
                     <!-- Experience Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
-                        <div class="flex justify-between items-center mb-4">
-                            <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                Work Experience
-                            </h2>
-                            <div class="flex gap-2">
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    Edit
-                                </button>
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    +
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <!-- Experience 1 -->
-                            <div class="flex gap-4">
-                                <div class="flex flex-col items-center">
-                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300">
+                        <div class="p-5">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                         <i class="fi fi-rr-briefcase text-primary"></i>
                                     </div>
-                                    <div class="w-0.5 h-full bg-gray-200 dark:bg-gray-700 my-2"></div>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100">Senior UI/UX Designer</h3>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">Creative Studio Inc. • 2019 - Present</p>
-                                    <p class="text-gray-700 dark:text-gray-300 mt-2">
-                                        Lead the design team in creating intuitive user experiences for web and mobile applications. Collaborate with developers to implement designs and maintain design systems.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <!-- Experience 2 -->
-                            <div class="flex gap-4">
-                                <div class="flex flex-col items-center">
-                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                                        <i class="fi fi-rr-briefcase text-primary"></i>
-                                    </div>
-                                    <div class="w-0.5 h-full bg-gray-200 dark:bg-gray-700 my-2"></div>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100">Web Designer</h3>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">Digital Solutions LLC • 2016 - 2019</p>
-                                    <p class="text-gray-700 dark:text-gray-300 mt-2">
-                                        Designed and developed responsive websites for clients across various industries. Created branding materials and marketing collateral.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <!-- Experience 3 -->
-                            <div class="flex gap-4">
-                                <div class="flex flex-col items-center">
-                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                                        <i class="fi fi-rr-briefcase text-primary"></i>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Work Experience</h3>
+                                        <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Professional journey</p>
                                     </div>
                                 </div>
-                                <div class="flex-1">
-                                    <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100">Graphic Designer</h3>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">Freelance • 2014 - 2016</p>
-                                    <p class="text-gray-700 dark:text-gray-300 mt-2">
-                                        Worked with various clients to create logos, branding materials, and print designs. Managed client relationships and project timelines.
-                                    </p>
+                                <div class="flex gap-1">
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-add text-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <!-- Experience 1 -->
+                                <div class="flex gap-4 group/item hover:bg-gray-50 dark:hover:bg-gray-700/50 p-3 rounded-lg transition-all duration-200">
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center group-hover/item:bg-blue-500/20 transition-all">
+                                            <i class="fi fi-rr-briefcase text-blue-500"></i>
+                                        </div>
+                                        <div class="w-0.5 h-full bg-gray-200 dark:bg-gray-700 my-2"></div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between items-start">
+                                            <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Senior UI/UX Designer</h3>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Creative Studio Inc.</p>
+                                            </div>
+                                            <span class="inline-flex items-center gap-1 text-xs text-green-500 bg-green-500/10 px-2 py-1 rounded-full">
+                                                <i class="fi fi-rr-calendar"></i>
+                                                2019 - Present
+                                            </span>
+                                        </div>
+                                        <p class="text-gray-700 dark:text-gray-300 mt-2 text-sm">
+                                            Lead the design team in creating intuitive user experiences for web and mobile applications. Collaborate with developers to implement designs and maintain design systems.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Experience 2 -->
+                                <div class="flex gap-4 group/item hover:bg-gray-50 dark:hover:bg-gray-700/50 p-3 rounded-lg transition-all duration-200">
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-12 h-12 rounded-full bg-green-500/10 flex items-center justify-center group-hover/item:bg-green-500/20 transition-all">
+                                            <i class="fi fi-rr-briefcase text-green-500"></i>
+                                        </div>
+                                        <div class="w-0.5 h-full bg-gray-200 dark:bg-gray-700 my-2"></div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between items-start">
+                                            <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Web Designer</h3>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Digital Solutions LLC</p>
+                                            </div>
+                                            <span class="inline-flex items-center gap-1 text-xs text-gray-500 bg-gray-500/10 px-2 py-1 rounded-full">
+                                                <i class="fi fi-rr-calendar"></i>
+                                                2016 - 2019
+                                            </span>
+                                        </div>
+                                        <p class="text-gray-700 dark:text-gray-300 mt-2 text-sm">
+                                            Designed and developed responsive websites for clients across various industries. Created branding materials and marketing collateral.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Experience 3 -->
+                                <div class="flex gap-4 group/item hover:bg-gray-50 dark:hover:bg-gray-700/50 p-3 rounded-lg transition-all duration-200">
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center group-hover/item:bg-purple-500/20 transition-all">
+                                            <i class="fi fi-rr-briefcase text-purple-500"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between items-start">
+                                            <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Graphic Designer</h3>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Freelance</p>
+                                            </div>
+                                            <span class="inline-flex items-center gap-1 text-xs text-gray-500 bg-gray-500/10 px-2 py-1 rounded-full">
+                                                <i class="fi fi-rr-calendar"></i>
+                                                2014 - 2016
+                                            </span>
+                                        </div>
+                                        <p class="text-gray-700 dark:text-gray-300 mt-2 text-sm">
+                                            Worked with various clients to create logos, branding materials, and print designs. Managed client relationships and project timelines.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Education Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
-                        <div class="flex justify-between items-center mb-4">
-                            <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                Education
-                            </h2>
-                            <div class="flex gap-2">
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    Edit
-                                </button>
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    +
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div class="space-y-6">
-                            <!-- Education 1 -->
-                            <div class="flex gap-4">
-                                <div class="flex flex-col items-center">
-                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300">
+                        <div class="p-5">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                         <i class="fi fi-rr-graduation-cap text-primary"></i>
                                     </div>
-                                    <div class="w-0.5 h-full bg-gray-200 dark:bg-gray-700 my-2"></div>
-                                </div>
-                                <div class="flex-1">
-                                    <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100">Master in Design</h3>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">California Institute of Arts • 2012 - 2014</p>
-                                    <p class="text-gray-700 dark:text-gray-300 mt-2">
-                                        Specialized in User Experience Design and Interactive Media. Thesis project focused on accessibility in digital design.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <!-- Education 2 -->
-                            <div class="flex gap-4">
-                                <div class="flex flex-col items-center">
-                                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                                        <i class="fi fi-rr-graduation-cap text-primary"></i>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Education</h3>
+                                        <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Academic background</p>
                                     </div>
                                 </div>
-                                <div class="flex-1">
-                                    <h3 class="text-lg font-medium text-gray-800 dark:text-gray-100">Bachelor of Fine Arts</h3>
-                                    <p class="text-sm text-gray-600 dark:text-gray-400">New York School of Design • 2008 - 2012</p>
-                                    <p class="text-gray-700 dark:text-gray-300 mt-2">
-                                        Major in Graphic Design with minors in Photography and Digital Media. Graduated with honors.
-                                    </p>
+                                <div class="flex gap-1">
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-add text-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <!-- Education 1 -->
+                                <div class="flex gap-4 group/item hover:bg-gray-50 dark:hover:bg-gray-700/50 p-3 rounded-lg transition-all duration-200">
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center group-hover/item:bg-yellow-500/20 transition-all">
+                                            <i class="fi fi-rr-graduation-cap text-yellow-500"></i>
+                                        </div>
+                                        <div class="w-0.5 h-full bg-gray-200 dark:bg-gray-700 my-2"></div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between items-start">
+                                            <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Master in Design</h3>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">California Institute of Arts</p>
+                                            </div>
+                                            <span class="inline-flex items-center gap-1 text-xs text-gray-500 bg-gray-500/10 px-2 py-1 rounded-full">
+                                                <i class="fi fi-rr-calendar"></i>
+                                                2012 - 2014
+                                            </span>
+                                        </div>
+                                        <p class="text-gray-700 dark:text-gray-300 mt-2 text-sm">
+                                            Specialized in User Experience Design and Interactive Media. Thesis project focused on accessibility in digital design.
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Education 2 -->
+                                <div class="flex gap-4 group/item hover:bg-gray-50 dark:hover:bg-gray-700/50 p-3 rounded-lg transition-all duration-200">
+                                    <div class="flex flex-col items-center">
+                                        <div class="w-12 h-12 rounded-full bg-purple-500/10 flex items-center justify-center group-hover/item:bg-purple-500/20 transition-all">
+                                            <i class="fi fi-rr-graduation-cap text-purple-500"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between items-start">
+                                            <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Bachelor of Fine Arts</h3>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">New York School of Design</p>
+                                            </div>
+                                            <span class="inline-flex items-center gap-1 text-xs text-gray-500 bg-gray-500/10 px-2 py-1 rounded-full">
+                                                <i class="fi fi-rr-calendar"></i>
+                                                2008 - 2012
+                                            </span>
+                                        </div>
+                                        <p class="text-gray-700 dark:text-gray-300 mt-2 text-sm">
+                                            Major in Graphic Design with minors in Photography and Digital Media. Graduated with honors.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Certifications Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
-                        <div class="flex justify-between items-center mb-4">
-                            <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                Certifications
-                            </h2>
-                            <div class="flex gap-2">
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    Edit
-                                </button>
-                                <button class="text-primary hover:text-primary-dark text-sm font-medium">
-                                    +
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <!-- Certification 1 -->
-                            <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300">
+                        <div class="p-5">
+                            <div class="flex items-start justify-between mb-4">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                                    <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                                         <i class="fi fi-rr-badge text-primary"></i>
                                     </div>
                                     <div>
-                                        <h3 class="font-medium text-gray-800 dark:text-gray-100">UX Design Professional</h3>
-                                        <p class="text-sm text-gray-600 dark:text-gray-400">Google • 2020</p>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Certifications</h3>
+                                        <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Professional certifications</p>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <!-- Certification 2 -->
-                            <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                                        <i class="fi fi-rr-badge text-primary"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-medium text-gray-800 dark:text-gray-100">Front-End Development</h3>
-                                        <p class="text-sm text-gray-600 dark:text-gray-400">Udacity • 2018</p>
-                                    </div>
+                                <div class="flex gap-1">
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-add text-sm"></i>
+                                    </button>
                                 </div>
                             </div>
-                            
-                            <!-- Certification 3 -->
-                            <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                                        <i class="fi fi-rr-badge text-primary"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-medium text-gray-800 dark:text-gray-100">Adobe Certified Expert</h3>
-                                        <p class="text-sm text-gray-600 dark:text-gray-400">Adobe • 2017</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Certification 4 -->
-                            <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                                        <i class="fi fi-rr-badge text-primary"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="font-medium text-gray-800 dark:text-gray-100">Digital Marketing</h3>
-                                        <p class="text-sm text-gray-600 dark:text-gray-400">HubSpot • 2016</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Add Section Modal -->
-        <div id="section-modal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
-                <div class="p-6">
-                    <div class="flex justify-between items-center mb-4">
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Add New Section</h3>
-                        <button id="close-section-modal" class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
-                            <i class="fi fi-rr-cross-small text-xl"></i>
-                        </button>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <!-- Certification 1 -->
+                                <div class="group bg-gray-50 dark:bg-gray-700 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-200">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center group-hover:bg-yellow-500/20">
+                                            <i class="fi fi-rr-badge text-yellow-500"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800 dark:text-gray-100">UX Design Professional</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">Google • 2020</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Certification 2 -->
+                                <div class="group bg-gray-50 dark:bg-gray-700 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-200">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20">
+                                            <i class="fi fi-rr-badge text-blue-500"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800 dark:text-gray-100">Front-End Development</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">Udacity • 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Certification 3 -->
+                                <div class="group bg-gray-50 dark:bg-gray-700 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-200">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:bg-purple-500/20">
+                                            <i class="fi fi-rr-badge text-purple-500"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800 dark:text-gray-100">Adobe Certified Expert</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">Adobe • 2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Certification 4 -->
+                                <div class="group bg-gray-50 dark:bg-gray-700 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-200">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center group-hover:bg-green-500/20">
+                                            <i class="fi fi-rr-badge text-green-500"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-medium text-gray-800 dark:text-gray-100">Digital Marketing</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">HubSpot • 2016</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <form class="space-y-4">
-                        <div>
-                            <label for="section-type" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Section Type</label>
-                            <select id="section-type" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200">
-                                <option value="">Select section type</option>
-                                <option value="experience">Work Experience</option>
-                                <option value="education">Education</option>
-                                <option value="skills">Skills</option>
-                                <option value="languages">Languages</option>
-                                <option value="certifications">Certifications</option>
-                                <option value="projects">Projects</option>
-                                <option value="publications">Publications</option>
-                                <option value="awards">Awards</option>
-                                <option value="custom">Custom Section</option>
-                            </select>
-                        </div>
-                        
-                        <div id="custom-section-name-container" class="hidden">
-                            <label for="custom-section-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Section Name</label>
-                            <input type="text" id="custom-section-name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200">
-                        </div>
-                        
-                        <div class="flex justify-end gap-3 pt-4">
-                            <button type="button" id="cancel-section-modal" class="bg-white dark:bg-gray-700 py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                Cancel
-                            </button>
-                            <button type="submit" class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition-colors">
-                                Add Section
-                            </button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- scripts -->
     <script src="../../assets/js/sidebar.js" defer></script>

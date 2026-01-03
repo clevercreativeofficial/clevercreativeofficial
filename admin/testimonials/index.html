@@ -49,7 +49,7 @@
 
 </head>
 
-<body class="bg-gray-50 dark:bg-gray-900">
+<body class="bg-gray-50 dark:bg-gray-900 overflow-x-hidden">
     <!-- loader -->
     <div id="loader" class="fixed top-0 left-0 w-full h-full bg-white dark:bg-gray-900 z-[100]">
         <div class="flex flex-col justify-center items-center gap-4 h-full">
@@ -74,14 +74,9 @@
                     <i class="fi fi-rr-sidebar-flip text-lg"></i>
                 </div>
             </div>
-            <div id="themeToggle"
-                class="w-10 h-10 text-primary bg-primary text-white rounded-full shadow-lg flex justify-center items-center cursor-pointer">
-                <span class="sun">
-                    <i class="fi fi-rr-sun inline-block translate-y-0.5"></i>
-                </span>
-                <span class="moon hidden">
-                    <i class="fi fi-rr-moon inline-block translate-y-0.5"></i>
-                </span>
+            <div
+                class="w-10 h-10 bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-full shadow-lg flex justify-center items-center cursor-pointer">
+                <i class="fi fi-rr-user inline-block"></i>
             </div>
         </div>
     </nav>
@@ -91,414 +86,622 @@
         class="fixed left-0 top-0 w-[275px] pt-24 px-3 min-h-screen bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 z-20">
         <ul class="flex flex-col gap-2">
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm h-[40px] w-full text-white px-3 py-2 rounded-lg bg-primary"
                     href="/admin">
-                    <i class="fi fi-rr-dashboard text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <i class="fi fi-rr-dashboard mx-1"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
-                    href="/admin/profile">
-                    <i class="fi fi-rr-user text-[16px] translate-y-0.5 inline-block mx-1"></i>
-                    <span>Profile</span>
-                </a>
-            </li>
-            <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
                     href="/admin/projects">
-                    <i class="fi fi-rr-laptop text-[16px] translate-y-0.5 inline-block mx-1"></i>
+                    <i class="fi fi-rr-briefcase text-primary mx-1"></i>
                     <span>Projects</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-white px-3 py-2 rounded-lg bg-primary"
-                    href="/admin/testimonials">
-                    <i class="fi fi-rr-stars translate-y-0.5 inline-block mx-1"></i>
-                    <span>Testimonials</span>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/skills">
+                    <i class="fi fi-rr-star text-primary mx-1"></i>
+                    <span>Skills</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/services">
+                    <i class="fi fi-rr-grid text-primary mx-1"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/partners">
+                    <i class="fi fi-rr-users text-primary mx-1"></i>
+                    <span>Partners</span>
+                </a>
+            </li>
+            <li>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
                     href="/admin/resume">
-                    <i class="fi fi-rr-document translate-y-0.5 inline-block mx-1"></i>
+                    <i class="fi fi-rr-document text-primary mx-1"></i>
                     <span>Resume</span>
                 </a>
             </li>
             <li>
-                <a class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
-                    href="/admin/address">
-                    <i class="fi fi-rr-marker text-[16px] translate-y-0.5 inline-block mx-1"></i>
-                    <span>Address</span>
+                <a class="inline-block text-sm h-[40px] w-full text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 duration-300"
+                    href="/admin/messages">
+                    <i class="fi fi-rr-envelope text-primary mx-1"></i>
+                    <span>Messages</span>
                 </a>
             </li>
+
         </ul>
 
-        <div id="logout" class="absolute bottom-2 left-0 w-[275px] px-3 text-center">
-            <a href=""
-                class="inline-block text-sm w-full text-gray-700 dark:text-gray-300 px-4 py-2 rounded-lg hover:bg-rose-500 hover:text-white bg-gray-100 dark:bg-gray-800 duration-300">
-                <i class="fi fi-rr-sign-out-alt translate-y-0.5 inline-block mx-1"></i>
-                <span>Logout</span>
-            </a>
+        <ul class="absolute bottom-24 left-0 w-full flex items-center px-3">
+            <div id="themeToggle"
+                class="inline-block text-sm h-[40px] w-full flex items-center justify-center text-center text-gray-700 dark:text-gray-400 px-3 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 cursor-pointer duration-300">
+                <div class="flex items-center justify-center">
+                    <span class="moon"><i class="fi fi-rr-moon text-primary"></i></span>
+                    <span class="sun"><i class="fi fi-rr-sun text-primary"></i></span>
+                    <li><span class="ml-2">Theme</span></li>
+                </div>
+            </div>
+        </ul>
+
+        <!-- User Profile -->
+        <div id="logout" class="absolute bottom-4 left-0 w-[275px] px-3">
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-gray-100 dark:bg-gray-800">
+                <div id="userProfile" class="flex items-center justify-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                        <i class="fi fi-rr-user text-primary"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-medium text-sm text-gray-800 dark:text-gray-100">Admin User</p>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">admin@kleva.com</p>
+                    </div>
+                </div>
+                <a href="login.html" class="p-2 text-gray-500 hover:text-red-500 transition-colors">
+                    <i class="fi fi-rr-sign-out-alt"></i>
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Main Testimonials Section -->
     <section
         class="ml-[70px] w-[calc(100vw-70px)] min-h-[calc(100vh-80px)] md:py-8 py-4 md:px-6 px-3 bg-gray-50 dark:bg-gray-900">
-        <div class="max-w-7xl mx-auto">
-            <!-- Testimonials Header -->
-            <div class="w-full bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm mb-8">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                    <div>
-                        <h1 class="text-xl md:text-2xl font-semibold text-gray-800 dark:text-gray-100">
-                            Testimonials Management
-                        </h1>
-                        <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                            Manage all client testimonials displayed on your portfolio
-                        </p>
-                    </div>
-                    <button
-                        class="inline-block flex justify-center items-center gap-2 rounded-lg min-w-[125px] h-8 bg-primary text-white dark:text-gray-100">
-                        <i class="fi fi-rr-add inline-block translate-y-0.5 text-sm"></i>
-                        <span>Add New</span>
-                    </button>
+        <div class="max-w-6xl mx-auto">
 
-                </div>
-            </div>
-
-            <!-- Testimonials Table -->
-            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden">
-                <div class="overflow-x-auto">
-                    <table class="w-full">
-                        <thead class="bg-gray-50 dark:bg-gray-700">
-                            <tr>
-                                <th
-                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                                    Client
-                                </th>
-                                <th
-                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                                    Position
-                                </th>
-                                <th
-                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                                    Testimonial
-                                </th>
-                                <th
-                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                                    Rating
-                                </th>
-                                <th
-                                    class="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                                    Actions
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-                            <!-- Testimonial 1 -->
-                            <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex-shrink-0 h-10 w-10">
-                                            <img class="h-10 w-10 rounded-full"
-                                                src="https://jfctjplvujhqsposskbb.supabase.co/storage/v1/object/sign/images/profile_sm.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzVhNjhlMTk1LTAwN2EtNDczMC05YTI4LTBhOGM2ZjRhZjAzYiJ9.eyJ1cmwiOiJpbWFnZXMvcHJvZmlsZV9zbS5qcGciLCJpYXQiOjE3NDg0MDU0NDAsImV4cCI6MTkwNjA4NTQ0MH0.pUI9iEASiF62h7pPkGEWMEheUzci-gvkVuTdw7LDsNI"
-                                                alt="">
-                                        </div>
-                                        <div class="ml-4">
-                                            <div class="text-sm font-medium text-gray-900 dark:text-gray-100">Sarah
-                                                Johnson</div>
-                                            <div class="text-sm text-gray-500 dark:text-gray-400">ABC Corp</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="text-sm text-gray-900 dark:text-gray-100">Marketing Director</div>
-                                </td>
-                                <td class="px-6 py-4 max-w-xs">
-                                    <div class="text-sm text-gray-900 dark:text-gray-100 line-clamp-2">Working with John
-                                        was an absolute pleasure. His attention to detail and creative vision
-                                        transformed our website into something truly special.</div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex items-center gap-1">
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                    <div class="flex justify-end gap-2">
-                                        <button
-                                            class="text-sky-600 hover:text-sky-900 dark:text-sky-400 dark:hover:text-sky-300">
-                                            <i class="fi fi-rr-edit"></i>
-                                        </button>
-                                        <button
-                                            class="text-rose-600 hover:text-rose-900 dark:text-rose-400 dark:hover:text-rose-300">
-                                            <i class="fi fi-rr-trash"></i>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <!-- Testimonial 2 -->
-                            <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex-shrink-0 h-10 w-10">
-                                            <img class="h-10 w-10 rounded-full"
-                                                src="https://jfctjplvujhqsposskbb.supabase.co/storage/v1/object/sign/images/profile_sm.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzVhNjhlMTk1LTAwN2EtNDczMC05YTI4LTBhOGM2ZjRhZjAzYiJ9.eyJ1cmwiOiJpbWFnZXMvcHJvZmlsZV9zbS5qcGciLCJpYXQiOjE3NDg0MDU0NDAsImV4cCI6MTkwNjA4NTQ0MH0.pUI9iEASiF62h7pPkGEWMEheUzci-gvkVuTdw7LDsNI"
-                                                alt="">
-                                        </div>
-                                        <div class="ml-4">
-                                            <div class="text-sm font-medium text-gray-900 dark:text-gray-100">Michael
-                                                Chen</div>
-                                            <div class="text-sm text-gray-500 dark:text-gray-400">XYZ Tech</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="text-sm text-gray-900 dark:text-gray-100">CEO</div>
-                                </td>
-                                <td class="px-6 py-4 max-w-xs">
-                                    <div class="text-sm text-gray-900 dark:text-gray-100 line-clamp-2">John delivered
-                                        our project ahead of schedule and exceeded all our expectations. His technical
-                                        skills are matched only by his professionalism.</div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex items-center gap-1">
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-gray-300 dark:text-gray-500"></i>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                    <div class="flex justify-end gap-2">
-                                        <button
-                                            class="text-sky-600 hover:text-sky-900 dark:text-sky-400 dark:hover:text-sky-300">
-                                            <i class="fi fi-rr-edit"></i>
-                                        </button>
-                                        <button
-                                            class="text-rose-600 hover:text-rose-900 dark:text-rose-400 dark:hover:text-rose-300">
-                                            <i class="fi fi-rr-trash"></i>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <!-- Testimonial 3 -->
-                            <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex-shrink-0 h-10 w-10">
-                                            <img class="h-10 w-10 rounded-full"
-                                                src="https://jfctjplvujhqsposskbb.supabase.co/storage/v1/object/sign/images/profile_sm.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzVhNjhlMTk1LTAwN2EtNDczMC05YTI4LTBhOGM2ZjRhZjAzYiJ9.eyJ1cmwiOiJpbWFnZXMvcHJvZmlsZV9zbS5qcGciLCJpYXQiOjE3NDg0MDU0NDAsImV4cCI6MTkwNjA4NTQ0MH0.pUI9iEASiF62h7pPkGEWMEheUzci-gvkVuTdw7LDsNI"
-                                                alt="">
-                                        </div>
-                                        <div class="ml-4">
-                                            <div class="text-sm font-medium text-gray-900 dark:text-gray-100">Emma
-                                                Rodriguez</div>
-                                            <div class="text-sm text-gray-500 dark:text-gray-400">Creative Solutions
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="text-sm text-gray-900 dark:text-gray-100">Art Director</div>
-                                </td>
-                                <td class="px-6 py-4 max-w-xs">
-                                    <div class="text-sm text-gray-900 dark:text-gray-100 line-clamp-2">I've worked with
-                                        many designers, but John stands out for his unique creative approach and ability
-                                        to understand client needs.</div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex items-center gap-1">
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star text-yellow-400"></i>
-                                            <i class="fi fi-rr-star-half text-yellow-400"></i>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                    <div class="flex justify-end gap-2">
-                                        <button
-                                            class="text-sky-600 hover:text-sky-900 dark:text-sky-400 dark:hover:text-sky-300">
-                                            <i class="fi fi-rr-edit"></i>
-                                        </button>
-                                        <button
-                                            class="text-rose-600 hover:text-rose-900 dark:text-rose-400 dark:hover:text-rose-300">
-                                            <i class="fi fi-rr-trash"></i>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- Pagination -->
-                <div
-                    class="bg-gray-50 dark:bg-gray-700 px-4 py-3 flex items-center justify-between border-t border-gray-200 dark:border-gray-600 sm:px-6">
-                    <div class="flex-1 flex justify-between sm:hidden">
-                        <a href="#"
-                            class="relative inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 text-sm font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700">
-                            Previous
-                        </a>
-                        <a href="#"
-                            class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 text-sm font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700">
-                            Next
-                        </a>
-                    </div>
-                    <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
-                        <div>
-                            <p class="text-sm text-gray-700 dark:text-gray-300">
-                                Showing <span class="font-medium">1</span> to <span class="font-medium">3</span> of
-                                <span class="font-medium">12</span> results
-                            </p>
+            <!-- Testimonials Content -->
+            <div class="sm:p-6 p-0">
+                <!-- Header -->
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="sm:flex hidden w-12 h-12 rounded-xl bg-primary/10 items-center justify-center">
+                                    <i class="fi fi-rr-comment-alt text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Testimonials</h1>
+                                    <p class="text-gray-600 dark:text-gray-400 mt-1">Manage client feedback and showcase
+                                        reviews</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px"
-                                aria-label="Pagination">
-                                <a href="#"
-                                    class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm font-medium text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700">
-                                    <span class="sr-only">Previous</span>
-                                    <i class="fi fi-rr-angle-small-left translate-y-0.5"></i>
-                                </a>
-                                <a href="#" aria-current="page"
-                                    class="z-10 bg-primary border-primary text-white relative inline-flex items-center px-4 py-2 border text-sm font-medium">
-                                    1
-                                </a>
-                                <a href="#"
-                                    class="bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
-                                    2
-                                </a>
-                                <a href="#"
-                                    class="bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
-                                    3
-                                </a>
-                                <a href="#"
-                                    class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm font-medium text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700">
-                                    <span class="sr-only">Next</span>
-                                    <i class="fi fi-rr-angle-small-right translate-y-0.5"></i>
-                                </a>
-                            </nav>
-                        </div>
+                        <button onclick="openTestimonialModal()"
+                            class="group relative md:w-fit w-full flex items-center justify-center gap-2 bg-primary text-white text-sm px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 overflow-hidden">
+                            <span class="relative z-10 flex items-center gap-2">
+                                <i class="fi fi-rr-add"></i>
+                                <span>Add Testimonial</span>
+                            </span>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-primary to-primary/70 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                            </div>
+                        </button>
                     </div>
                 </div>
-            </div>
 
-            <!-- Add/Edit Testimonial Modal (hidden by default) -->
-            <div id="testimonial-modal"
-                class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 p-4">
-                <div
-                    class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Add New Testimonial</h3>
-                            <button id="close-modal" class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
-                                <i class="fi fi-rr-cross-small text-xl"></i>
-                            </button>
+                <!-- Stats -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Total Testimonials</p>
+                                <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">36</p>
+                            </div>
+                            <div class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center">
+                                <i class="fi fi-rr-comment-alt text-blue-500"></i>
+                            </div>
                         </div>
-
-                        <form class="space-y-4">
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
+                        <div class="flex items-center justify-between">
                             <div>
-                                <label for="client-name"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Client
-                                    Name</label>
-                                <input type="text" id="client-name"
-                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200">
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Featured</p>
+                                <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">12</p>
                             </div>
-                            <div>
-                                <label for="client-company"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Company</label>
-                                <input type="text" id="client-company"
-                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200">
+                            <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center">
+                                <i class="fi fi-rr-star text-yellow-500"></i>
                             </div>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
+                        <div class="flex items-center justify-between">
                             <div>
-                                <label for="client-position"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Position</label>
-                                <input type="text" id="client-position"
-                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200">
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Published</p>
+                                <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">28</p>
                             </div>
-                            <div>
-                                <label for="testimonial-text"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Testimonial</label>
-                                <textarea id="testimonial-text" rows="4"
-                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200"></textarea>
+                            <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center">
+                                <i class="fi fi-rr-check text-green-500"></i>
                             </div>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
+                        <div class="flex items-center justify-between">
                             <div>
-                                <label
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Rating</label>
-                                <div class="flex items-center">
-                                    <div class="flex items-center rating-input">
-                                        <input type="radio" id="star5" name="rating" value="5" class="hidden">
-                                        <label for="star5"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
-                                        <input type="radio" id="star4" name="rating" value="4" class="hidden">
-                                        <label for="star4"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
-                                        <input type="radio" id="star3" name="rating" value="3" class="hidden">
-                                        <label for="star3"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
-                                        <input type="radio" id="star2" name="rating" value="2" class="hidden">
-                                        <label for="star2"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
-                                        <input type="radio" id="star1" name="rating" value="1" class="hidden">
-                                        <label for="star1"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Average Rating</p>
+                                <div class="flex items-center gap-1 mt-1">
+                                    <p class="text-2xl font-bold text-gray-800 dark:text-gray-100">4.8</p>
+                                    <div class="flex items-center">
+                                        <i class="fi fi-rr-star text-yellow-500 text-sm"></i>
+                                        <i class="fi fi-rr-star text-yellow-500 text-sm"></i>
+                                        <i class="fi fi-rr-star text-yellow-500 text-sm"></i>
+                                        <i class="fi fi-rr-star text-yellow-500 text-sm"></i>
+                                        <i class="fi fi-rr-star text-yellow-500 text-sm"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div>
-                                <label for="client-avatar"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Client
-                                    Avatar</label>
-                                <div class="mt-1 flex items-center">
-                                    <span
-                                        class="inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100 dark:bg-gray-700">
-                                        <img id="avatar-preview" src="../assets/images/placeholder-avatar.jpg"
-                                            alt="Avatar preview" class="h-full w-full object-cover">
-                                    </span>
-                                    <input type="file" id="client-avatar" class="hidden" accept="image/*">
-                                    <button type="button" onclick="document.getElementById('client-avatar').click()"
-                                        class="ml-5 bg-white dark:bg-gray-700 py-2 px-3 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-                                        Change
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center">
+                                <i class="fi fi-rr-thumbs-up text-purple-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden group transition-all duration-300 hover:shadow-lg">
+                        <div class="p-5">
+                            <!-- Header -->
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center text-white font-semibold">
+                                        JD
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">John Doe</h3>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">CEO, TechCorp Inc.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-red-500 hover:text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20">
+                                        <i class="fi fi-rr-trash text-sm"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div class="flex justify-end gap-3 pt-4">
-                                <button type="button" id="cancel-modal"
-                                    class="bg-white dark:bg-gray-700 py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                    Cancel
-                                </button>
-                                <button type="submit"
-                                    class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition-colors">
-                                    Save Testimonial
-                                </button>
+
+                            <!-- Rating -->
+                            <div class="flex items-center gap-1 mb-4">
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">5.0</span>
                             </div>
-                        </form>
+
+                            <!-- Content -->
+                            <p class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3 italic">
+                                "Working with this team was an absolute pleasure. They delivered exceptional results
+                                beyond our expectations. The attention to detail and professionalism is unmatched."
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-blue-500 bg-blue-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-briefcase text-xs"></i>
+                                    Web Development
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-green-500 bg-green-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-check text-xs"></i>
+                                    Completed
+                                </span>
+                            </div>
+
+                            <!-- Footer -->
+                            <div
+                                class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                        <i class="fi fi-rr-calendar"></i>
+                                        Mar 15, 2024
+                                    </span>
+                                    <span
+                                        class="inline-flex items-center gap-1 text-xs text-yellow-500 bg-yellow-500/10 px-2 py-1 rounded-full">
+                                        <i class="fi fi-rr-star text-xs"></i>
+                                        Featured
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-blue-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-globe text-sm"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-brands-linkedin text-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden group transition-all duration-300 hover:shadow-lg">
+                        <div class="p-5">
+                            <!-- Header -->
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white font-semibold">
+                                        SC
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Sarah Chen</h3>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Design Director, CreativeCo
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-red-500 hover:text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20">
+                                        <i class="fi fi-rr-trash text-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Rating -->
+                            <div class="flex items-center gap-1 mb-4">
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">5.0</span>
+                            </div>
+
+                            <!-- Content -->
+                            <p class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3 italic">
+                                "The UI/UX design work exceeded all our expectations. They understood our brand
+                                perfectly and delivered a stunning, user-friendly interface that our customers love."
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-purple-500 bg-purple-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-palette text-xs"></i>
+                                    UI/UX Design
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-green-500 bg-green-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-check text-xs"></i>
+                                    Published
+                                </span>
+                            </div>
+
+                            <!-- Footer -->
+                            <div
+                                class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                        <i class="fi fi-rr-calendar"></i>
+                                        Feb 28, 2024
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-blue-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-globe text-sm"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-pink-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-brands-instagram text-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden group transition-all duration-300 hover:shadow-lg">
+                        <div class="p-5">
+                            <!-- Header -->
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-400 flex items-center justify-center text-white font-semibold">
+                                        MR
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Michael Rodriguez</h3>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Founder, StartupXYZ</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-red-500 hover:text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20">
+                                        <i class="fi fi-rr-trash text-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Rating -->
+                            <div class="flex items-center gap-1 mb-4">
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">5.0</span>
+                            </div>
+
+                            <!-- Content -->
+                            <p class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3 italic">
+                                "Exceptional service from start to finish. The team was responsive, professional, and
+                                delivered high-quality work on time. Highly recommended!"
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-orange-500 bg-orange-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-mobile text-xs"></i>
+                                    Mobile App
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-yellow-500 bg-yellow-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-star text-xs"></i>
+                                    Featured
+                                </span>
+                            </div>
+
+                            <!-- Footer -->
+                            <div
+                                class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                        <i class="fi fi-rr-calendar"></i>
+                                        Jan 12, 2024
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-blue-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-globe text-sm"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-blue-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-brands-twitter text-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden group transition-all duration-300 hover:shadow-lg">
+                        <div class="p-5">
+                            <!-- Header -->
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-amber-400 flex items-center justify-center text-white font-semibold">
+                                        ES
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Emily Smith</h3>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">Marketing Manager,
+                                            BrandBoost</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-red-500 hover:text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20">
+                                        <i class="fi fi-rr-trash text-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Rating -->
+                            <div class="flex items-center gap-1 mb-4">
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">5.0</span>
+                            </div>
+
+                            <!-- Content -->
+                            <p class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3 italic">
+                                "The branding work they did for our company was phenomenal. They captured our vision
+                                perfectly and delivered a cohesive brand identity that resonates with our audience."
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-pink-500 bg-pink-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-brush text-xs"></i>
+                                    Branding
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-green-500 bg-green-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-check text-xs"></i>
+                                    Published
+                                </span>
+                            </div>
+
+                            <!-- Footer -->
+                            <div
+                                class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                        <i class="fi fi-rr-calendar"></i>
+                                        Dec 5, 2023
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-blue-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-globe text-sm"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-red-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-brands-youtube text-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div
+                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden group transition-all duration-300 hover:shadow-lg">
+                        <div class="p-5">
+                            <!-- Header -->
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-gradient-to-r from-red-500 to-rose-400 flex items-center justify-center text-white font-semibold">
+                                        AK
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-gray-800 dark:text-gray-100">Alex Kim</h3>
+                                        <p class="text-sm text-gray-600 dark:text-gray-400">CTO, DataSolutions</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-edit text-sm"></i>
+                                    </button>
+                                    <button
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-red-500 hover:text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20">
+                                        <i class="fi fi-rr-trash text-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Rating -->
+                            <div class="flex items-center gap-1 mb-4">
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <i class="fi fi-rr-star text-yellow-500"></i>
+                                <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">5.0</span>
+                            </div>
+
+                            <!-- Content -->
+                            <p class="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3 italic">
+                                "The backend development work was solid and scalable. They implemented complex features
+                                with precision and provided excellent documentation."
+                            </p>
+
+                            <!-- Tags -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-indigo-500 bg-indigo-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-database text-xs"></i>
+                                    Backend Development
+                                </span>
+                                <span
+                                    class="inline-flex items-center gap-1 text-xs text-gray-500 bg-gray-500/10 px-2 py-1 rounded-full">
+                                    <i class="fi fi-rr-drafting-compass text-xs"></i>
+                                    Draft
+                                </span>
+                            </div>
+
+                            <!-- Footer -->
+                            <div
+                                class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
+                                <div class="flex items-center gap-2">
+                                    <span class="inline-flex items-center gap-1 text-xs text-gray-500">
+                                        <i class="fi fi-rr-calendar"></i>
+                                        Nov 20, 2023
+                                    </span>
+                                    <span
+                                        class="inline-flex items-center gap-1 text-xs text-yellow-500 bg-yellow-500/10 px-2 py-1 rounded-full">
+                                        <i class="fi fi-rr-star text-xs"></i>
+                                        Featured
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-blue-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-rr-globe text-sm"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-blue-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
+                                        <i class="fi fi-brands-github text-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add New Testimonial Card -->
+                    <div
+                        class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-700 overflow-hidden group transition-all duration-300 hover:border-primary/50 hover:bg-primary/5 cursor-pointer">
+                        <div class="p-5 h-full flex flex-col items-center justify-center text-center min-h-[300px]">
+                            <div
+                                class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-all">
+                                <i class="fi fi-rr-add text-primary text-2xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800 dark:text-gray-100 mb-2">Add New Testimonial</h3>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6">
+                                Showcase client feedback and build credibility
+                            </p>
+                            <button onclick="openTestimonialModal()"
+                                class="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium">
+                                <i class="fi fi-rr-add"></i>
+                                <span>Create Testimonial</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- scripts -->
     <script src="../../assets/js/sidebar.js" defer></script>
 
@@ -521,6 +724,59 @@
 
     <!-- Testimonials -->
     <script src="../../assets/js/testimonials.js" defer></script>
+
+    <script>
+        // Section Modal functionality
+        document.addEventListener( 'DOMContentLoaded', function ()
+        {
+            const addButton = document.getElementById( 'add-section-btn' );
+            const modal = document.getElementById( 'section-modal' );
+            const closeButton = document.getElementById( 'close-section-modal' );
+            const cancelButton = document.getElementById( 'cancel-section-modal' );
+            const sectionTypeSelect = document.getElementById( 'section-type' );
+            const customSectionContainer = document.getElementById( 'custom-section-name-container' );
+
+            if ( addButton )
+            {
+                addButton.addEventListener( 'click', function ( e )
+                {
+                    e.preventDefault();
+                    modal.classList.remove( 'hidden' );
+                } );
+            }
+
+            if ( closeButton )
+            {
+                closeButton.addEventListener( 'click', function ()
+                {
+                    modal.classList.add( 'hidden' );
+                } );
+            }
+
+            if ( cancelButton )
+            {
+                cancelButton.addEventListener( 'click', function ()
+                {
+                    modal.classList.add( 'hidden' );
+                } );
+            }
+
+            // Show/hide custom section name field
+            if ( sectionTypeSelect )
+            {
+                sectionTypeSelect.addEventListener( 'change', function ()
+                {
+                    if ( this.value === 'custom' )
+                    {
+                        customSectionContainer.classList.remove( 'hidden' );
+                    } else
+                    {
+                        customSectionContainer.classList.add( 'hidden' );
+                    }
+                } );
+            }
+        } );
+    </script>
 </body>
 
 </html>

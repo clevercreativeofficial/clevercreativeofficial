@@ -75,5 +75,5 @@ span{
   /* ======================================= */
   i.fi{
     display: inline-block !important;
-    transform: translateY(3px) !important;
+    transform: translateY(1px) !important;
   }

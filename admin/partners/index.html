@@ -166,81 +166,34 @@
         <div class="max-w-7xl mx-auto">
             <!-- Premium Partners Management -->
             <div class="max-w-[1200px] mx-auto px-3 py-6">
-                <!-- Header Section -->
-                <div class="relative mb-8">
-                    <div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 p-6">
-                        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                            <!-- Title Section -->
-                            <div class="space-y-2">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                                        <i class="fi fi-rr-handshake text-primary"></i>
-                                    </div>
-                                    <div>
-                                        <h1 class="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100">
-                                            Partners Management
-                                        </h1>
-                                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                                            Manage client logos displayed in your portfolio
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <!-- Action Buttons -->
-                            <button
-                                class="group relative sm:w-fit w-full flex items-center justify-center text-sm gap-2 bg-primary text-white px-4 py-2.5 rounded-xl font-medium hover:bg-primary/90 transition-all duration-300 overflow-hidden">
-                                <span class="relative z-10 flex items-center gap-2">
-                                    <i class="fi fi-rr-add text-sm"></i>
-                                    <span>Add Partner</span>
-                                </span>
+                <!-- Header -->
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-3">
                                 <div
-                                    class="absolute inset-0 bg-gradient-to-r from-primary to-primary/70 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
+                                    class="sm:flex hidden w-12 h-12 rounded-xl bg-primary/10 items-center justify-center">
+                                    <i class="fi fi-rr-handshake text-primary text-xl"></i>
                                 </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Stats Overview -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                    <!-- Total Partners -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-sm text-gray-600 dark:text-gray-400">Total Partners</p>
-                                <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">12</p>
-                            </div>
-                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                                <i class="fi fi-rr-building text-primary"></i>
+                                <div>
+                                    <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Partners Management
+                                    </h1>
+                                    <p class="text-gray-600 dark:text-gray-400 mt-1">Manage client logos displayed in
+                                        your portfolio</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Active Partners -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-sm text-gray-600 dark:text-gray-400">Active</p>
-                                <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">8</p>
+                        <a href="/admin/partners/create/"
+                            class="group relative md:w-fit w-full flex items-center justify-center gap-2 bg-primary text-white text-sm px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 overflow-hidden">
+                            <span class="relative z-10 flex items-center gap-2">
+                                <i class="fi fi-rr-add"></i>
+                                <span>Add New Partner</span>
+                            </span>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-primary to-primary/70 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
                             </div>
-                            <div class="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center">
-                                <i class="fi fi-rr-check text-green-500"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Featured Partners -->
-                    <div class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-4">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <p class="text-sm text-gray-600 dark:text-gray-400">Featured</p>
-                                <p class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-1">6</p>
-                            </div>
-                            <div class="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center">
-                                <i class="fi fi-rr-star text-yellow-500"></i>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -262,130 +215,41 @@
                                 <h3 class="font-semibold text-gray-800 dark:text-gray-100">BBCI Bank</h3>
                                 <span
                                     class="inline-flex items-center gap-1 bg-green-500/10 text-green-600 dark:text-green-400 text-xs px-2 py-1 rounded-full">
-                                    <i class="fi fi-rr-check text-xs"></i>
                                     Active
                                 </span>
                             </div>
 
                             <div class="flex items-center gap-3 mb-4">
                                 <div class="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">
-                                    <i class="fi fi-rr-calendar text-xs"></i>
                                     <span>Since 2022</span>
                                 </div>
-                                <div class="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">
-                                    <i class="fi fi-rr-star text-xs text-yellow-500"></i>
+                                <div
+                                    class="flex items-center gap-1 text-xs text-sky-600 dark:text-sky-400 bg-sky-50 dark:bg-sky-900/20 px-3 py-1 rounded-full">
                                     <span>Featured</span>
                                 </div>
                             </div>
 
                             <!-- Actions -->
                             <div class="flex items-center gap-2 pt-4 border-t border-gray-100 dark:border-gray-700">
-                                <button
-                                    class="flex-1 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                    Edit
-                                </button>
-                                <button
-                                    class="flex-1 py-2 text-sm font-medium text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">
-                                    Remove
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Partner Card 2 -->
-                    <div
-                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden group hover:border-primary/30 transition-all duration-300">
-                        <!-- Partner Logo -->
-                        <div class="p-6 flex items-center justify-center bg-white dark:bg-gray-700/30 h-40">
-                            <img src="https://ecobrixburundi.com/assets/logo_light.svg?t=1767172129629"
-                                class="max-h-16 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
-                                alt="Ecobrix">
-                        </div>
-
-                        <!-- Partner Info -->
-                        <div class="p-4">
-                            <div class="flex items-center justify-between mb-3">
-                                <h3 class="font-semibold text-gray-800 dark:text-gray-100">Ecobrix</h3>
-                                <span
-                                    class="inline-flex items-center gap-1 bg-green-500/10 text-green-600 dark:text-green-400 text-xs px-2 py-1 rounded-full">
-                                    <i class="fi fi-rr-check text-xs"></i>
-                                    Active
-                                </span>
-                            </div>
-
-                            <div class="flex items-center gap-3 mb-4">
-                                <div class="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">
-                                    <i class="fi fi-rr-calendar text-xs"></i>
-                                    <span>Since 2023</span>
-                                </div>
-                                <div class="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">
-                                    <i class="fi fi-rr-star text-xs text-yellow-500"></i>
-                                    <span>Featured</span>
-                                </div>
-                            </div>
-
-                            <!-- Actions -->
-                            <div class="flex items-center gap-2 pt-4 border-t border-gray-100 dark:border-gray-700">
-                                <button
-                                    class="flex-1 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                    Edit
-                                </button>
-                                <button
-                                    class="flex-1 py-2 text-sm font-medium text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">
-                                    Remove
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Partner Card 3 -->
-                    <div
-                        class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden group hover:border-primary/30 transition-all duration-300">
-                        <!-- Partner Logo -->
-                        <div class="p-6 flex items-center justify-center bg-white dark:bg-gray-700/30 h-40">
-                            <img src="https://pacc-bi.vercel.app/assets/images/logo/logo_color.svg"
-                                class="max-h-16 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
-                                alt="PACC">
-                        </div>
-
-                        <!-- Partner Info -->
-                        <div class="p-4">
-                            <div class="flex items-center justify-between mb-3">
-                                <h3 class="font-semibold text-gray-800 dark:text-gray-100">PACC</h3>
-                                <span
-                                    class="inline-flex items-center gap-1 bg-green-500/10 text-green-600 dark:text-green-400 text-xs px-2 py-1 rounded-full">
-                                    <i class="fi fi-rr-check text-xs"></i>
-                                    Active
-                                </span>
-                            </div>
-
-                            <div class="flex items-center gap-3 mb-4">
-                                <div class="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">
-                                    <i class="fi fi-rr-calendar text-xs"></i>
-                                    <span>Since 2023</span>
-                                </div>
-                                <div class="flex items-center gap-1 text-sm text-gray-600 dark:text-gray-400">
-                                    <i class="fi fi-rr-star text-xs text-yellow-500"></i>
-                                    <span>Featured</span>
-                                </div>
-                            </div>
-
-                            <!-- Actions -->
-                            <div class="flex items-center gap-2 pt-4 border-t border-gray-100 dark:border-gray-700">
-                                <button
-                                    class="flex-1 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
-                                    Edit
-                                </button>
-                                <button
-                                    class="flex-1 py-2 text-sm font-medium text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">
-                                    Remove
-                                </button>
+                                <a href="/admin/partners/edit/" class="flex w-1/2">
+                                    <button
+                                        class="flex-1 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                                        Edit
+                                    </button>
+                                </a>
+                                <a href="#" class="flex w-1/2">
+                                    <button
+                                        class="flex-1 py-2 text-sm font-medium text-red-600 dark:text-red-400 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">
+                                        Remove
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Add New Partner Card -->
-                    <div
+
+                    <a href="/admin/partners/create/"
                         class="bg-white dark:bg-gray-800 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-600 flex flex-col items-center justify-center p-8 group hover:border-primary hover:bg-primary/5 transition-all duration-300 cursor-pointer">
                         <div
                             class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -395,108 +259,11 @@
                         <p class="text-sm text-gray-600 dark:text-gray-400 text-center">
                             Upload logo and details for a new client partner
                         </p>
-                    </div>
+                    </a>
+
                 </div>
             </div>
 
-            <!-- Add/Edit Testimonial Modal (hidden by default) -->
-            <div id="testimonial-modal"
-                class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 p-4">
-                <div
-                    class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
-                    <div class="p-6">
-                        <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100">Add New Testimonial</h3>
-                            <button id="close-modal" class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
-                                <i class="fi fi-rr-cross-small text-xl"></i>
-                            </button>
-                        </div>
-
-                        <form class="space-y-4">
-                            <div>
-                                <label for="client-name"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Client
-                                    Name</label>
-                                <input type="text" id="client-name"
-                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200">
-                            </div>
-                            <div>
-                                <label for="client-company"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Company</label>
-                                <input type="text" id="client-company"
-                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200">
-                            </div>
-                            <div>
-                                <label for="client-position"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Position</label>
-                                <input type="text" id="client-position"
-                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200">
-                            </div>
-                            <div>
-                                <label for="testimonial-text"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Testimonial</label>
-                                <textarea id="testimonial-text" rows="4"
-                                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:text-gray-200"></textarea>
-                            </div>
-                            <div>
-                                <label
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Rating</label>
-                                <div class="flex items-center">
-                                    <div class="flex items-center rating-input">
-                                        <input type="radio" id="star5" name="rating" value="5" class="hidden">
-                                        <label for="star5"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
-                                        <input type="radio" id="star4" name="rating" value="4" class="hidden">
-                                        <label for="star4"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
-                                        <input type="radio" id="star3" name="rating" value="3" class="hidden">
-                                        <label for="star3"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
-                                        <input type="radio" id="star2" name="rating" value="2" class="hidden">
-                                        <label for="star2"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
-                                        <input type="radio" id="star1" name="rating" value="1" class="hidden">
-                                        <label for="star1"
-                                            class="text-2xl cursor-pointer text-gray-300 dark:text-gray-600 hover:text-yellow-400"><i
-                                                class="fi fi-rr-star"></i></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="client-avatar"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Client
-                                    Avatar</label>
-                                <div class="mt-1 flex items-center">
-                                    <span
-                                        class="inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100 dark:bg-gray-700">
-                                        <img id="avatar-preview" src="../assets/images/placeholder-avatar.jpg"
-                                            alt="Avatar preview" class="h-full w-full object-cover">
-                                    </span>
-                                    <input type="file" id="client-avatar" class="hidden" accept="image/*">
-                                    <button type="button" onclick="document.getElementById('client-avatar').click()"
-                                        class="ml-5 bg-white dark:bg-gray-700 py-2 px-3 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-                                        Change
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="flex justify-end gap-3 pt-4">
-                                <button type="button" id="cancel-modal"
-                                    class="bg-white dark:bg-gray-700 py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600">
-                                    Cancel
-                                </button>
-                                <button type="submit"
-                                    class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition-colors">
-                                    Save Testimonial
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 

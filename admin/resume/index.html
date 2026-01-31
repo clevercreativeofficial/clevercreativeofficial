@@ -184,7 +184,8 @@
                                 </div>
                             </div>
                         </div>
-                        <button onclick="openResumeModal()"
+
+                        <a href="/admin/resume/upload/"
                             class="group relative md:w-fit w-full flex items-center justify-center gap-2 bg-primary text-white text-sm px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 overflow-hidden">
                             <span class="relative z-10 flex items-center gap-2">
                                 <i class="fi fi-rr-cloud-upload"></i>
@@ -193,7 +194,8 @@
                             <div
                                 class="absolute inset-0 bg-gradient-to-r from-primary to-primary/70 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500">
                             </div>
-                        </button>
+                        </a>
+
                     </div>
                 </div>
 
@@ -249,82 +251,6 @@
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     <!-- Left Column -->
                     <div class="lg:col-span-1 space-y-6">
-                        <!-- Personal Info Card -->
-                        <div
-                            class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300">
-                            <div class="p-5">
-                                <div class="flex items-start justify-between mb-4">
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                                            <i class="fi fi-rr-user text-primary"></i>
-                                        </div>
-                                        <div>
-                                            <h3 class="font-bold text-gray-800 dark:text-gray-100">Personal Information
-                                            </h3>
-                                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-1">Basic contact
-                                                details</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex gap-1">
-                                        <a href="/admin/profile/">
-                                            <button
-                                                class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
-                                                <i class="fi fi-rr-edit text-sm"></i>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="space-y-4">
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                                            <i class="fi fi-rr-envelope text-gray-600 dark:text-gray-300 text-sm"></i>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm text-gray-800 dark:text-gray-200">john@clevercreative.com
-                                            </p>
-                                            <p class="text-xs text-gray-500 dark:text-gray-400">Email Address</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                                            <i class="fi fi-rr-phone-call text-gray-600 dark:text-gray-300 text-sm"></i>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm text-gray-800 dark:text-gray-200">+1 (555) 123-4567</p>
-                                            <p class="text-xs text-gray-500 dark:text-gray-400">Phone Number</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                                            <i class="fi fi-rr-marker text-gray-600 dark:text-gray-300 text-sm"></i>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm text-gray-800 dark:text-gray-200">San Francisco, CA</p>
-                                            <p class="text-xs text-gray-500 dark:text-gray-400">Location</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center gap-3">
-                                        <div
-                                            class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
-                                            <i class="fi fi-rr-globe text-gray-600 dark:text-gray-300 text-sm"></i>
-                                        </div>
-                                        <div>
-                                            <p class="text-sm text-gray-800 dark:text-gray-200">portfolio.dev</p>
-                                            <p class="text-xs text-gray-500 dark:text-gray-400">Website</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- Skills Card -->
                         <div
                             class="bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300">
@@ -343,12 +269,7 @@
                                     </div>
 
                                     <div class="flex gap-1">
-                                        <a href="/admin/resume/edit_skill">
-                                            <button
-                                                class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
-                                                <i class="fi fi-rr-edit text-sm"></i>
-                                            </button>
-                                        </a>
+
                                         <a href="/admin/resume/add_skill">
                                             <button
                                                 class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -362,8 +283,15 @@
                                 <div class="space-y-4">
                                     <div>
                                         <div class="flex justify-between text-sm mb-2">
-                                            <span class="text-gray-800 dark:text-gray-200 font-medium">UI/UX
-                                                Design</span>
+                                            <span
+                                                class="text-gray-800 dark:text-gray-200 font-medium flex items-center gap-2">
+                                                UI/UX Design
+                                                <a href="/admin/resume/edit_skill">
+                                                    <button class="text-gray-500 hover:text-primary dark:text-gray-400">
+                                                        <i class="fi fi-rr-edit text-sm"></i>
+                                                    </button>
+                                                </a>
+                                            </span>
                                             <span class="text-primary font-semibold">90%</span>
                                         </div>
                                         <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
@@ -373,8 +301,15 @@
 
                                     <div>
                                         <div class="flex justify-between text-sm mb-2">
-                                            <span class="text-gray-800 dark:text-gray-200 font-medium">Web
-                                                Development</span>
+                                            <span
+                                                class="text-gray-800 dark:text-gray-200 font-medium flex items-center gap-2">
+                                                Web Development
+                                                <a href="/admin/resume/edit_skill">
+                                                    <button class="text-gray-500 hover:text-primary dark:text-gray-400">
+                                                        <i class="fi fi-rr-edit text-sm"></i>
+                                                    </button>
+                                                </a>
+                                            </span>
                                             <span class="text-primary font-semibold">85%</span>
                                         </div>
                                         <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
@@ -384,8 +319,15 @@
 
                                     <div>
                                         <div class="flex justify-between text-sm mb-2">
-                                            <span class="text-gray-800 dark:text-gray-200 font-medium">Graphic
-                                                Design</span>
+                                            <span
+                                                class="text-gray-800 dark:text-gray-200 font-medium flex items-center gap-2">
+                                                Frontend Development
+                                                <a href="/admin/resume/edit_skill">
+                                                    <button class="text-gray-500 hover:text-primary dark:text-gray-400">
+                                                        <i class="fi fi-rr-edit text-sm"></i>
+                                                    </button>
+                                                </a>
+                                            </span>
                                             <span class="text-primary font-semibold">95%</span>
                                         </div>
                                         <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
@@ -396,7 +338,14 @@
                                     <div>
                                         <div class="flex justify-between text-sm mb-2">
                                             <span
-                                                class="text-gray-800 dark:text-gray-200 font-medium">Photography</span>
+                                                class="text-gray-800 dark:text-gray-200 font-medium flex items-center gap-2">
+                                                UI/UX Design
+                                                <a href="/admin/resume/edit_skill">
+                                                    <button class="text-gray-500 hover:text-primary dark:text-gray-400">
+                                                        <i class="fi fi-rr-edit text-sm"></i>
+                                                    </button>
+                                                </a>
+                                            </span>
                                             <span class="text-primary font-semibold">75%</span>
                                         </div>
                                         <div class="w-full bg-gray-100 dark:bg-gray-700 rounded-full h-2">
@@ -488,12 +437,7 @@
                                         </div>
                                     </div>
                                     <div class="flex gap-1">
-                                        <a href="/admin/resume/edit_experience">
-                                            <button
-                                                class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
-                                                <i class="fi fi-rr-edit text-sm"></i>
-                                            </button>
-                                        </a>
+
                                         <a href="/admin/resume/add_experience">
                                             <button
                                                 class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -517,8 +461,16 @@
                                         <div class="flex-1">
                                             <div class="flex justify-between items-start">
                                                 <div>
-                                                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                                        Senior UI/UX Designer</h3>
+                                                    <h3
+                                                        class="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                                        Senior UI/UX Designer
+                                                        <a href="/admin/resume/edit_experience">
+                                                            <button
+                                                                class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 duration-300">
+                                                                <i class="fi fi-rr-edit text-sm"></i>
+                                                            </button>
+                                                        </a>
+                                                    </h3>
                                                     <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Creative
                                                         Studio Inc.</p>
                                                 </div>
@@ -549,8 +501,16 @@
                                         <div class="flex-1">
                                             <div class="flex justify-between items-start">
                                                 <div>
-                                                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                                        Web Designer</h3>
+                                                    <h3
+                                                        class="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                                        Web Designer
+                                                        <a href="/admin/resume/edit_experience">
+                                                            <button
+                                                                class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 duration-300">
+                                                                <i class="fi fi-rr-edit text-sm"></i>
+                                                            </button>
+                                                        </a>
+                                                    </h3>
                                                     <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Digital
                                                         Solutions LLC</p>
                                                 </div>
@@ -579,8 +539,16 @@
                                         <div class="flex-1">
                                             <div class="flex justify-between items-start">
                                                 <div>
-                                                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                                        Graphic Designer</h3>
+                                                    <h3
+                                                        class="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                                        Graphic Designer
+                                                        <a href="/admin/resume/edit_experience">
+                                                            <button
+                                                                class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 duration-300">
+                                                                <i class="fi fi-rr-edit text-sm"></i>
+                                                            </button>
+                                                        </a>
+                                                    </h3>
                                                     <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Freelance
                                                     </p>
                                                 </div>
@@ -617,12 +585,6 @@
                                         </div>
                                     </div>
                                     <div class="flex gap-1">
-                                        <a href="/admin/resume/edit_education">
-                                            <button
-                                                class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
-                                                <i class="fi fi-rr-edit text-sm"></i>
-                                            </button>
-                                        </a>
                                         <a href="/admin/resume/add_education">
                                             <button
                                                 class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -646,8 +608,16 @@
                                         <div class="flex-1">
                                             <div class="flex justify-between items-start">
                                                 <div>
-                                                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                                        Master in Design</h3>
+                                                    <h3
+                                                        class="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                                        Master in Design
+                                                        <a href="/admin/resume/edit_experience">
+                                                            <button
+                                                                class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 duration-300">
+                                                                <i class="fi fi-rr-edit text-sm"></i>
+                                                            </button>
+                                                        </a>
+                                                    </h3>
                                                     <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">California
                                                         Institute of Arts</p>
                                                 </div>
@@ -676,8 +646,16 @@
                                         <div class="flex-1">
                                             <div class="flex justify-between items-start">
                                                 <div>
-                                                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">
-                                                        Bachelor of Fine Arts</h3>
+                                                    <h3
+                                                        class="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                                        Bachelor of Fine Arts
+                                                        <a href="/admin/resume/edit_experience">
+                                                            <button
+                                                                class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 duration-300">
+                                                                <i class="fi fi-rr-edit text-sm"></i>
+                                                            </button>
+                                                        </a>
+                                                    </h3>
                                                     <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">New York
                                                         School of Design</p>
                                                 </div>
@@ -714,12 +692,6 @@
                                         </div>
                                     </div>
                                     <div class="flex gap-1">
-                                        <a href="/admin/resume/edit_certification">
-                                            <button
-                                                class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
-                                                <i class="fi fi-rr-edit text-sm"></i>
-                                            </button>
-                                        </a>
                                         <a href="/admin/resume/add_certification">
                                             <button
                                                 class="w-8 h-8 rounded-lg flex items-center justify-center text-gray-500 hover:text-primary dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -739,8 +711,16 @@
                                                 <i class="fi fi-rr-badge text-yellow-500"></i>
                                             </div>
                                             <div>
-                                                <h3 class="font-medium text-gray-800 dark:text-gray-100">UX Design
-                                                    Professional</h3>
+                                                <h3
+                                                    class="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                                    UX design Professional
+                                                    <a href="/admin/resume/edit_experience">
+                                                        <button
+                                                            class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 duration-300">
+                                                            <i class="fi fi-rr-edit text-sm"></i>
+                                                        </button>
+                                                    </a>
+                                                </h3>
                                                 <p class="text-sm text-gray-600 dark:text-gray-400">Google • 2020</p>
                                             </div>
                                         </div>
@@ -755,8 +735,16 @@
                                                 <i class="fi fi-rr-badge text-blue-500"></i>
                                             </div>
                                             <div>
-                                                <h3 class="font-medium text-gray-800 dark:text-gray-100">Front-End
-                                                    Development</h3>
+                                                <h3
+                                                    class="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                                    Frontend Development
+                                                    <a href="/admin/resume/edit_experience">
+                                                        <button
+                                                            class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 duration-300">
+                                                            <i class="fi fi-rr-edit text-sm"></i>
+                                                        </button>
+                                                    </a>
+                                                </h3>
                                                 <p class="text-sm text-gray-600 dark:text-gray-400">Udacity • 2018</p>
                                             </div>
                                         </div>
@@ -771,8 +759,16 @@
                                                 <i class="fi fi-rr-badge text-purple-500"></i>
                                             </div>
                                             <div>
-                                                <h3 class="font-medium text-gray-800 dark:text-gray-100">Adobe Certified
-                                                    Expert</h3>
+                                                <h3
+                                                    class="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                                    Adobe Certified Expert
+                                                    <a href="/admin/resume/edit_experience">
+                                                        <button
+                                                            class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 duration-300">
+                                                            <i class="fi fi-rr-edit text-sm"></i>
+                                                        </button>
+                                                    </a>
+                                                </h3>
                                                 <p class="text-sm text-gray-600 dark:text-gray-400">Adobe • 2017</p>
                                             </div>
                                         </div>
@@ -787,8 +783,16 @@
                                                 <i class="fi fi-rr-badge text-green-500"></i>
                                             </div>
                                             <div>
-                                                <h3 class="font-medium text-gray-800 dark:text-gray-100">Digital
-                                                    Marketing</h3>
+                                                <h3
+                                                    class="flex items-center gap-2 text-lg font-semibold text-gray-800 dark:text-gray-100">
+                                                    Digital Marketing
+                                                    <a href="/admin/resume/edit_experience">
+                                                        <button
+                                                            class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-gray-100 duration-300">
+                                                            <i class="fi fi-rr-edit text-sm"></i>
+                                                        </button>
+                                                    </a>
+                                                </h3>
                                                 <p class="text-sm text-gray-600 dark:text-gray-400">HubSpot • 2016</p>
                                             </div>
                                         </div>
